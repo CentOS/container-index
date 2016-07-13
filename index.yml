@@ -1,0 +1,16 @@
+# This is the main index.
+
+Projects:
+  - id          : default
+    app-id      :
+    job-id      :
+    git-url     :
+    git-path    :
+    git-branch  :
+    target-file :
+    notify-email:
+    depends-on  : null 
+
+# Add your job below this line, you can use the 'default' project
+# from the top of this file as a template. All values are required.
+

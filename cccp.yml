@@ -1,0 +1,17 @@
+#place this file in your nulecule dir and call it cccp.yml
+job-id: 
+
+#the following are optional, can be left blank
+#defaults, where applicable are filled in
+nulecule-file   : nulecule
+test-skip       : True
+test-script     :
+build-script    :
+delivery-script :
+docker-index    : True
+custom-delivery : False
+local-delivery  : True
+Upstreams       :
+        - ref           :
+          url           :
+desired-tag     : null
