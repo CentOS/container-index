@@ -14,7 +14,7 @@ Projects:
 # Add your job below this line, you can use the 'default' project
 # from the top of this file as a template. All values are required.
 
- - id          : 1
+  - id          : 1
     app-id      : dharmit
     job-id      : pipeline-scanner
     git-url     : git://github.com/dharmit/container-pipeline-service
