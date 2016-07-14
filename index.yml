@@ -23,3 +23,13 @@ Projects:
     target-file : Dockerfile
     notify-email: shahdharmit@gmail.com
     depends-on  : null 
+
+  - id          : 2
+    app-id      : bamachrn
+    job-id      : python
+    git-url     : https://github.com/bamachrn/cccp-python
+    git-path    : /
+    git-branch  : master
+    target-file : Dockerfile.test
+    notify-email: bamachrn@gmail.com
+    depends-on  : null
