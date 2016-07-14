@@ -14,8 +14,17 @@ Projects:
 # Add your job below this line, you can use the 'default' project
 # from the top of this file as a template. All values are required.
 
-#bamachrn
-  - id          : 1
+ - id          : 1
+    app-id      : dharmit
+    job-id      : pipeline-scanner
+    git-url     : git://github.com/dharmit/container-pipeline-service
+    git-path    : pipeline-scanner
+    git-branch  : master
+    target-file : Dockerfile
+    notify-email: shahdharmit@gmail.com
+    depends-on  : null 
+
+  - id          : 2
     app-id      : bamachrn
     job-id      : python
     git-url     : https://github.com/bamachrn/cccp-python
