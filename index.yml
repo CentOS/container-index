@@ -14,3 +14,13 @@ Projects:
 # Add your job below this line, you can use the 'default' project
 # from the top of this file as a template. All values are required.
 
+#bamachrn
+  - id          : 1
+    app-id      : bamachrn
+    job-id      : python
+    git-url     : https://github.com/bamachrn/cccp-python
+    git-path    : /
+    git-branch  : master
+    target-file : Dockerfile.test
+    notify-email: bamachrn@gmail.com
+    depends-on  : null
