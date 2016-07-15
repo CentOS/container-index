@@ -236,3 +236,164 @@ Projects:
         - openshift/origin-base
         - openshift/origin
 
+# sclo containers
+
+  - id           : 20
+    app-id       : sclo
+    job-id       : mysql-55-centos7
+    git-url      : https://github.com/sclorg/mysql-container
+    git-path     : 5.5/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 21
+    app-id       : sclo
+    job-id       : mysql-56-centos7
+    git-url      : https://github.com/sclorg/mysql-container
+    git-path     : 5.6/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 22
+    app-id       : sclo
+    job-id       : nginx-16-centos7
+    git-url      : https://github.com/sclorg/nginx-container
+    git-path     : 1.6/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 23
+    app-id       : sclo
+    job-id       : ror-41-centos7
+    git-url      : https://github.com/sclorg/ror-container
+    git-path     : 4.1/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 24
+    app-id       : sclo
+    job-id       : ror-42-centos7
+    git-url      : https://github.com/sclorg/ror-container
+    git-path     : 4.2/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 25
+    app-id       : sclo
+    job-id       : thermostat-1-agent-centos7
+    git-url      : https://github.com/sclorg/thermostat-container
+    git-path     : 1-agent
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 26
+    app-id       : sclo
+    job-id       : devtoolset-4-perftools-centos7
+    git-url      : https://github.com/sclorg/devtoolset-container
+    git-path     : 4-perftools
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 27
+    app-id       : sclo
+    job-id       : devtoolset-4-toolchain-centos7
+    git-url      : https://github.com/sclorg/devtoolset-container
+    git-path     : 4-toolchain
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 28
+    app-id       : sclo
+    job-id       : mariadb-100-centos7
+    git-url      : https://github.com/sclorg/mariadb-container
+    git-path     : 10.0/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 29
+    app-id       : sclo
+    job-id       : mariadb-101-centos7
+    git-url      : https://github.com/sclorg/mariadb-container
+    git-path     : 10.1/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 30
+    app-id       : sclo
+    job-id       : mongodb-24-centos7
+    git-url      : https://github.com/sclorg/mongodb-container
+    git-path     : 2.4/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 31
+    app-id       : sclo
+    job-id       : mongodb-26-centos7
+    git-url      : https://github.com/sclorg/mongodb-container
+    git-path     : 2.6/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 32
+    app-id       : sclo
+    job-id       : mongodb-32-centos7
+    git-url      : https://github.com/sclorg/mongodb-container
+    git-path     : 3.2/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 33
+    app-id       : sclo
+    job-id       : postgresql-92-centos7
+    git-url      : https://github.com/sclorg/postgresql-container
+    git-path     : 9.2/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 34
+    app-id       : sclo
+    job-id       : postgresql-94-centos7
+    git-url      : https://github.com/sclorg/postgresql-container
+    git-path     : 9.4/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 35
+    app-id       : sclo
+    job-id       : postgresql-95-centos7
+    git-url      : https://github.com/sclorg/postgresql-container
+    git-path     : 9.5/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
