@@ -33,3 +33,367 @@ Projects:
     target-file : Dockerfile.test
     notify-email: bamachrn@gmail.com
     depends-on  : null
+
+# Openshift Images
+
+# * Base Images
+
+  - id          : 3
+    app-id      : openshift
+    job-id      : origin-base
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/base
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null
+        
+  - id          : 4
+    app-id      : openshift
+    job-id      : origin-custom-docker-builder
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/builder/docker/custom-docker-builder/
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+ 
+  - id          : 5
+    app-id      : openshift
+    job-id      : origin-haproxy-router-base
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/router/haproxy-base
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+
+  - id          : 6
+    app-id      : openshift
+    job-id      : origin-release
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/release
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+
+# * Helper Images with no reliance
+
+  - id          : 7
+    app-id      : openshift
+    job-id      : origin-pod
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/pod
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null
+
+  - id          : 8
+    app-id      : openshift
+    job-id      : openvswitch
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/openvswitch
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null
+
+# * Relies on origin base
+
+  - id          : 9
+    app-id      : openshift
+    job-id      : origin
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/origin
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+
+  - id          : 10
+    app-id      : openshift
+    job-id      : origin-haproxy-router
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/router/haproxy
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+        - openshift/origin-haproxy-router-base
+
+  - id          : 11
+    app-id      : openshift
+    job-id      : origin-keepalived-ipfailover
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/ipfailover/keepalived
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+        - openshift/origin
+
+  - id          : 12
+    app-id      : openshift
+    job-id      : origin-docker-registry
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/dockerregistry
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+
+  - id          : 13
+    app-id      : openshift
+    job-id      : origin-egress-router
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/router/egress
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+
+# * Relies on openshift origin
+
+  - id          : 14
+    app-id      : openshift
+    job-id      : origin-deployer
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/deployer
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+        - openshift/origin
+
+  - id          : 15
+    app-id      : openshift
+    job-id      : origin-recycler
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/recycler
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+        - openshift/origin
+
+  - id          : 16
+    app-id      : openshift
+    job-id      : origin-docker-builder
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/builder/docker/docker-builder
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+        - openshift/origin
+
+  - id          : 17
+    app-id      : openshift
+    job-id      : origin-sti-builder
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/builder/docker/sti-builder
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+        - openshift/origin
+
+  - id          : 18
+    app-id      : openshift
+    job-id      : origin-f5-router
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/router/f5
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+        - openshift/origin
+
+  - id          : 19
+    app-id      : openshift
+    job-id      : node
+    git-url     : git://github.com/tdawson/origin
+    git-path    : images/node
+    git-branch  : 2016-centos-images
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : 
+        - openshift/origin-base
+        - openshift/origin
+
+# sclo containers
+
+  - id           : 20
+    app-id       : sclo
+    job-id       : mysql-55-centos7
+    git-url      : https://github.com/sclorg/mysql-container
+    git-path     : 5.5/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 21
+    app-id       : sclo
+    job-id       : mysql-56-centos7
+    git-url      : https://github.com/sclorg/mysql-container
+    git-path     : 5.6/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 22
+    app-id       : sclo
+    job-id       : nginx-16-centos7
+    git-url      : https://github.com/sclorg/nginx-container
+    git-path     : 1.6/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 23
+    app-id       : sclo
+    job-id       : ror-41-centos7
+    git-url      : https://github.com/sclorg/ror-container
+    git-path     : 4.1/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 24
+    app-id       : sclo
+    job-id       : ror-42-centos7
+    git-url      : https://github.com/sclorg/ror-container
+    git-path     : 4.2/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 25
+    app-id       : sclo
+    job-id       : thermostat-1-agent-centos7
+    git-url      : https://github.com/sclorg/thermostat-container
+    git-path     : 1-agent
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 26
+    app-id       : sclo
+    job-id       : devtoolset-4-perftools-centos7
+    git-url      : https://github.com/sclorg/devtoolset-container
+    git-path     : 4-perftools
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 27
+    app-id       : sclo
+    job-id       : devtoolset-4-toolchain-centos7
+    git-url      : https://github.com/sclorg/devtoolset-container
+    git-path     : 4-toolchain
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 28
+    app-id       : sclo
+    job-id       : mariadb-100-centos7
+    git-url      : https://github.com/sclorg/mariadb-container
+    git-path     : 10.0/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 29
+    app-id       : sclo
+    job-id       : mariadb-101-centos7
+    git-url      : https://github.com/sclorg/mariadb-container
+    git-path     : 10.1/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 30
+    app-id       : sclo
+    job-id       : mongodb-24-centos7
+    git-url      : https://github.com/sclorg/mongodb-container
+    git-path     : 2.4/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 31
+    app-id       : sclo
+    job-id       : mongodb-26-centos7
+    git-url      : https://github.com/sclorg/mongodb-container
+    git-path     : 2.6/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 32
+    app-id       : sclo
+    job-id       : mongodb-32-centos7
+    git-url      : https://github.com/sclorg/mongodb-container
+    git-path     : 3.2/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 33
+    app-id       : sclo
+    job-id       : postgresql-92-centos7
+    git-url      : https://github.com/sclorg/postgresql-container
+    git-path     : 9.2/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 34
+    app-id       : sclo
+    job-id       : postgresql-94-centos7
+    git-url      : https://github.com/sclorg/postgresql-container
+    git-path     : 9.4/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 35
+    app-id       : sclo
+    job-id       : postgresql-95-centos7
+    git-url      : https://github.com/sclorg/postgresql-container
+    git-path     : 9.5/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
