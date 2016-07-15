@@ -18,7 +18,7 @@ Projects:
     app-id      : dharmit
     job-id      : pipeline-scanner
     git-url     : git://github.com/dharmit/container-pipeline-service
-    git-path    : pipeline-scanner
+    git-path    : pipeline_scanner
     git-branch  : master
     target-file : Dockerfile
     notify-email: shahdharmit@gmail.com
