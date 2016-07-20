@@ -34,7 +34,7 @@ Projects:
     notify-email: bamachrn@gmail.com
     depends-on  : null
 
-# sclo containers
+# sclo containers (Reserved 3-500)
 
   - id           : 3
     app-id       : sclo
@@ -191,6 +191,198 @@ Projects:
     job-id       : postgresql-95-centos7
     git-url      : https://github.com/sclorg/postgresql-container
     git-path     : 9.5/
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+# CentOS Dockerfiles (Reserved 501-1000)
+
+  - id           : 501
+    app-id       : centos
+    job-id       : django
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : Django/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 502
+    app-id       : centos
+    job-id       : etherpad
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : etherpad/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 503
+    app-id       : centos
+    job-id       : firefox
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : firefox/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 504
+    app-id       : centos
+    job-id       : freeipa
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : freeipa/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 505
+    app-id       : centos
+    job-id       : httpd
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : httpd/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 506
+    app-id       : centos
+    job-id       : mariadb
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : mariadb/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 507
+    app-id       : centos
+    job-id       : memcached
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : memcached/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 508
+    app-id       : centos
+    job-id       : mongo
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : mongodb/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 509
+    app-id       : centos
+    job-id       : owncloud
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : owncloud/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 510
+    app-id       : centos
+    job-id       : python
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : python/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 511
+    app-id       : centos
+    job-id       : qpid
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : qpid/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 512
+    app-id       : centos
+    job-id       : redis
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : redis/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 513
+    app-id       : centos
+    job-id       : registry-v2
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : registry-v2/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 514
+    app-id       : centos
+    job-id       : registry
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : registry/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 514
+    app-id       : centos
+    job-id       : ssh
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : ssh/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 515
+    app-id       : centos
+    job-id       : systemd
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : systemd/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 516
+    app-id       : centos
+    job-id       : tools
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : tools/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 517
+    app-id       : centos
+    job-id       : wildfly
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : wildfly/centos7
+    git-branch   : master
+    target-file  : Dockerfile
+    notify-email : mohammed.zee1000@gmail.com
+    depends-on   : null
+
+  - id           : 518
+    app-id       : centos
+    job-id       : wordpress
+    git-url      : https://github.com/CentOS/CentOS-Dockerfiles
+    git-path     : wordpress/centos7
     git-branch   : master
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
