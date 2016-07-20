@@ -212,7 +212,7 @@ Projects:
     app-id       : centos
     job-id       : etherpad
     git-url      : https://github.com/CentOS/CentOS-Dockerfiles
-    git-path     : etherpad/centos7
+    git-path     : etherpad/
     git-branch   : master
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
@@ -362,7 +362,7 @@ Projects:
     app-id       : centos
     job-id       : tools
     git-url      : https://github.com/CentOS/CentOS-Dockerfiles
-    git-path     : tools/centos7
+    git-path     : tools
     git-branch   : master
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
