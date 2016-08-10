@@ -196,7 +196,16 @@ Projects:
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
 
-# CentOS Dockerfiles (Reserved 501-1000)
+# CentOS Dockerfiles (Reserved 500-1000)
+  - id           : 500
+    app-id       : centos
+    job-id       : centos
+    git-url      : https://github.com/CentOS/sig-cloud-instance-images
+    git-path     : docker
+    git-branch   : CentOS-7
+    target-file  : Dockerfile
+    notify-email : bamachrn@gmail.com
+    depends-on   : null
 
   - id           : 501
     app-id       : centos
