@@ -396,3 +396,13 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
+
+  - id          : 520
+    app-id      : dharmit
+    job-id      : dockerfile-lint
+    git-url     : https://github.com/dharmit/dockerfile-lint
+    git-path    : pipeline_scanner
+    git-branch  : pipeline
+    target-file : Dockerfile
+    notify-email: shahdharmit@gmail.com
+    depends-on  : null 
