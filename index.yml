@@ -406,3 +406,55 @@ Projects:
     target-file : Dockerfile
     notify-email: shahdharmit@gmail.com
     depends-on  : null 
+
+# Postgresql Containers (Reserved: 1001-1250)
+
+  - id          : 1001
+    app-id      : mohammedzee100
+    job-id      : postgresql-9.2
+    git-url     : https://github.com/mohammedzee1000/postgres
+    git-path    : 9.2/
+    git-branch  : dockerfile.centos7-files
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null
+ 
+  - id          : 1002
+    app-id      : mohammedzee1000
+    job-id      : postgresql-9.3
+    git-url     : https://github.com/mohammedzee1000/postgres
+    git-path    : 9.3/
+    git-branch  : dockerfile.centos7-files
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null 
+
+  - id          : 1003
+    app-id      : mohammedzee1000
+    job-id      : postgresql-9.4
+    git-url     : https://github.com/mohammedzee1000/postgres
+    git-path    : 9.4/
+    git-branch  : dockerfile.centos7-files
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null
+ 
+  - id          : 1004
+    app-id      : mohammedzee1000
+    job-id      : postgresql-9.5
+    git-url     : https://github.com/mohammedzee1000/postgres
+    git-path    : 9.5/
+    git-branch  : dockerfile.centos7-files
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null 
+
+  - id          : 1005
+    app-id      : mohammedzee1000
+    job-id      : postgresql-9.6
+    git-url     : https://github.com/mohammedzee1000/postgres
+    git-path    : 9.6/
+    git-branch  : dockerfile.centos7-files
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null 
