@@ -397,6 +397,7 @@ Projects:
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
 
+<<<<<<< HEAD
   - id          : 520
     app-id      : dharmit
     job-id      : dockerfile-lint
@@ -457,4 +458,13 @@ Projects:
     git-branch  : dockerfile.centos7-files
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
+
+  - id          : 2000
+    app-id      : gluster
+    job-id      : storagesig-gluster-centos
+    git-url     : https://github.com/gluster/docker
+    git-path    : CentOS/
+    git-branch  : master
+    target-file : Dockerfile
+    notify-email: humble.devassy@gmail.com
     depends-on  : null 
