@@ -397,7 +397,6 @@ Projects:
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
 
-<<<<<<< HEAD
   - id          : 520
     app-id      : dharmit
     job-id      : dockerfile-lint
