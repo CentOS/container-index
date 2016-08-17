@@ -401,7 +401,7 @@ Projects:
     app-id      : dharmit
     job-id      : dockerfile-lint
     git-url     : https://github.com/dharmit/dockerfile-lint
-    git-path    : pipeline_scanner
+    git-path    : /
     git-branch  : pipeline
     target-file : Dockerfile
     notify-email: shahdharmit@gmail.com
