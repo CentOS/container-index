@@ -457,6 +457,7 @@ Projects:
     git-branch  : dockerfile.centos7-files
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
+    depends-on  : null
 
   - id          : 2000
     app-id      : gluster
