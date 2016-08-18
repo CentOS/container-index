@@ -24,7 +24,6 @@ Projects:
     target-file : Dockerfile
     notify-email: shahdharmit@gmail.com
     depends-on  : null 
-    desired-tag : latest
 
   - id          : 2
     app-id      : bamachrn
@@ -35,7 +34,6 @@ Projects:
     target-file : Dockerfile.test
     notify-email: bamachrn@gmail.com
     depends-on  : null
-    desired-tag : latest
 
 # sclo containers (Reserved 3-500)
 
@@ -48,7 +46,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 4
     app-id       : sclo
@@ -59,7 +56,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 5
     app-id       : sclo
@@ -70,7 +66,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 6
     app-id       : sclo
@@ -81,7 +76,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 7
     app-id       : sclo
@@ -92,7 +86,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 8
     app-id       : sclo
@@ -103,7 +96,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 9
     app-id       : sclo
@@ -114,7 +106,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 10
     app-id       : sclo
@@ -125,7 +116,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 11
     app-id       : sclo
@@ -136,7 +126,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 12
     app-id       : sclo
@@ -147,7 +136,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 13
     app-id       : sclo
@@ -158,7 +146,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 14
     app-id       : sclo
@@ -169,7 +156,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 15
     app-id       : sclo
@@ -180,7 +166,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 16
     app-id       : sclo
@@ -191,7 +176,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 17
     app-id       : sclo
@@ -202,7 +186,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 18
     app-id       : sclo
@@ -213,7 +196,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
 # CentOS Dockerfiles (Reserved 500-1000)
   - id           : 500
@@ -225,7 +207,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : bamachrn@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 501
     app-id       : centos
@@ -236,7 +217,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 502
     app-id       : centos
@@ -247,7 +227,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 503
     app-id       : centos
@@ -258,7 +237,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 504
     app-id       : centos
@@ -269,7 +247,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 505
     app-id       : centos
@@ -280,7 +257,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 506
     app-id       : centos
@@ -291,7 +267,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 507
     app-id       : centos
@@ -302,7 +277,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 508
     app-id       : centos
@@ -313,7 +287,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 509
     app-id       : centos
@@ -324,7 +297,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 510
     app-id       : centos
@@ -335,7 +307,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 511
     app-id       : centos
@@ -346,7 +317,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 512
     app-id       : centos
@@ -357,7 +327,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 513
     app-id       : centos
@@ -368,7 +337,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 514
     app-id       : centos
@@ -379,7 +347,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 515
     app-id       : centos
@@ -390,7 +357,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 516
     app-id       : centos
@@ -401,7 +367,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 517
     app-id       : centos
@@ -412,7 +377,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 518
     app-id       : centos
@@ -423,7 +387,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id           : 519
     app-id       : centos
@@ -434,7 +397,6 @@ Projects:
     target-file  : Dockerfile
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
-    desired-tag : latest
 
   - id          : 520
     app-id      : dharmit
@@ -445,7 +407,6 @@ Projects:
     target-file : Dockerfile
     notify-email: shahdharmit@gmail.com
     depends-on  : null 
-    desired-tag : latest
 
 # Postgresql Containers (Reserved: 1001-1250)
 
@@ -458,8 +419,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     depends-on  : null
-    desired-tag : latest
- 
+
   - id          : 1002
     app-id      : mohammedzee1000
     job-id      : postgresql-9.3
@@ -469,7 +429,6 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     depends-on  : null 
-    desired-tag : latest
 
   - id          : 1003
     app-id      : mohammedzee1000
@@ -480,8 +439,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     depends-on  : null
-    desired-tag : latest
- 
+
   - id          : 1004
     app-id      : mohammedzee1000
     job-id      : postgresql-9.5
@@ -491,7 +449,6 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     depends-on  : null 
-    desired-tag : latest
 
   - id          : 1005
     app-id      : mohammedzee1000
@@ -502,7 +459,6 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     depends-on  : null
-    desired-tag : latest
 
   - id          : 2000
     app-id      : gluster
@@ -513,7 +469,6 @@ Projects:
     target-file : Dockerfile
     notify-email: humble.devassy@gmail.com
     depends-on  : null 
-    desired-tag : latest
 
 #container pipeline images  
   - id          : 3000
@@ -525,7 +480,6 @@ Projects:
     target-file : Dockerfile.build
     notify-email: bamachrn@gmail.com
     depends-on  : null 
-    desired-tag : latest
 
   - id          : 3001
     app-id      : container-pipeline
@@ -536,7 +490,6 @@ Projects:
     target-file : Dockerfile.test
     notify-email: bamachrn@gmail.com
     depends-on  : null 
-    desired-tag : latest
 
   - id          : 3002
     app-id      : container-pipeline
@@ -547,7 +500,6 @@ Projects:
     target-file : Dockerfile.delivery
     notify-email: bamachrn@gmail.com
     depends-on  : null 
-    desired-tag : latest
 
   - id          : 3003
     app-id      : container-pipeline
@@ -558,4 +510,3 @@ Projects:
     target-file : Dockerfile.mailserv
     notify-email: bamachrn@gmail.com
     depends-on  : null 
-    desired-tag : latest
