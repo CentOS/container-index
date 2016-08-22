@@ -405,7 +405,27 @@ Projects:
     git-branch  : pipeline
     target-file : Dockerfile
     notify-email: shahdharmit@gmail.com
-    depends-on  : null 
+    depends-on  : null
+
+  - id          : 521
+    app-id      : dharmit
+    job-id      : centos_jre
+    git-url     : https://github.com/dharmit/dockerfiles
+    git-path    : centos_jre
+    git-branch  : centos-dockerfiles
+    target-file : Dockerfile
+    notify-email: shahdharmit@gmail.com
+    depends-on  : null
+
+  - id          : 522
+    app-id      : dharmit
+    job-id      : centos_go
+    git-url     : https://github.com/dharmit/dockerfiles
+    git-path    : centos_go
+    git-branch  : centos-dockerfiles
+    target-file : Dockerfile
+    notify-email: shahdharmit@gmail.com
+    depends-on  : null
 
 # Postgresql Containers (Reserved: 1001-1250)
 
