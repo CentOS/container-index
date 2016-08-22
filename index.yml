@@ -400,7 +400,7 @@ Projects:
   - id          : 520
     app-id      : dharmit
     job-id      : dockerfile-lint
-    git-url     : https://github.com/dharmit/dockerfile-lint
+    git-url     : https://github.com/dharmit/dockerfile_lint
     git-path    : /
     git-branch  : pipeline
     target-file : Dockerfile
