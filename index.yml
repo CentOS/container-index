@@ -10,6 +10,7 @@ Projects:
     target-file :
     notify-email:
     depends-on  : null 
+    desired-tag : latest
 
 # Add your job below this line, you can use the 'default' project
 # from the top of this file as a template. All values are required.
@@ -438,7 +439,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     depends-on  : null
- 
+
   - id          : 1002
     app-id      : mohammedzee1000
     job-id      : postgresql-9.3
@@ -458,7 +459,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     depends-on  : null
- 
+
   - id          : 1004
     app-id      : mohammedzee1000
     job-id      : postgresql-9.5
@@ -487,4 +488,45 @@ Projects:
     git-branch  : master
     target-file : Dockerfile
     notify-email: humble.devassy@gmail.com
+    depends-on  : null 
+
+#container pipeline images  
+  - id          : 3000
+    app-id      : container-pipeline
+    job-id      : cccp-build
+    git-url     : https://github.com/CentOS/container-pipeline-service
+    git-path    : server
+    git-branch  : master
+    target-file : Dockerfile.build
+    notify-email: bamachrn@gmail.com
+    depends-on  : null 
+
+  - id          : 3001
+    app-id      : container-pipeline
+    job-id      : cccp-test
+    git-url     : https://github.com/CentOS/container-pipeline-service
+    git-path    : server
+    git-branch  : master
+    target-file : Dockerfile.test
+    notify-email: bamachrn@gmail.com
+    depends-on  : null 
+
+  - id          : 3002
+    app-id      : container-pipeline
+    job-id      : cccp-delivery
+    git-url     : https://github.com/CentOS/container-pipeline-service
+    git-path    : server
+    git-branch  : master
+    target-file : Dockerfile.delivery
+    notify-email: bamachrn@gmail.com
+    depends-on  : null 
+
+  - id          : 3003
+    app-id      : container-pipeline
+    job-id      : mail-server
+    git-url     : https://github.com/CentOS/container-pipeline-service
+    git-path    : mail_service
+    git-branch  : master
+    target-file : Dockerfile.mailserv
+    notify-email: bamachrn@gmail.com
     depends-on  : null 
