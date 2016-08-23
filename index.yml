@@ -16,7 +16,7 @@ Projects:
 # from the top of this file as a template. All values are required.
 
   - id          : 1
-    app-id      : dharmit
+    app-id      : pipeline-images
     job-id      : pipeline-scanner
     git-url     : git://github.com/dharmit/container-pipeline-service
     git-path    : pipeline_scanner
@@ -399,7 +399,7 @@ Projects:
     depends-on   : null
 
   - id          : 520
-    app-id      : dharmit
+    app-id      : pipeline-images
     job-id      : dockerfile-lint
     git-url     : https://github.com/dharmit/dockerfile_lint
     git-path    : /
