@@ -15,16 +15,6 @@ Projects:
 # Add your job below this line, you can use the 'default' project
 # from the top of this file as a template. All values are required.
 
-  - id          : 1
-    app-id      : pipeline-images
-    job-id      : pipeline-scanner
-    git-url     : git://github.com/dharmit/container-pipeline-service
-    git-path    : pipeline_scanner
-    git-branch  : master
-    target-file : Dockerfile
-    notify-email: shahdharmit@gmail.com
-    depends-on  : null 
-
   - id          : 2
     app-id      : bamachrn
     job-id      : python
@@ -398,36 +388,6 @@ Projects:
     notify-email : mohammed.zee1000@gmail.com
     depends-on   : null
 
-  - id          : 520
-    app-id      : pipeline-images
-    job-id      : dockerfile-lint
-    git-url     : https://github.com/dharmit/dockerfile_lint
-    git-path    : /
-    git-branch  : pipeline
-    target-file : Dockerfile
-    notify-email: shahdharmit@gmail.com
-    depends-on  : null
-
-  - id          : 521
-    app-id      : dharmit
-    job-id      : centos_jre
-    git-url     : https://github.com/dharmit/dockerfiles
-    git-path    : centos_jre
-    git-branch  : centos-dockerfiles
-    target-file : Dockerfile
-    notify-email: shahdharmit@gmail.com
-    depends-on  : null
-
-  - id          : 522
-    app-id      : dharmit
-    job-id      : centos_go
-    git-url     : https://github.com/dharmit/dockerfiles
-    git-path    : centos_go
-    git-branch  : centos-dockerfiles
-    target-file : Dockerfile
-    notify-email: shahdharmit@gmail.com
-    depends-on  : null
-
 # Postgresql Containers (Reserved: 1001-1250)
 
   - id          : 1001
@@ -490,9 +450,30 @@ Projects:
     notify-email: humble.devassy@gmail.com
     depends-on  : null 
 
+#eclipse che images
+  - id          : 2500
+    app-id      : dharmit
+    job-id      : centos_jre
+    git-url     : https://github.com/dharmit/dockerfiles
+    git-path    : centos_jre
+    git-branch  : centos-dockerfiles
+    target-file : Dockerfile
+    notify-email: shahdharmit@gmail.com
+    depends-on  : null
+
+  - id          : 2501
+    app-id      : dharmit
+    job-id      : centos_go
+    git-url     : https://github.com/dharmit/dockerfiles
+    git-path    : centos_go
+    git-branch  : centos-dockerfiles
+    target-file : Dockerfile
+    notify-email: shahdharmit@gmail.com
+    depends-on  : null
+
 #container pipeline images  
   - id          : 3000
-    app-id      : container-pipeline
+    app-id      : pipeline-images
     job-id      : cccp-build
     git-url     : https://github.com/CentOS/container-pipeline-service
     git-path    : server
@@ -502,7 +483,7 @@ Projects:
     depends-on  : null 
 
   - id          : 3001
-    app-id      : container-pipeline
+    app-id      : pipeline-images
     job-id      : cccp-test
     git-url     : https://github.com/CentOS/container-pipeline-service
     git-path    : server
@@ -512,7 +493,7 @@ Projects:
     depends-on  : null 
 
   - id          : 3002
-    app-id      : container-pipeline
+    app-id      : pipeline-images
     job-id      : cccp-delivery
     git-url     : https://github.com/CentOS/container-pipeline-service
     git-path    : server
@@ -522,7 +503,7 @@ Projects:
     depends-on  : null 
 
   - id          : 3003
-    app-id      : container-pipeline
+    app-id      : pipeline-images
     job-id      : mail-server
     git-url     : https://github.com/CentOS/container-pipeline-service
     git-path    : mail_service
@@ -530,3 +511,23 @@ Projects:
     target-file : Dockerfile.mailserv
     notify-email: bamachrn@gmail.com
     depends-on  : null 
+
+  - id          : 3004
+    app-id      : pipeline-images
+    job-id      : pipeline-scanner
+    git-url     : git://github.com/dharmit/container-pipeline-service
+    git-path    : pipeline_scanner
+    git-branch  : master
+    target-file : Dockerfile
+    notify-email: shahdharmit@gmail.com
+    depends-on  : null
+
+  - id          : 3005
+    app-id      : pipeline-images
+    job-id      : dockerfile-lint
+    git-url     : https://github.com/dharmit/dockerfile_lint
+    git-path    : /
+    git-branch  : pipeline
+    target-file : Dockerfile
+    notify-email: shahdharmit@gmail.com
+    depends-on  : null
