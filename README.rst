@@ -30,6 +30,7 @@ The index file is yaml formatted, and must include :
  - *Git Path (git-path)* : Required: The qualified path within the git repo to the cccp.yml file ( )
  - *Git Branch(git-branch)* : Required: Branch from the git repo you want processed, optional. Defaults to 'master'
  - *Target File (target-file)* : Required: The actual file from where the build will start. This would typically be Dockerfile.
+ - *Desired Tag (desired-tag)* : Required: The tag for container, such as latest. Full container name = app-id/job-id:desired-tag.
  - *Notify Email (notify-email)*: The email id to which emails will be sent, upon success or failure of builds.
  - *Depends On (depends-on)* : This would be a list of containers, already in the index that this container depends on. The list should container container names in the form of "app-id/job-id" of the containers the current entry relies on. 
 
