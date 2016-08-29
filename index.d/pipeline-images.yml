@@ -64,3 +64,14 @@
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: null
+
+  - id: 7
+    app-id: pipeline-images
+    job-id: scanner-rpm-verify
+    git-url: https://github.com/CentOS/container-pipeline-service
+    git-branch: master
+    git-path: /atomic_scanners/scanner-rpm-verify/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    depends-on: null
