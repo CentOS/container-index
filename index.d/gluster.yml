@@ -1,0 +1,11 @@
+
+  - id: 1
+    app-id: gluster
+    job-id: storagesig-gluster-centos
+    git-url: https://github.com/gluster/docker
+    git-branch: master
+    git-path: CentOS/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: humble.devassy@gmail.com
+    depends-on: null
