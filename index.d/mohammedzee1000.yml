@@ -1,0 +1,55 @@
+
+  - id: 1
+    app-id: mohammedzee1000
+    job-id: postgresql
+    git-url: https://github.com/mohammedzee1000/postgres
+    git-branch: dockerfile.centos7-files
+    git-path: 9.2/
+    target-file: Dockerfile.centos7
+    desired-tag: 9.2
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+  
+  - id: 2
+    app-id: mohammedzee1000
+    job-id: postgresql
+    git-url: https://github.com/mohammedzee1000/postgres
+    git-branch: dockerfile.centos7-files
+    git-path: 9.3/
+    target-file: Dockerfile.centos7
+    desired-tag: 9.3
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+  
+  - id: 3
+    app-id: mohammedzee1000
+    job-id: postgresql
+    git-url: https://github.com/mohammedzee1000/postgres
+    git-branch: dockerfile.centos7-files
+    git-path: 9.4/
+    target-file: Dockerfile.centos7
+    desired-tag: 9.4
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+  
+  - id: 4
+    app-id: mohammedzee1000
+    job-id: postgresql
+    git-url: https://github.com/mohammedzee1000/postgres
+    git-branch: dockerfile.centos7-files
+    git-path: 9.5/
+    target-file: Dockerfile.centos7
+    desired-tag: 9.5
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+  
+  - id: 5
+    app-id: mohammedzee1000
+    job-id: postgresql
+    git-url: https://github.com/mohammedzee1000/postgres
+    git-branch: dockerfile.centos7-files
+    git-path: 9.6/
+    target-file: Dockerfile.centos7
+    desired-tag: 9.6
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null

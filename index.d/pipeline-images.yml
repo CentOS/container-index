@@ -1,0 +1,66 @@
+
+  - id: 1
+    app-id: pipeline-images
+    job-id: cccp-build
+    git-url: https://github.com/CentOS/container-pipeline-service
+    git-branch: master
+    git-path: server
+    target-file: Dockerfile.build
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    depends-on: null
+
+  - id: 2
+    app-id: pipeline-images
+    job-id: cccp-test
+    git-url: https://github.com/CentOS/container-pipeline-service
+    git-branch: master
+    git-path: server
+    target-file: Dockerfile.test
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    depends-on: null
+
+  - id: 3
+    app-id: pipeline-images
+    job-id: cccp-delivery
+    git-url: https://github.com/CentOS/container-pipeline-service
+    git-branch: master
+    git-path: server
+    target-file: Dockerfile.delivery
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    depends-on: null
+
+  - id: 4
+    app-id: pipeline-images
+    job-id: mail-server
+    git-url: https://github.com/CentOS/container-pipeline-service
+    git-branch: master
+    git-path: mail_service
+    target-file: Dockerfile.mailserv
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    depends-on: null
+
+  - id: 5
+    app-id: pipeline-images
+    job-id: pipeline-scanner
+    git-url: git://github.com/dharmit/container-pipeline-service
+    git-branch: master
+    git-path: pipeline_scanner
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
+  - id: 6
+    app-id: pipeline-images
+    job-id: dockerfile-lint
+    git-url: https://github.com/dharmit/dockerfile_lint
+    git-branch: pipeline
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null

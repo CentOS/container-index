@@ -6,7 +6,7 @@ Usage Quickstart
  1. Fork and clone this git repository.
  2. Take the cccp.yml file included in this repo and drop it into the same directory as the container build file such as a Dockerfile.
  3. Populate the template as per your needs.
- 4. Modify the index.yml file by adding your entry to the index.yml. You can copy and paste the first entry to the lower part of the file and edit it. All values are cumpulsory.
+ 4. Modify the yml file by adding your entry to the index.yml. You can copy and paste the template file and edit it. All values are required.
  5. Send a PR to this repository and wait for it to be merged, following any instructions, provided by the maintainers.
 
 If you need help with this, you can contact us on the #centos-devel or #nulecule channel on freenode, or the centos devel mailing list.
@@ -14,24 +14,27 @@ If you need help with this, you can contact us on the #centos-devel or #nulecule
 Mechanics
 =========
 
-The index file in this git repository contains a yaml formatted list of all container applicatons included in the pipeline. In order to have your container application be included, tested and delivered via the Community Pipeline, it must be listed in this index. We are making resources behind the pipeline available to anyone on the internet who wishes to use them, provided what they are doing isnt illegal and is licensed in a way to be open source compatible. Note that the pipeline, its contents, all build and post build artifacts as well as delivery destinations should be considered publicly available.
+The index.d directory in this git repository contains yaml formatted files with lists of all container applicatons included in the pipeline. In order to have your container application be included, tested and delivered via the Community Pipeline, it must be listed in this index. We are making resources behind the pipeline available to anyone on the internet who wishes to use them, provided what they are doing isnt illegal and is licensed in a way to be open source compatible. Note that the pipeline, its contents, all build and post build artifacts as well as delivery destinations should be considered publicly available.
 
 The index file is processed hourly, so new inclusions will be picked up fairly quickly. Once in the system, we will poll your git repository for changes every hour and initiate build runs as needed. Details for the build are included in the cccp.yml file that is hosted inside your git repo. Metadata from this file can be used to control the build, request changes to the delivery parth, opt-in or out of the testing options available etc.
 
-The *index.yml* File
---------------------
+The *index.d* Directory
+-----------------------
 
-The index file is yaml formatted, and must include :
+The index.d contains yaml formatted files, which must include :
 
- - *Project ID (id)* : Required: This field is the Pimary key and must contain a unique number.
- - *App ID (app-id)* : Required: This would typically be the name of your app or the git repo name etc. It will be the repository name in which the container will be built.
- - *Job ID (job-id)* : Required: This will be the name of your container. Infact the final name of your container will be app-id/job-id.
+ - *Job ID (job-id)* : Required: This will be the name of your container. Infact the final name of your container will be filename/job-id.
  - *Git URL (git-url)* : Required: The complete url to your git repo ( eg. https://github.com/projectatomic/atomicapp ). The Git repo can reside anywhere on the public internet. 
  - *Git Path (git-path)* : Required: The qualified path within the git repo to the cccp.yml file ( )
  - *Git Branch(git-branch)* : Required: Branch from the git repo you want processed, optional. Defaults to 'master'
  - *Target File (target-file)* : Required: The actual file from where the build will start. This would typically be Dockerfile.
  - *Notify Email (notify-email)*: The email id to which emails will be sent, upon success or failure of builds.
- - *Depends On (depends-on)* : This would be a list of containers, already in the index that this container depends on. The list should container container names in the form of "app-id/job-id" of the containers the current entry relies on. 
+ - *Desired Tag (desired-tag)* : Required: The tag for container, such as latest.
+ - *Depends On (depends-on)* : This would be a list of containers, already in the index that this container depends on. The list should container container names in the form of "namespace/job-id:tag" of the containers the current entry relies on.
+ 
+*Note :* : The name of the file is going to be part of the container name (i.e the namespace). Infact your container will be based on the filename, jobid and desired-tag 
+
+For Example: File name :  hello.yml, job-id: mycontainer, desired-tag: latest, then container name will be hello/mycontainer:latest
 
 The *cccp.yml* File
 -------------------
