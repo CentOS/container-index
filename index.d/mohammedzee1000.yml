@@ -44,7 +44,7 @@
     depends-on: null
   
   - id: 5
-    app-id: postgresql
+    app-id: mohammedzee1000
     job-id: postgresql
     git-url: https://github.com/mohammedzee1000/postgres
     git-branch: dockerfile.centos7-files
