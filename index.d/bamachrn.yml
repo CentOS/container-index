@@ -6,6 +6,6 @@
     git-branch: master
     git-path: demo
     target-file: Dockerfile.demo
-    desired-tag: latest
+    desired-tag: demo
     notify-email: bamachrn@gmail.com
     depends-on: null
