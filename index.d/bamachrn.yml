@@ -4,8 +4,8 @@
     job-id: python
     git-url: https://github.com/bamachrn/cccp-python
     git-branch: master
-    git-path: /
-    target-file: Dockerfile.test
+    git-path: demo
+    target-file: Dockerfile.demo
     desired-tag: latest
     notify-email: bamachrn@gmail.com
     depends-on: null
