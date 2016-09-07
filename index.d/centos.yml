@@ -218,3 +218,14 @@
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
+
+  - id: 21
+    app-id: centos
+    job-id: postgres
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: postgres/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    depends-on: null
