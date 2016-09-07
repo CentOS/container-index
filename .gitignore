@@ -1,0 +1,9 @@
+# Ignore Everything
+*
+
+# Except what we need
+!.gitignore
+!README.rst
+!cccp.yml
+!whattomerge.md
+!index.d/*.yml
