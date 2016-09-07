@@ -1,7 +1,7 @@
 
   - id: 1
     app-id: centos
-    job-id: centos-base
+    job-id: centos
     git-url: https://github.com/CentOS/sig-cloud-instance-images
     git-branch: CentOS-7
     git-path: docker
@@ -227,5 +227,16 @@
     git-path: postgres/centos7
     target-file: Dockerfile
     desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    depends-on: null
+
+  - id: 22
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 7
     notify-email: bamachrn@gmail.com
     depends-on: null
