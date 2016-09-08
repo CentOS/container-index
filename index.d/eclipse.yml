@@ -1,0 +1,67 @@
+
+  - id: 1
+    app-id: eclipse
+    job-id: che-dev
+    git-url: https://github.com/dharmit/che-dockerfiles
+    git-branch: centos-dockerfiles
+    git-path: che-dev
+    target-file: Dockerfile.centos
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
+  - id: 2
+    app-id: eclipse
+    job-id: che-launcher
+    git-url: https://github.com/dharmit/che-dockerfiles
+    git-branch: centos-dockerfiles
+    git-path: che-launcher
+    target-file: Dockerfile.centos
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
+  - id: 3
+    app-id: eclipse
+    job-id: centos_jre
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: centos-dockerfiles
+    git-path: centos_jre
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
+  - id: 4
+    app-id: eclipse
+    job-id: centos_go
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: centos-dockerfiles
+    git-path: centos_go
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
+  - id: 5
+    app-id: eclipse
+    job-id: centos_python27
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: centos-dockerfiles
+    git-path: centos_python/2.7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
+  - id: 6
+    app-id: eclipse
+    job-id: centos_python34
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: centos-dockerfiles
+    git-path: centos_python/3.4
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
