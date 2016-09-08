@@ -23,7 +23,7 @@
 
   - id: 3
     app-id: eclipse
-    job-id: centos_jre
+    job-id: centos-jre
     git-url: https://github.com/dharmit/dockerfiles
     git-branch: centos-dockerfiles
     git-path: centos_jre
@@ -34,7 +34,7 @@
 
   - id: 4
     app-id: eclipse
-    job-id: centos_go
+    job-id: centos-go
     git-url: https://github.com/dharmit/dockerfiles
     git-branch: centos-dockerfiles
     git-path: centos_go
@@ -45,7 +45,7 @@
 
   - id: 5
     app-id: eclipse
-    job-id: centos_python27
+    job-id: centos-python27
     git-url: https://github.com/dharmit/dockerfiles
     git-branch: centos-dockerfiles
     git-path: centos_python/2.7
@@ -56,7 +56,7 @@
 
   - id: 6
     app-id: eclipse
-    job-id: centos_python34
+    job-id: centos-python34
     git-url: https://github.com/dharmit/dockerfiles
     git-branch: centos-dockerfiles
     git-path: centos_python/3.4
