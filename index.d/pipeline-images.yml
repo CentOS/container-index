@@ -46,9 +46,9 @@
   - id: 5
     app-id: pipeline-images
     job-id: pipeline-scanner
-    git-url: git://github.com/dharmit/container-pipeline-service
+    git-url: git://github.com/CentOS/container-pipeline-service
     git-branch: master
-    git-path: pipeline_scanner
+    git-path: atomic_scanners/pipeline-scanner
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
