@@ -1,5 +1,5 @@
+Projects:
 # * Base Images
-
   - id          : 1
     app-id      : openshift
     job-id      : origin-base
@@ -21,7 +21,7 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
+      - openshift/origin-base
  
   - id          : 3
     app-id      : openshift
@@ -33,7 +33,7 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
+      - openshift/origin-base
 
   - id          : 4
     app-id      : openshift
@@ -45,7 +45,7 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
+      - openshift/origin-base
 
 # * Helper Images with no reliance
 
@@ -83,7 +83,7 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
+      - openshift/origin-base
 
   - id          : 8
     app-id      : openshift
@@ -95,8 +95,8 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
-        - openshift/origin-haproxy-router-base
+      - openshift/origin-base
+      - openshift/origin-haproxy-router-base
 
   - id          : 9
     app-id      : openshift
@@ -108,8 +108,8 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
-        - openshift/origin
+      - openshift/origin-base
+      - openshift/origin
 
   - id          : 10
     app-id      : openshift
@@ -121,7 +121,7 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
+      - openshift/origin-base
 
   - id          : 11
     app-id      : openshift
@@ -133,7 +133,7 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
+      - openshift/origin-base
 
 # * Relies on openshift origin
 
@@ -147,8 +147,8 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
-        - openshift/origin
+      - openshift/origin-base
+      - openshift/origin
 
   - id          : 13
     app-id      : openshift
@@ -160,8 +160,8 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
-        - openshift/origin
+      - openshift/origin-base
+      - openshift/origin
 
   - id          : 14
     app-id      : openshift
@@ -173,8 +173,8 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
-        - openshift/origin
+      - openshift/origin-base
+      - openshift/origin
 
   - id          : 15
     app-id      : openshift
@@ -186,8 +186,8 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
-        - openshift/origin
+      - openshift/origin-base
+      - openshift/origin
 
   - id          : 16
     app-id      : openshift
@@ -199,8 +199,8 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
-        - openshift/origin
+      - openshift/origin-base
+      - openshift/origin
 
   - id          : 17
     app-id      : openshift
@@ -212,5 +212,5 @@
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-        - openshift/origin-base
-        - openshift/origin
+      - openshift/origin-base
+      - openshift/origin
