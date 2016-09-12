@@ -95,7 +95,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-      - openshift/origin-base
+#      - openshift/origin-base
       - openshift/origin-haproxy-router-base
 
   - id          : 9
@@ -108,7 +108,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-      - openshift/origin-base
+#      - openshift/origin-base
       - openshift/origin
 
   - id          : 10
@@ -147,7 +147,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-      - openshift/origin-base
+#      - openshift/origin-base
       - openshift/origin
 
   - id          : 13
@@ -160,7 +160,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-      - openshift/origin-base
+#      - openshift/origin-base
       - openshift/origin
 
   - id          : 14
@@ -173,7 +173,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-      - openshift/origin-base
+#      - openshift/origin-base
       - openshift/origin
 
   - id          : 15
@@ -186,7 +186,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-      - openshift/origin-base
+#      - openshift/origin-base
       - openshift/origin
 
   - id          : 16
@@ -199,7 +199,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-      - openshift/origin-base
+#      - openshift/origin-base
       - openshift/origin
 
   - id          : 17
@@ -212,5 +212,5 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
-      - openshift/origin-base
+#      - openshift/origin-base
       - openshift/origin
