@@ -8,7 +8,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : null
         
   - id          : 2
@@ -19,7 +19,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
       - openshift/origin-base
  
@@ -31,7 +31,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
       - openshift/origin-base
 
@@ -43,7 +43,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
       - openshift/origin-base
 
@@ -57,7 +57,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : null
 
   - id          : 6
@@ -68,7 +68,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : null
 
 # * Relies on origin base
@@ -81,7 +81,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
       - openshift/origin-base
 
@@ -93,7 +93,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin-haproxy-router-base
@@ -106,7 +106,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin
@@ -119,7 +119,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
       - openshift/origin-base
 
@@ -131,7 +131,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
       - openshift/origin-base
 
@@ -145,7 +145,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin
@@ -158,7 +158,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin
@@ -171,7 +171,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin
@@ -184,7 +184,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin
@@ -197,7 +197,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin
@@ -210,7 +210,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : 1.2.1
+    desired-tag : latest
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin
