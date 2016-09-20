@@ -18,6 +18,7 @@ Projects:
     git-branch: master
     git-path: app
     target-file: Dockerfile.centos7
+    desired-tag: latest
     notify-email: bamachrn@gmail.com
     depends-on: null
 
@@ -28,6 +29,7 @@ Projects:
     git-branch: master
     git-path: db
     target-file: Dockerfile.centos7
+    desired-tag: latest
     notify-email: bamachrn@gmail.com
     depends-on: null
 
@@ -38,5 +40,6 @@ Projects:
     git-branch: master
     git-path: web
     target-file: Dockerfile.centos7
+    desired-tag: latest
     notify-email: bamachrn@gmail.com
     depends-on: null
