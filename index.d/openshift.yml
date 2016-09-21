@@ -68,7 +68,7 @@ Projects:
     git-branch  : release-1.2
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
-    desired-tag : latest
+    desired-tag : 1.2.1
     depends-on  : null
 
 # * Relies on origin base
@@ -91,7 +91,7 @@ Projects:
     git-url     : git://github.com/openshift/origin
     git-path    : images/router/haproxy
     git-branch  : release-1.2
-    target-file : Dockerfile
+    target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
@@ -156,7 +156,7 @@ Projects:
     git-url     : git://github.com/openshift/origin
     git-path    : images/recycler
     git-branch  : release-1.2
-    target-file : Dockerfile
+    target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : 1.2.1
     depends-on  : 
