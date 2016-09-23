@@ -65,3 +65,14 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: null
 
+  - id: 7
+    app-id: eclipse
+    job-id: che-server
+    git-url: https://github.com/dharmit/che
+    git-branch: centos-dockerfiles
+    git-path: /
+    target-file: Dockerfile.centos
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
+
