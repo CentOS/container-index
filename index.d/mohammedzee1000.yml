@@ -60,7 +60,7 @@ Projects:
     git-url: https://github.com/mohammedzee1000/cccp-registry
     git-branch: master
     git-path: test-container/
-    target-file: Dockerfile.test1
+    target-file: Dockerfile.test
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
