@@ -53,3 +53,14 @@ Projects:
     desired-tag: 9.6
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
+
+  - id: 6
+    app-id: mohammedzee1000
+    job-id: demo-container
+    git-url: https://github.com/mohammedzee1000/cccp-registry
+    git-branch: master
+    git-path: test-container/
+    target-file: Dockerfile.test1
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
