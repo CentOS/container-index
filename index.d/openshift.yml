@@ -214,3 +214,16 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - openshift/origin
+
+# s2i base container
+
+  - id          : 18
+    app-id      : openshift
+    job-id      : base-centos7
+    git-url     : https://github.com/mohammedzee1000/s2i-base
+    git-path    : /
+    git-branch  : master
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  : null 
