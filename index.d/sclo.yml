@@ -174,3 +174,236 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
+
+# New additions
+
+  - id: 17
+    app-id: sclo
+    job-id: mongodb-30-upg-centos7
+    git-url: https://github.com/sclorg/mongodb-container.git
+    git-branch: master
+    git-path: 3.0-upg/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+# S2I container
+
+# * S2I python
+
+  - id: 18
+    app-id: sclo
+    job-id: python-27-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-python-container
+    git-branch: master
+    git-path: 2.7/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+  - id: 19
+    app-id: sclo
+    job-id: python-33-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-python-container
+    git-branch: master
+    git-path: 3.3/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+  - id: 20
+    app-id: sclo
+    job-id: python-34-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-python-container
+    git-branch: master
+    git-path: 3.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+  - id: 21
+    app-id: sclo
+    job-id: python-35-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-python-container
+    git-branch: master
+    git-path: 3.5/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I php
+
+  - id: 22
+    app-id: sclo
+    job-id: php-55-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-php-container
+    git-branch: master
+    git-path: 5.5/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+  - id: 23
+    app-id: sclo
+    job-id: php-56-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-php-container
+    git-branch: master
+    git-path: 5.6/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I perl
+
+  - id: 24
+    app-id: sclo
+    job-id: perl-516-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-perl-container
+    git-branch: master
+    git-path: 5.16/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+  - id: 25
+    app-id: sclo
+    job-id: perl-520-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-perl-container
+    git-branch: master
+    git-path: 5.20/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I perl
+
+  - id: 26
+    app-id: sclo
+    job-id: nodejs-010-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-nodejs-container
+    git-branch: master
+    git-path: 0.10/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+  - id: 27
+    app-id: sclo
+    job-id: nodejs-4-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-nodejs-container
+    git-branch: master
+    git-path: 4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I httpd
+
+  - id: 28
+    app-id: sclo
+    job-id: httpd-24-centos7
+    git-url: https://github.com/mohammedzee1000/httpd-container
+    git-branch: master
+    git-path: 2.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I nginx
+
+  - id: 29
+    app-id: sclo
+    job-id: nginx-18-centos7
+    git-url: https://github.com/mohammedzee1000/nginx-container
+    git-branch: master
+    git-path: 1.8/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I passenger
+
+  - id: 30
+    app-id: sclo
+    job-id: passenger-40-centos7
+    git-url: https://github.com/mohammedzee1000/passenger-container
+    git-branch: master
+    git-path: 4.0/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I Varnish
+
+  - id: 31
+    app-id: sclo
+    job-id: varnish-18-centos7
+    git-url: https://github.com/mohammedzee1000/varnish-container
+    git-branch: master
+    git-path: 4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I Ruby
+
+  - id: 32
+    app-id: sclo
+    job-id: ruby-20-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-ruby-container
+    git-branch: master
+    git-path: 2.0/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+  - id: 33
+    app-id: sclo
+    job-id: ruby-22-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-ruby-container
+    git-branch: master
+    git-path: 2.2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+  - id: 34
+    app-id: sclo
+    job-id: ruby-23-centos7
+    git-url: https://github.com/mohammedzee1000/s2i-ruby-container
+    git-branch: master
+    git-path: 2.3/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
+
+# * S2I Redis
+
+  - id: 35
+    app-id: sclo
+    job-id: redis-32-centos7
+    git-url: https://github.com/mohammedzee1000/redis-container
+    git-branch: master
+    git-path: 3.2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: openshift/base-centos7
