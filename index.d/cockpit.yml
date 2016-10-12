@@ -20,3 +20,25 @@ Projects:
     desired-tag: testing
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
+
+  - id: 3
+    app-id: cockpit
+    job-id: ws
+    git-url: https://github.com/mohammedzee1000/cockpit-container
+    git-branch: centos-cockpit-container
+    git-path: /
+    target-file: Dockerfile.centos7
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+  - id: 4
+    app-id: cockpit
+    job-id: ws
+    git-url: https://github.com/mohammedzee1000/cockpit-container
+    git-branch: centos-cockpit-container
+    git-path: /
+    target-file: Dockerfile.testing.centos7
+    desired-tag: testing
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
