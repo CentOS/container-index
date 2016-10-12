@@ -10,3 +10,14 @@ Projects:
     notify-email: cp.build.inb@karan.org
     depends-on: null
   
+  - id: 3
+    app-id: kbsingh
+    job-id: openshift-vault
+    git-url: https://github.com/kbsingh/openshift-vault
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: cp.build.inb@karan.org
+    depends-on: null
+  
