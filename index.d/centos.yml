@@ -330,3 +330,27 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: centos/kubernetes-master
+
+# centos base alternate tags - tempfix
+
+  - id: 31
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: centos7
+    notify-email: bamachrn@gmail.com
+    depends-on: null
+
+  - id: 32
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-6
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: centos6
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
