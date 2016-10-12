@@ -240,3 +240,93 @@ Projects:
     desired-tag: 7
     notify-email: bamachrn@gmail.com
     depends-on: null
+
+# New additions
+
+  - id: 23
+    app-id: centos
+    job-id: bind
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: bind/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+  - id: 24
+    app-id: centos
+    job-id: kubernetes-master
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/master
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+  - id: 25
+    app-id: centos
+    job-id: kubernetes-node
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/node
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+  - id: 26
+    app-id: centos
+    job-id: kubernetes-apiserver
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/apiserver
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: centos/kubernetes-master
+
+  - id: 27
+    app-id: centos
+    job-id: kubernetes-controller-manager
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/controller-manager
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: centos/kubernetes-master
+
+  - id: 28
+    app-id: centos
+    job-id: kubernetes-kubelet
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/kubelet
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: kubernetes-kubelet
+
+  - id: 29
+    app-id: centos
+    job-id: kubernetes-proxy
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/proxy
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: centos/kubernetes-node
+
+  - id: 30
+    app-id: centos
+    job-id: kubernetes-scheduler
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/master
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: centos/kubernetes-master
