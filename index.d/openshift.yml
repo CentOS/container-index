@@ -1,4 +1,5 @@
 Projects:
+# v1.2.1 containers
 # * Base Images
   - id          : 1
     app-id      : openshift
@@ -227,3 +228,439 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
     depends-on  : null 
+
+# v1.3.1 containers
+
+# * Base Images
+  - id          : 19
+    app-id      : openshift
+    job-id      : origin-base
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/base
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  : null
+        
+  - id          : 20
+    app-id      : openshift
+    job-id      : origin-custom-docker-builder
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/builder/docker/custom-docker-builder/
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  : 
+      - openshift/origin-base
+ 
+  - id          : 21
+    app-id      : openshift
+    job-id      : origin-haproxy-router-base
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/router/haproxy-base
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  : 
+      - openshift/origin-base
+
+  - id          : 22
+    app-id      : openshift
+    job-id      : origin-release
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/release
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  : 
+      - openshift/origin-base
+
+# * Helper Images with no reliance
+
+  - id          : 23
+    app-id      : openshift
+    job-id      : origin-pod
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/pod
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  : null
+
+  - id          : 24
+    app-id      : openshift
+    job-id      : openvswitch
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/openvswitch
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  : null
+
+# * Relies on origin base
+
+  - id          : 25
+    app-id      : openshift
+    job-id      : origin
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/origin
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+      - openshift/origin-base
+
+  - id          : 26
+    app-id      : openshift
+    job-id      : origin-haproxy-router
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/router/haproxy
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin-haproxy-router-base
+
+  - id          : 27
+    app-id      : openshift
+    job-id      : origin-keepalived-ipfailover
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/ipfailover/keepalived
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 28
+    app-id      : openshift
+    job-id      : origin-docker-registry
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/dockerregistry
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+      - openshift/origin-base
+
+  - id          : 29
+    app-id      : openshift
+    job-id      : origin-egress-router
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/router/egress
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+      - openshift/origin-base
+
+# * Relies on openshift origin
+
+  - id          : 30
+    app-id      : openshift
+    job-id      : origin-deployer
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/deployer
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 31
+    app-id      : openshift
+    job-id      : origin-recycler
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/recycler
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 32
+    app-id      : openshift
+    job-id      : origin-docker-builder
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/builder/docker/docker-builder
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 33
+    app-id      : openshift
+    job-id      : origin-sti-builder
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/builder/docker/sti-builder
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 34
+    app-id      : openshift
+    job-id      : origin-f5-router
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/router/f5
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 35
+    app-id      : openshift
+    job-id      : node
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/node
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : v1.3.1
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+# Latest Tag equivalent
+
+# * Base Images
+  - id          : 36
+    app-id      : openshift
+    job-id      : origin-base
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/base
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  : null
+
+  - id          : 37
+    app-id      : openshift
+    job-id      : origin-custom-docker-builder
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/builder/docker/custom-docker-builder/
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+      - openshift/origin-base
+
+  - id          : 39
+    app-id      : openshift
+    job-id      : origin-haproxy-router-base
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/router/haproxy-base
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+      - openshift/origin-base
+
+  - id          : 40
+    app-id      : openshift
+    job-id      : origin-release
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/release
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+      - openshift/origin-base
+
+# * Helper Images with no reliance
+
+  - id          : 41
+    app-id      : openshift
+    job-id      : origin-pod
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/pod
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  : null
+
+  - id          : 42
+    app-id      : openshift
+    job-id      : openvswitch
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/openvswitch
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  : null
+
+# * Relies on origin base
+
+  - id          : 43
+    app-id      : openshift
+    job-id      : origin
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/origin
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+      - openshift/origin-base
+
+  - id          : 44
+    app-id      : openshift
+    job-id      : origin-haproxy-router
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/router/haproxy
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin-haproxy-router-base
+
+  - id          : 45
+    app-id      : openshift
+    job-id      : origin-keepalived-ipfailover
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/ipfailover/keepalived
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 46
+    app-id      : openshift
+    job-id      : origin-docker-registry
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/dockerregistry
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+      - openshift/origin-base
+
+  - id          : 47
+    app-id      : openshift
+    job-id      : origin-egress-router
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/router/egress
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+      - openshift/origin-base
+
+# * Relies on openshift origin
+
+  - id          : 48
+    app-id      : openshift
+    job-id      : origin-deployer
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/deployer
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 49
+    app-id      : openshift
+    job-id      : origin-recycler
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/recycler
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 50
+    app-id      : openshift
+    job-id      : origin-docker-builder
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/builder/docker/docker-builder
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 51
+    app-id      : openshift
+    job-id      : origin-sti-builder
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/builder/docker/sti-builder
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 52
+    app-id      : openshift
+    job-id      : origin-f5-router
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/router/f5
+    git-branch  : release-1.3
+    target-file : Dockerfile
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
+
+  - id          : 53
+    app-id      : openshift
+    job-id      : node
+    git-url     : git://github.com/openshift/origin
+    git-path    : images/node
+    git-branch  : release-1.3
+    target-file : Dockerfile.centos7
+    notify-email: mohammed.zee1000@gmail.com
+    desired-tag : latest
+    depends-on  :
+#      - openshift/origin-base
+      - openshift/origin
