@@ -341,7 +341,7 @@ Projects:
     git-path: docker
     target-file: Dockerfile
     desired-tag: centos7
-    notify-email: bamachrn@gmail.com
+    notify-email: mohammed.zee1000@gmail.com
     depends-on: null
 
   - id: 32
@@ -352,5 +352,18 @@ Projects:
     git-path: docker
     target-file: Dockerfile
     desired-tag: centos6
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+# CentOS_7.2.1511
+
+  - id: 33
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/mohammedzee1000/sig-cloud-instance-images
+    git-branch: 2016-11-02_12-56-14-centos_721511
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 7.2.1511
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
