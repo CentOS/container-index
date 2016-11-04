@@ -1,11 +1,12 @@
 Projects:
+# * Distro cockpit containers
   - id: 1
     app-id: cockpit
     job-id: kubernetes
-    git-url: https://github.com/mohammedzee1000/cockpit
-    git-branch: container_kubernetes_centos
-    git-path: containers/kubernetes
-    target-file: Dockerfile.centos7
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: cockpit/kubernetes
+    target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
@@ -13,10 +14,10 @@ Projects:
   - id: 2
     app-id: cockpit
     job-id: kubernetes
-    git-url: https://github.com/mohammedzee1000/cockpit
-    git-branch: container_kubernetes_centos
-    git-path: containers/kubernetes
-    target-file: Dockerfile.atomic.centos7
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: cockpit/kubernetes
+    target-file: Dockerfile.testing
     desired-tag: testing
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
@@ -24,10 +25,10 @@ Projects:
   - id: 3
     app-id: cockpit
     job-id: ws
-    git-url: https://github.com/mohammedzee1000/cockpit-container
-    git-branch: centos-cockpit-container
-    git-path: /
-    target-file: Dockerfile.centos7
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: cockpit/ws
+    target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
@@ -35,10 +36,10 @@ Projects:
   - id: 4
     app-id: cockpit
     job-id: ws
-    git-url: https://github.com/mohammedzee1000/cockpit-container
-    git-branch: centos-cockpit-container
-    git-path: /
-    target-file: Dockerfile.testing.centos7
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: cockpit/ws
+    target-file: Dockerfile.testing
     desired-tag: testing
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
