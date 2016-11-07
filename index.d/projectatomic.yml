@@ -1,0 +1,12 @@
+Projects:
+  - id: 1 
+    app-id: projectatomic
+    job-id: atomic-registry-install
+    git-url: https://github.com/openshift/origin
+    git-branch: master
+    git-path: examples/atomic-registry/systemd
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: 
+      - openshift/origin
