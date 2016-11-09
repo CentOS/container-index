@@ -1,0 +1,22 @@
+Projects:
+  - id: 1
+    app-id: sgk
+    job-id: mattermost-github-integration
+    git-url: https://github.com/syamgk/mattermost-github-integration
+    git-branch: centos
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: null
+
+  - id: 2
+    app-id: sgk
+    job-id: recurring-pgdump
+    git-url: https://github.com/syamgk/recurring-pgdump
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: null
