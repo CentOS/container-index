@@ -2,7 +2,7 @@ Projects:
   - id: 1 
     app-id: jboss
     job-id: base
-    git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_base
+    git-url: https://github.com/jboss-dockerfiles/base
     git-branch: master
     git-path: /
     target-file: Dockerfile
@@ -13,7 +13,7 @@ Projects:
   - id: 2
     app-id: jboss
     job-id: base-jdk
-    git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_base-jdk
+    git-url: https://github.com/jboss-dockerfiles/base-jdk
     git-branch: jdk8
     git-path: /
     target-file: Dockerfile
@@ -24,7 +24,7 @@ Projects:
   - id: 3
     app-id: jboss
     job-id: wildfly
-    git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_wildfly
+    git-url: https://github.com/jboss-dockerfiles/wildfly
     git-branch: master
     git-path: /
     target-file: Dockerfile
@@ -35,7 +35,7 @@ Projects:
   - id: 4
     app-id: jboss
     job-id: keycloak
-    git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_keycloak
+    git-url: https://github.com/jboss-dockerfiles/keycloak
     git-branch: master
     git-path: server
     target-file: Dockerfile
@@ -46,7 +46,7 @@ Projects:
   - id: 5
     app-id: jboss
     job-id: keycloak-postgres
-    git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_keycloak
+    git-url: https://github.com/jboss-dockerfiles/keycloak
     git-branch: master
     git-path: server-postgres
     target-file: Dockerfile
@@ -57,7 +57,7 @@ Projects:
   - id: 6
     app-id: jboss
     job-id: keycloak-ha-postgres
-    git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_keycloak
+    git-url: https://github.com/jboss-dockerfiles/keycloak
     git-branch: master
     git-path: server-ha-postgres
     target-file: Dockerfile
@@ -68,7 +68,7 @@ Projects:
   - id: 7
     app-id: jboss
     job-id: keycloak-adapter-wildfly
-    git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_keycloak
+    git-url: https://github.com/jboss-dockerfiles/keycloak
     git-branch: master
     git-path: adapter-wildfly
     target-file: Dockerfile
