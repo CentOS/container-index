@@ -664,3 +664,60 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - openshift/origin
+
+# * Jenkins containers
+
+  - id: 54
+    app-id: openshift
+    job-id: jenkins-1-centos7
+    git-url: https://github.com/openshift/jenkins
+    git-branch: master
+    git-path: 1/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+  - id: 55
+    app-id: openshift
+    job-id: jenkins-2-centos7
+    git-url: https://github.com/openshift/jenkins
+    git-branch: master
+    git-path: 2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+  - id: 56
+    app-id: openshift
+    job-id: jenkins-slave-base-centos7
+    git-url: https://github.com/openshift/jenkins
+    git-branch: master
+    git-path: slave-base/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+  - id: 57
+    app-id: openshift
+    job-id: jenkins-slave-maven-centos7
+    git-url: https://github.com/openshift/jenkins
+    git-branch: master
+    git-path: slave-maven/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
+
+  - id: 58
+    app-id: openshift
+    job-id: jenkins-slave-nodejs-centos7
+    git-url: https://github.com/openshift/jenkins
+    git-branch: master
+    git-path: slave-nodejs/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
