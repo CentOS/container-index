@@ -75,3 +75,14 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: jboss/base-jdk:8
+
+  - id: 8
+    app-id: jboss
+    job-id: wildfly
+    git-url: https://github.com/jboss-dockerfiles/wildfly
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: 10.0.0.Final
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
