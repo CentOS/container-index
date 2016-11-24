@@ -367,3 +367,16 @@ Projects:
     desired-tag: 7.2.1511
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
+
+# CentOS Dockerfiles continue
+
+  - id: 34
+    app-id: centos
+    job-id: rabbitmq
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: rabbitmq/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
