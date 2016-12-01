@@ -373,8 +373,8 @@ Projects:
   - id: 34
     app-id: centos
     job-id: rabbitmq
-    git-url: https://github.com/CentOS/CentOS-Dockerfiles
-    git-branch: master
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2016-11-28_18-10-42-rabbitmq_update
     git-path: rabbitmq/centos7
     target-file: Dockerfile
     desired-tag: latest
