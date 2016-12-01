@@ -380,3 +380,14 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
+
+  - id: 35
+    app-id: centos
+    job-id: pgweb
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2016-11-24_15-46-15-pgweb_container
+    git-path: pgweb/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: null
