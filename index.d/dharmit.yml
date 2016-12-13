@@ -1,7 +1,7 @@
 Projects:
   - id: 1
     app-id: dharmit
-    job-id: centosi-jre
+    job-id: centos-jre
     git-url: https://github.com/dharmit/dockerfiles
     git-branch: centos-dockerfiles
     git-path: centos_jre
