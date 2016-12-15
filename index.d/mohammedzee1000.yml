@@ -53,3 +53,14 @@ Projects:
     desired-tag: 9.6
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
+
+  - id: 6
+    app-id: mohammedzee1000
+    job-id: keycloak-postgres
+    git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_keycloak
+    git-branch: 2016-12-14_21-27-10-keycloak_direct_perms
+    git-path: server-postgres
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: jboss/keycloak:latest
