@@ -26,7 +26,7 @@ Projects:
     job-id: mattermost
     git-url: https://github.com/syamgk/mattermost-docker
     git-branch: master
-    git-path: /
+    git-path: app
     target-file: Dockerfile
     desired-tag: latest
     notify-email: sgk@redhat.com
