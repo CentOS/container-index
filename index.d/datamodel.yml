@@ -1,0 +1,33 @@
+Projects:
+  - id: 1
+    app-id: datamodel
+    job-id: centos-java
+    git-url: https://github.com/containscafeine/data-model
+    git-branch: master
+    git-path: centos-java/
+    target-file: Dockerfile
+    desired-tag: concaf
+    notify-email: shubham@linux.com
+    depends-on: centos/centos:7
+
+  - id: 2
+    app-id: datamodel
+    job-id: gremlin
+    git-url: https://github.com/containscafeine/data-model
+    git-branch: master
+    git-path: gremlin/
+    target-file: Dockerfile
+    desired-tag: concaf
+    notify-email: shubham@linux.com
+    depends-on: datamodel/centos-java:concaf
+
+  - id: 3
+    app-id: datamodel
+    job-id: gremlin-client
+    git-url: https://github.com/containscafeine/data-model
+    git-branch: master
+    git-path: gremlin-client/
+    target-file: Dockerfile
+    desired-tag: concaf
+    notify-email: shubham@linux.com
+    depends-on: datamodel/gremlin:concaf
