@@ -20,3 +20,25 @@ Projects:
     desired-tag: latest
     notify-email: sgk@redhat.com
     depends-on: null
+
+  - id: 3
+    app-id: sgk
+    job-id: mattermost
+    git-url: https://github.com/syamgk/mattermost-docker
+    git-branch: master
+    git-path: app
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: null
+
+  - id: 4
+    app-id: sgk
+    job-id: mattermost-gitlab-integration
+    git-url: https://github.com/syamgk/mattermost-gitlab-integration
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: null
