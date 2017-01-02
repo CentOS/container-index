@@ -42,3 +42,14 @@ Projects:
     desired-tag: latest
     notify-email: sgk@redhat.com
     depends-on: null
+
+  - id: 5
+    app-id: sgk
+    job-id: mattermost-trello-integration
+    git-url: https://github.com/syamgk/mattermost-trello-integration
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: null
