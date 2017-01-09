@@ -42,3 +42,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: null
+
+  - id: 5
+    app-id: pipeline-images
+    job-id: misc-package-updates
+    git-url: git://github.com/dharmit/container-pipeline-service
+    git-branch: misc-package-updates
+    git-path: atomic_scanners/misc-package-updates
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: null
