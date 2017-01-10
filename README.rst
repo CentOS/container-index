@@ -5,11 +5,12 @@ Usage Quickstart
 
  1. Fork and clone this git repository.
  2. Take the cccp.yml file included in this repo and drop it into the same directory as the container build file such as a Dockerfile.
- 3. Populate the template as per your needs.
- 4. Get into the index.d, and if there isnt already a yml file present for your container namespace, you can copy and paste the index_template.yml file and edit it. All values are required.
+ 3. Populate the template as per your needs. It is commented appropriately as per what is required.
+ 4. Get into the index.d, and if there isn't already a yml file present for your container namespace, you can copy and paste the index_template.yml file and edit it. All values are required.
  5. Note that the file name should compulsorily be namespace.yml while all entries will have app-id as again namespace. For example if you are building openshift containers containers, then you will have an openshift.yml and and all app-id's must also be openshift.yml.
- 6. Send a PR to this repository and wait for it to be merged, following any instructions, provided by the maintainers.
- 7. Once the PR is merged, and the pipeline has picked up your artifacts, your container will be built, tested and delivered to registry.centos.org. You should recieve a mail indicating the status of the build(s) once completed.
+ 6. Send a PR to this repository and wait for it to be merged, following any instructions, provided by the maintainers. The CI will also inform you of any errors in the index format and values.
+ 7. Even if ci passed your PR, please go through the logs for warning against your changes. Unless there is an explicit and appropriate reason why there should be ignored, the maintainers wont ignore them.
+ 8. Once the PR is merged, and the pipeline has picked up your artifacts, your container will be built, tested and delivered to registry.centos.org. You should receive a mail indicating the status of the build(s) once completed.
 
 If you need help with this, you can contact us on the #centos-devel or #nulecule channel on freenode, or the centos devel mailing list.
 
