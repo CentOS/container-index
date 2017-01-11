@@ -1,4 +1,4 @@
-This is the master Index used by the `CentOS Container Pipeline <https://github.com/CentOS/container-pipeline-service>` to build and deliver containers at https://registry.centos.org
+This is the master Index used by the `CentOS Container Pipeline Service <https://github.com/CentOS/container-pipeline-service>`_ to build and deliver containers at https://registry.centos.org
 
 Usage Quickstart
 ================
