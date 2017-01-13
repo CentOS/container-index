@@ -262,7 +262,7 @@ Projects:
     git-path: kubernetes/master
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: jbrooks@redhat.com
     depends-on: centos/centos:latest
 
   - id: 25
@@ -273,7 +273,7 @@ Projects:
     git-path: kubernetes/node
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: jbrooks@redhat.com
     depends-on: centos/centos:latest
 
   - id: 26
@@ -284,7 +284,7 @@ Projects:
     git-path: kubernetes/apiserver
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: jbrooks@redhat.com
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-master:latest
@@ -297,7 +297,7 @@ Projects:
     git-path: kubernetes/controller-manager
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: jbrooks@redhat.com
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-master:latest
@@ -310,7 +310,7 @@ Projects:
     git-path: kubernetes/kubelet
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: jbrooks@redhat.com
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-node:latest
@@ -323,7 +323,7 @@ Projects:
     git-path: kubernetes/proxy
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: jbrooks@redhat.com
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-node:latest
@@ -336,7 +336,7 @@ Projects:
     git-path: kubernetes/master
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: jbrooks@redhat.com
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-master:latest
