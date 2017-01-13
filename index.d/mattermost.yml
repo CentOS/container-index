@@ -1,6 +1,6 @@
 Projects:
   - id: 1
-    app-id: sgk
+    app-id: mattermost
     job-id: mattermost-github-integration
     git-url: https://github.com/syamgk/mattermost-github-integration
     git-branch: centos
@@ -11,7 +11,7 @@ Projects:
     depends-on: centos/centos:latest
 
   - id: 2
-    app-id: sgk
+    app-id: mattermost
     job-id: recurring-pgdump
     git-url: https://github.com/syamgk/recurring-pgdump
     git-branch: master
@@ -22,7 +22,7 @@ Projects:
     depends-on: centos/centos:latest
 
   - id: 3
-    app-id: sgk
+    app-id: mattermost
     job-id: mattermost
     git-url: https://github.com/syamgk/mattermost-docker
     git-branch: master
@@ -33,7 +33,7 @@ Projects:
     depends-on: centos/centos:latest
 
   - id: 4
-    app-id: sgk
+    app-id: mattermost
     job-id: mattermost-gitlab-integration
     git-url: https://github.com/syamgk/mattermost-gitlab-integration
     git-branch: master
@@ -44,7 +44,7 @@ Projects:
     depends-on: centos/centos:latest
 
   - id: 5
-    app-id: sgk
+    app-id: mattermost
     job-id: mattermost-trello-integration
     git-url: https://github.com/syamgk/mattermost-trello-integration
     git-branch: master
