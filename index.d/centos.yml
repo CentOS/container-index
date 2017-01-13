@@ -313,7 +313,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - kubernetes-kubelet
+      - centos/kubernetes-node
 
   - id: 29
     app-id: centos
