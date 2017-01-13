@@ -13,7 +13,12 @@ This document outlines the things to lookout for before merging any PRs to this 
   * mismatched job-id
   * mismatched git-url, git-branch and git-path.
   * Listed scripts such as test scripts being non-existent.
-  * You may use https://github.com/CentOS/container-pipeline-service/tree/master/testcccpindex, to validate the index entries. just run `$ python __init__.py -h` to know what to do
+  * You may use https://github.com/CentOS/container-pipeline-service/tree/master/testindex, to validate the index entries. just run `$ python __init__.py -h` to know what to do
+
+### IMPORTANT:
+Even if a ***PR passed***, please ensure you ***read through the logs and the warnings***, if any and request
+that ***changes be made accordingly***. Unless there is an ***explicit reason*** why a ***warning*** is being 
+***ignored***, you will be ***held accountable*** for merging the PR. along with the sender.
 
 ## What to do if there are errors in the PR
 
