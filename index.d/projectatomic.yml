@@ -8,5 +8,6 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: 
+    depends-on:
+      - centos/centos:latest 
       - openshift/origin

@@ -19,7 +19,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: concaf
     notify-email: shubham@linux.com
-    depends-on: datamodel/centos-java:concaf
+    depends-on:
+      - centos/centos:latest
+      - datamodel/centos-java:concaf
 
   - id: 3
     app-id: datamodel
@@ -30,4 +32,6 @@ Projects:
     target-file: Dockerfile
     desired-tag: concaf
     notify-email: shubham@linux.com
-    depends-on: datamodel/gremlin:concaf
+    depends-on: 
+      - centos/centos:latest
+      - datamodel/gremlin:concaf

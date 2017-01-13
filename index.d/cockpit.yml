@@ -9,7 +9,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 2
     app-id: cockpit
@@ -20,7 +20,7 @@ Projects:
     target-file: Dockerfile.testing
     desired-tag: testing
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 3
     app-id: cockpit
@@ -42,4 +42,4 @@ Projects:
     target-file: Dockerfile.testing
     desired-tag: testing
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest

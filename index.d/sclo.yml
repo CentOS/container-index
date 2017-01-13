@@ -8,7 +8,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 2
     app-id: sclo
@@ -19,7 +19,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 3
     app-id: sclo
@@ -30,7 +30,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 4
     app-id: sclo
@@ -41,7 +41,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 5
     app-id: sclo
@@ -52,7 +52,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 6
     app-id: sclo
@@ -63,7 +63,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 7
     app-id: sclo
@@ -74,7 +74,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 8
     app-id: sclo
@@ -85,7 +85,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 9
     app-id: sclo
@@ -96,7 +96,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 10
     app-id: sclo
@@ -107,7 +107,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 11
     app-id: sclo
@@ -118,7 +118,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 12
     app-id: sclo
@@ -129,7 +129,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 13
     app-id: sclo
@@ -140,7 +140,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 14
     app-id: sclo
@@ -151,7 +151,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 15
     app-id: sclo
@@ -162,7 +162,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 16
     app-id: sclo
@@ -173,7 +173,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
 # New additions
 
@@ -186,7 +186,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
 # S2I container
 
@@ -201,7 +201,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
   - id: 19
     app-id: sclo
@@ -212,7 +214,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
   - id: 20
     app-id: sclo
@@ -223,7 +227,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
   - id: 21
     app-id: sclo
@@ -234,7 +240,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I php
 
@@ -247,7 +255,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
   - id: 23
     app-id: sclo
@@ -258,7 +268,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I perl
 
@@ -271,7 +283,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
   - id: 25
     app-id: sclo
@@ -282,7 +296,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I perl
 
@@ -306,7 +322,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I httpd
 
@@ -319,7 +337,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I nginx
 
@@ -332,7 +352,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I passenger
 
@@ -345,7 +367,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I Varnish
 
@@ -358,7 +382,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I Ruby
 
@@ -371,7 +397,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
   - id: 33
     app-id: sclo
@@ -382,7 +410,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
   - id: 34
     app-id: sclo
@@ -393,7 +423,9 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7
 
 # * S2I Redis
 
@@ -406,4 +438,6 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: 
+      - centos/centos:latest
+      - openshift/base-centos7

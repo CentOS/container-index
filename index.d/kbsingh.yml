@@ -8,7 +8,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: cp.build.inb@karan.org
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 3
     app-id: kbsingh
@@ -19,5 +19,5 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: cp.build.inb@karan.org
-    depends-on: null
+    depends-on: centos/centos:latest
   

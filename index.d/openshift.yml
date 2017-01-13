@@ -10,7 +10,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
-    depends-on  : null
+    depends-on  : centos/centos:latest
         
   - id          : 2
     app-id      : openshift
@@ -22,6 +22,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
  
   - id          : 3
@@ -34,6 +35,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 4
@@ -46,6 +48,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
 
 # * Helper Images with no reliance
@@ -59,7 +62,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
-    depends-on  : null
+    depends-on  : centos/centos:latest
 
   - id          : 6
     app-id      : openshift
@@ -70,7 +73,7 @@ Projects:
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
-    depends-on  : null
+    depends-on  : centos/centos:latest
 
 # * Relies on origin base
 
@@ -84,6 +87,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 8
@@ -97,6 +101,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin-haproxy-router-base
 
   - id          : 9
@@ -110,6 +115,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 10
@@ -122,6 +128,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 11
@@ -134,6 +141,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.2.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
 
 # * Relies on openshift origin
@@ -149,6 +157,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 13
@@ -162,6 +171,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 14
@@ -175,6 +185,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 15
@@ -188,6 +199,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 16
@@ -201,6 +213,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 17
@@ -214,6 +227,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
 # s2i base container
@@ -227,7 +241,7 @@ Projects:
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
-    depends-on  : null 
+    depends-on  : centos/centos:latest
 
 # v1.3.1 containers
 
@@ -241,7 +255,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
-    depends-on  : null
+    depends-on  : centos/centos:latest
         
   - id          : 20
     app-id      : openshift
@@ -253,6 +267,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
  
   - id          : 21
@@ -265,6 +280,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 22
@@ -277,6 +293,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
     depends-on  : 
+      - centos/centos:latest
       - openshift/origin-base
 
 # * Helper Images with no reliance
@@ -290,7 +307,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
-    depends-on  : null
+    depends-on  : centos/centos:latest
 
   - id          : 24
     app-id      : openshift
@@ -301,7 +318,7 @@ Projects:
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
-    depends-on  : null
+    depends-on  : centos/centos:latest
 
 # * Relies on origin base
 
@@ -315,6 +332,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 26
@@ -328,6 +346,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin-haproxy-router-base
 
   - id          : 27
@@ -341,6 +360,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 28
@@ -353,6 +373,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 29
@@ -365,6 +386,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v1.3.1
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
 # * Relies on openshift origin
@@ -380,6 +402,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 31
@@ -393,6 +416,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 32
@@ -406,6 +430,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 33
@@ -419,6 +444,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 34
@@ -432,6 +458,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 35
@@ -445,6 +472,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
 # Latest Tag equivalent
@@ -459,7 +487,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
-    depends-on  : null
+    depends-on  : centos/centos:latest
 
   - id          : 37
     app-id      : openshift
@@ -471,6 +499,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 39
@@ -483,6 +512,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 40
@@ -495,6 +525,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
 # * Helper Images with no reliance
@@ -508,7 +539,7 @@ Projects:
     target-file : Dockerfile.centos7
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
-    depends-on  : null
+    depends-on  : centos/centos:latest
 
   - id          : 42
     app-id      : openshift
@@ -519,7 +550,7 @@ Projects:
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
-    depends-on  : null
+    depends-on  : centos/centos:latest
 
 # * Relies on origin base
 
@@ -533,6 +564,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 44
@@ -546,6 +578,7 @@ Projects:
     desired-tag : latest
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin-haproxy-router-base
 
   - id          : 45
@@ -559,6 +592,7 @@ Projects:
     desired-tag : latest
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 46
@@ -571,6 +605,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
   - id          : 47
@@ -583,6 +618,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
     depends-on  :
+      - centos/centos:latest
       - openshift/origin-base
 
 # * Relies on openshift origin
@@ -598,6 +634,7 @@ Projects:
     desired-tag : latest
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 49
@@ -611,6 +648,7 @@ Projects:
     desired-tag : latest
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 50
@@ -624,6 +662,7 @@ Projects:
     desired-tag : latest
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 51
@@ -637,6 +676,7 @@ Projects:
     desired-tag : latest
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 52
@@ -650,6 +690,7 @@ Projects:
     desired-tag : latest
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
   - id          : 53
@@ -663,6 +704,7 @@ Projects:
     desired-tag : latest
     depends-on  :
 #      - openshift/origin-base
+      - centos/centos:latest
       - openshift/origin
 
 # * Jenkins containers
@@ -676,7 +718,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 55
     app-id: openshift
@@ -687,7 +729,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 56
     app-id: openshift
@@ -698,7 +740,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 57
     app-id: openshift
@@ -709,7 +751,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 58
     app-id: openshift
@@ -720,4 +762,4 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
