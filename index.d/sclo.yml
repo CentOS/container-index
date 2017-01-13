@@ -203,7 +203,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
   - id: 19
     app-id: sclo
@@ -216,7 +216,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
   - id: 20
     app-id: sclo
@@ -229,7 +229,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
   - id: 21
     app-id: sclo
@@ -242,7 +242,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I php
 
@@ -257,7 +257,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
   - id: 23
     app-id: sclo
@@ -270,7 +270,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I perl
 
@@ -285,7 +285,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
   - id: 25
     app-id: sclo
@@ -298,7 +298,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I perl
 
@@ -311,7 +311,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: openshift/base-centos7
+    depends-on: openshift/base-centos7:latest
 
   - id: 27
     app-id: sclo
@@ -324,7 +324,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I httpd
 
@@ -339,7 +339,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I nginx
 
@@ -354,7 +354,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I passenger
 
@@ -369,7 +369,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I Varnish
 
@@ -384,7 +384,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I Ruby
 
@@ -399,7 +399,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
   - id: 33
     app-id: sclo
@@ -412,7 +412,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
   - id: 34
     app-id: sclo
@@ -425,7 +425,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest
 
 # * S2I Redis
 
@@ -440,4 +440,4 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - openshift/base-centos7
+      - openshift/base-centos7:latest

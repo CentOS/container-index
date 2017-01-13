@@ -10,4 +10,4 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on:
       - centos/centos:latest 
-      - openshift/origin
+      - openshift/origin:latest

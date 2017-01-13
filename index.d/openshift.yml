@@ -23,7 +23,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.2.1
  
   - id          : 3
     app-id      : openshift
@@ -36,7 +36,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.2.1
 
   - id          : 4
     app-id      : openshift
@@ -49,7 +49,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.2.1
 
 # * Helper Images with no reliance
 
@@ -88,7 +88,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.2.1
 
   - id          : 8
     app-id      : openshift
@@ -102,7 +102,7 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin-haproxy-router-base
+      - openshift/origin-haproxy-router-base:v1.2.1
 
   - id          : 9
     app-id      : openshift
@@ -116,7 +116,7 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.2.1
 
   - id          : 10
     app-id      : openshift
@@ -129,7 +129,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.2.1
 
   - id          : 11
     app-id      : openshift
@@ -142,7 +142,7 @@ Projects:
     desired-tag : v1.2.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.2.1
 
 # * Relies on openshift origin
 
@@ -158,7 +158,7 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.2.1
 
   - id          : 13
     app-id      : openshift
@@ -172,7 +172,7 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.2.1
 
   - id          : 14
     app-id      : openshift
@@ -186,7 +186,7 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.2.1
 
   - id          : 15
     app-id      : openshift
@@ -200,7 +200,7 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.2.1
 
   - id          : 16
     app-id      : openshift
@@ -214,7 +214,7 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.2.1
 
   - id          : 17
     app-id      : openshift
@@ -228,7 +228,7 @@ Projects:
     depends-on  : 
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.2.1
 
 # s2i base container
 
@@ -268,7 +268,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.3.1
  
   - id          : 21
     app-id      : openshift
@@ -281,7 +281,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.3.1
 
   - id          : 22
     app-id      : openshift
@@ -294,7 +294,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  : 
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.3.1
 
 # * Helper Images with no reliance
 
@@ -333,7 +333,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.3.1
 
   - id          : 26
     app-id      : openshift
@@ -347,7 +347,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin-haproxy-router-base
+      - openshift/origin-haproxy-router-base:v1.3.1
 
   - id          : 27
     app-id      : openshift
@@ -361,7 +361,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.3.1
 
   - id          : 28
     app-id      : openshift
@@ -374,7 +374,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.3.1
 
   - id          : 29
     app-id      : openshift
@@ -387,7 +387,7 @@ Projects:
     desired-tag : v1.3.1
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:v1.3.1
 
 # * Relies on openshift origin
 
@@ -403,7 +403,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.3.1
 
   - id          : 31
     app-id      : openshift
@@ -417,7 +417,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.3.1
 
   - id          : 32
     app-id      : openshift
@@ -431,7 +431,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.3.1
 
   - id          : 33
     app-id      : openshift
@@ -445,7 +445,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.3.1
 
   - id          : 34
     app-id      : openshift
@@ -459,7 +459,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.3.1
 
   - id          : 35
     app-id      : openshift
@@ -473,7 +473,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:v1.3.1
 
 # Latest Tag equivalent
 
@@ -500,7 +500,7 @@ Projects:
     desired-tag : latest
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:latest
 
   - id          : 39
     app-id      : openshift
@@ -513,7 +513,7 @@ Projects:
     desired-tag : latest
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:latest
 
   - id          : 40
     app-id      : openshift
@@ -526,7 +526,7 @@ Projects:
     desired-tag : latest
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:latest
 
 # * Helper Images with no reliance
 
@@ -565,7 +565,7 @@ Projects:
     desired-tag : latest
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:latest
 
   - id          : 44
     app-id      : openshift
@@ -579,7 +579,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin-haproxy-router-base
+      - openshift/origin-haproxy-router-base:latest
 
   - id          : 45
     app-id      : openshift
@@ -606,7 +606,7 @@ Projects:
     desired-tag : latest
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:latest
 
   - id          : 47
     app-id      : openshift
@@ -619,7 +619,7 @@ Projects:
     desired-tag : latest
     depends-on  :
       - centos/centos:latest
-      - openshift/origin-base
+      - openshift/origin-base:latest
 
 # * Relies on openshift origin
 
@@ -635,7 +635,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:latest
 
   - id          : 49
     app-id      : openshift
@@ -649,7 +649,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:latest
 
   - id          : 50
     app-id      : openshift
@@ -663,7 +663,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:latest
 
   - id          : 51
     app-id      : openshift
@@ -677,7 +677,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:latest
 
   - id          : 52
     app-id      : openshift
@@ -691,7 +691,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:latest
 
   - id          : 53
     app-id      : openshift
@@ -705,7 +705,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:latest
 
 # * Jenkins containers
 

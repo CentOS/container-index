@@ -31,7 +31,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 4
     app-id: cockpit

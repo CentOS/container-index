@@ -287,7 +287,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - centos/kubernetes-master
+      - centos/kubernetes-master:latest
 
   - id: 27
     app-id: centos
@@ -300,7 +300,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - centos/kubernetes-master
+      - centos/kubernetes-master:latest
 
   - id: 28
     app-id: centos
@@ -313,7 +313,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - centos/kubernetes-node
+      - centos/kubernetes-node:latest
 
   - id: 29
     app-id: centos
@@ -326,7 +326,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - centos/kubernetes-node
+      - centos/kubernetes-node:latest
 
   - id: 30
     app-id: centos
@@ -339,7 +339,7 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     depends-on: 
       - centos/centos:latest
-      - centos/kubernetes-master
+      - centos/kubernetes-master:latest
 
 # centos base alternate tags - tempfix
 
