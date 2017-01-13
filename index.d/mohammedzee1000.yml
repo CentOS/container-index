@@ -8,7 +8,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: 9.2
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 2
     app-id: mohammedzee1000
@@ -19,7 +19,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: 9.3
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 3
     app-id: mohammedzee1000
@@ -30,7 +30,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: 9.4
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 4
     app-id: mohammedzee1000
@@ -41,7 +41,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: 9.5
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 5
     app-id: mohammedzee1000
@@ -52,7 +52,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: 9.6
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 6
     app-id: mohammedzee1000
@@ -63,4 +63,6 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: jboss/keycloak:latest
+    depends-on: 
+      - centos/centos:latest
+      - jboss/keycloak:latest

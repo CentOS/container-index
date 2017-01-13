@@ -19,7 +19,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 3
     app-id: centos
@@ -30,7 +30,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 4
     app-id: centos
@@ -41,7 +41,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 5
     app-id: centos
@@ -52,7 +52,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 6
     app-id: centos
@@ -63,7 +63,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 7
     app-id: centos
@@ -74,7 +74,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 8
     app-id: centos
@@ -85,7 +85,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 9
     app-id: centos
@@ -96,7 +96,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 10
     app-id: centos
@@ -107,7 +107,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 11
     app-id: centos
@@ -118,7 +118,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 12
     app-id: centos
@@ -129,7 +129,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 13
     app-id: centos
@@ -140,7 +140,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 14
     app-id: centos
@@ -151,7 +151,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 15
     app-id: centos
@@ -162,7 +162,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 16
     app-id: centos
@@ -173,7 +173,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 17
     app-id: centos
@@ -184,7 +184,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 18
     app-id: centos
@@ -195,7 +195,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 19
     app-id: centos
@@ -206,7 +206,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
   
   - id: 20
     app-id: centos
@@ -217,7 +217,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 21
     app-id: centos
@@ -228,7 +228,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: bamachrn@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 22
     app-id: centos
@@ -239,7 +239,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: 7
     notify-email: bamachrn@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
 # New additions
 
@@ -252,7 +252,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 24
     app-id: centos
@@ -262,8 +262,8 @@ Projects:
     git-path: kubernetes/master
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    notify-email: jbrooks@redhat.com
+    depends-on: centos/centos:latest
 
   - id: 25
     app-id: centos
@@ -273,8 +273,8 @@ Projects:
     git-path: kubernetes/node
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    notify-email: jbrooks@redhat.com
+    depends-on: centos/centos:latest
 
   - id: 26
     app-id: centos
@@ -284,8 +284,10 @@ Projects:
     git-path: kubernetes/apiserver
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    depends-on: centos/kubernetes-master
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-master:latest
 
   - id: 27
     app-id: centos
@@ -295,8 +297,10 @@ Projects:
     git-path: kubernetes/controller-manager
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    depends-on: centos/kubernetes-master
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-master:latest
 
   - id: 28
     app-id: centos
@@ -306,8 +310,10 @@ Projects:
     git-path: kubernetes/kubelet
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    depends-on: kubernetes-kubelet
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-node:latest
 
   - id: 29
     app-id: centos
@@ -317,8 +323,10 @@ Projects:
     git-path: kubernetes/proxy
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    depends-on: centos/kubernetes-node
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-node:latest
 
   - id: 30
     app-id: centos
@@ -328,8 +336,10 @@ Projects:
     git-path: kubernetes/master
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    depends-on: centos/kubernetes-master
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-master:latest
 
 # centos base alternate tags - tempfix
 
@@ -379,7 +389,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 35
     app-id: centos
@@ -390,4 +400,4 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest

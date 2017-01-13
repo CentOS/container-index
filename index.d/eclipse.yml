@@ -8,7 +8,7 @@ Projects:
     target-file: Dockerfile.centos
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 2
     app-id: eclipse
@@ -19,7 +19,7 @@ Projects:
     target-file: Dockerfile.centos
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 3
     app-id: eclipse
@@ -30,7 +30,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 4
     app-id: eclipse
@@ -41,7 +41,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 5
     app-id: eclipse
@@ -52,7 +52,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
   - id: 6
     app-id: eclipse
@@ -63,7 +63,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: null
+    depends-on: centos/centos:latest
 
 #   - id: 7
 #     app-id: eclipse
