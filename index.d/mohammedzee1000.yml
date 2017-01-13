@@ -24,10 +24,10 @@ Projects:
   - id: 3
     app-id: mohammedzee1000
     job-id: postgresql
-    git-url: https://github.com/mohammedzee1000/postgres
-    git-branch: dockerfile.centos7-files
+    git-url: https://github.com/mohammedzee1000/postgresql_openshift
+    git-branch: master
     git-path: 9.4/
-    target-file: Dockerfile.centos7
+    target-file: Dockerfile
     desired-tag: 9.4
     notify-email: mohammed.zee1000@gmail.com
     depends-on: centos/centos:latest
@@ -35,10 +35,10 @@ Projects:
   - id: 4
     app-id: mohammedzee1000
     job-id: postgresql
-    git-url: https://github.com/mohammedzee1000/postgres
-    git-branch: dockerfile.centos7-files
+    git-url: https://github.com/mohammedzee1000/postgresql_openshift
+    git-branch: master
     git-path: 9.5/
-    target-file: Dockerfile.centos7
+    target-file: Dockerfile
     desired-tag: 9.5
     notify-email: mohammed.zee1000@gmail.com
     depends-on: centos/centos:latest
@@ -46,10 +46,10 @@ Projects:
   - id: 5
     app-id: mohammedzee1000
     job-id: postgresql
-    git-url: https://github.com/mohammedzee1000/postgres
-    git-branch: dockerfile.centos7-files
+    git-url: https://github.com/mohammedzee1000/postgresql_openshift
+    git-branch: master
     git-path: 9.6/
-    target-file: Dockerfile.centos7
+    target-file: Dockerfile
     desired-tag: 9.6
     notify-email: mohammed.zee1000@gmail.com
     depends-on: centos/centos:latest
