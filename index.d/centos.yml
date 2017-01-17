@@ -333,7 +333,7 @@ Projects:
     job-id: kubernetes-scheduler
     git-url: https://github.com/CentOS/CentOS-Dockerfiles
     git-branch: master
-    git-path: kubernetes/master
+    git-path: kubernetes/scheduler
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
