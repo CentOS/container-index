@@ -32,13 +32,3 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: null
 
-  - id: 4
-    app-id: dharmit
-    job-id: vertx
-    git-url: https://github.com/dharmit/che-java-stacks
-    git-branch: master
-    git-path: vertx/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: null
