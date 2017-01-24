@@ -32,24 +32,3 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 4
-    app-id: dharmit
-    job-id: vertx
-    git-url: https://github.com/dharmit/che-java-stacks
-    git-branch: master
-    git-path: vertx/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
-
-    #   - id: 5
-    #     app-id: pipeline-images
-    #     job-id: misc-package-updates
-    #     git-url: git://github.com/dharmit/container-pipeline-service
-    #     git-branch: misc-package-updates
-    #     git-path: atomic_scanners/misc-package-updates
-    #     target-file: Dockerfile
-    #     desired-tag: latest
-    #     notify-email: shahdharmit@gmail.com
-    #     depends-on: null
