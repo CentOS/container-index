@@ -593,7 +593,7 @@ Projects:
     depends-on  :
 #      - openshift/origin-base
       - centos/centos:latest
-      - openshift/origin
+      - openshift/origin:latest
 
   - id          : 46
     app-id      : openshift
