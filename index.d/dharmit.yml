@@ -32,3 +32,14 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
+  - id: 4
+    app-id: dharmit
+    job-id: package-list-scanner
+    git-url: https://github.com/dharmit/package-list-scanner
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+
