@@ -235,7 +235,7 @@ Projects:
   - id          : 18
     app-id      : openshift
     job-id      : base-centos7
-    git-url     : https://github.com/mohammedzee1000/s2i-base
+    git-url     : https://github.com/sclorg/s2i-base-container
     git-path    : /
     git-branch  : master
     target-file : Dockerfile
