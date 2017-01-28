@@ -2,8 +2,8 @@ Projects:
   - id: 1
     app-id: che-stacks
     job-id: vertx
-    git-url: https://github.com/dharmit/che-dockerfiles
-    git-branch: centos-vertx
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
     git-path: recipes/centos_vertx
     target-file: Dockerfile
     desired-tag: latest
