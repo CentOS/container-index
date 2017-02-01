@@ -47,8 +47,12 @@ The *cccp.yml* File
 Every build that we process is required to host a container pipeline control file, called the cccp.yml. You can host it as either .cccp.yml ( and then its just out of the way ), or as cccp.yml. An example of what this file might look like is included in this git repo. Feel free to use that as a template. This file is a standard yaml formatted file and includes the following information:
 
  - *Job ID (job-id)* : Required: This must match the Job ID that you insert into the index file.
- - *Nulecule File (nulecule-file)* : Optional - Currently unusable: Indicate a nulecule pattern file.
+ - *Nulecule File (nulecule-file)* : Optional - *Currently unusable*: Indicate a nulecule pattern file.
  - *Test Skip (test-skip)* : Optional (True or False): Indicate if you want to skip the test phase of the pipeline. Note, this only skips user scripts and not the standard tests that we run on every container.
  - *Test Script (test-script)* : Optional: Use to specify the path of the test script relative to the location of your target-file from index.yml. This test script must use a non-zero exit code to indicate failure and can get to know the intermediate container tag with which to reference the image via the CONTAINER_NAME environment variable which is injected into the workers.
- - *Build Script (build-script)* : Optional - Currently unusable:
+ - *Build Script (build-script)* : Optional - *Currently unusable*: Custom build script
  - *Delivery script (delivery-script)* : Optional: This would be where you can specify a custom delivery script.
+ - *Docker Index (docker-index)* : Optional - *Currently unusable* : If true, then container is delivered to docker hub.
+ - *Custom Delivery (custom-delivery)* : Optional - *Currently unusable* : Specify a script for your own delivery mechanisms
+ - *Local Delivery* : Optional - *Currently unusable* : This flag can be used to disable delivery to r.c.o
+ - *Upstreams* : Optional - *Currently unusable* : This can be used to specify upstreams to track and rebuild based on.
