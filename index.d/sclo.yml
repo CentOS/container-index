@@ -172,7 +172,7 @@ Projects:
     git-path: 9.5/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
 
 # New additions
@@ -185,7 +185,7 @@ Projects:
     git-path: 3.0-upg/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
 
 # S2I container
@@ -200,7 +200,7 @@ Projects:
     git-path: 2.7/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -213,7 +213,7 @@ Projects:
     git-path: 3.3/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -226,7 +226,7 @@ Projects:
     git-path: 3.4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -239,7 +239,7 @@ Projects:
     git-path: 3.5/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -254,7 +254,7 @@ Projects:
     git-path: 5.5/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -267,7 +267,7 @@ Projects:
     git-path: 5.6/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -282,7 +282,7 @@ Projects:
     git-path: 5.16/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -295,7 +295,7 @@ Projects:
     git-path: 5.20/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -310,7 +310,7 @@ Projects:
     git-path: 0.10/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: openshift/base-centos7:latest
 
   - id: 27
@@ -321,7 +321,7 @@ Projects:
     git-path: 4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -336,7 +336,7 @@ Projects:
     git-path: 2.4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -351,7 +351,7 @@ Projects:
     git-path: 1.8/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -366,7 +366,7 @@ Projects:
     git-path: 4.0/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -381,7 +381,7 @@ Projects:
     git-path: 4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -396,7 +396,7 @@ Projects:
     git-path: 2.0/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -409,7 +409,7 @@ Projects:
     git-path: 2.2/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -422,7 +422,7 @@ Projects:
     git-path: 2.3/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
@@ -437,7 +437,7 @@ Projects:
     git-path: 3.2/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
