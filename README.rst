@@ -49,7 +49,7 @@ Every build that we process is required to host a container pipeline control fil
  - *Job ID (job-id)* : Required: This must match the Job ID that you insert into the index file.
  - *Nulecule File (nulecule-file)* : Optional - *Currently unusable*: Indicate a nulecule pattern file.
  - *Test Skip (test-skip)* : Optional (True or False): Indicate if you want to skip the test phase of the pipeline. Note, this only skips user scripts and not the standard tests that we run on every container.
- - *Test Script (test-script)* : Optional: Use to specify the path of the test script relative to the location of your target-file from index.yml. This test script must use a non-zero exit code to indicate failure and can get to know the intermediate container tag with which to reference the image via the CONTAINER_NAME environment variable which is injected into the workers.
+ - *Test Script (test-script)* : Optional: Use to specify the path of the test script relative to the location of your target-file from index.yml. This test script must use a non-zero exit code to indicate failure and can get to know the intermediate container tag with which to reference the image via the CONTAINER_NAME environment variable which is injected into the workers. Ensure that test-skip above is explicitly reset to False, as otherwise the test script will not be run (if test-skip is not specified, it is assumed to be True)
  - *Build Script (build-script)* : Optional - *Currently unusable*: Custom build script
  - *Delivery script (delivery-script)* : Optional: This would be where you can specify a custom delivery script.
  - *Docker Index (docker-index)* : Optional - *Currently unusable* : If true, then container is delivered to docker hub.
