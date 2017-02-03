@@ -86,3 +86,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 9
+    app-id: pipeline-images
+    job-id: container-capabilities-scanner
+    git-url: https://github.com/dharmit/container-pipeline-service
+    git-branch: container-capabilities-scanner
+    git-path: atomic_scanners/container-capabilities-scanner
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
