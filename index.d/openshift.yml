@@ -239,7 +239,7 @@ Projects:
     git-path    : /
     git-branch  : master
     target-file : Dockerfile
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     desired-tag : latest
     depends-on  : centos/centos:latest
 
