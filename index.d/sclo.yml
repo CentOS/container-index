@@ -7,7 +7,7 @@ Projects:
     git-path: 5.5/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 2
@@ -18,7 +18,7 @@ Projects:
     git-path: 5.6/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 3
@@ -29,7 +29,7 @@ Projects:
     git-path: 1.6/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 4
@@ -40,7 +40,7 @@ Projects:
     git-path: 4.1/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 5
@@ -51,7 +51,7 @@ Projects:
     git-path: 4.2/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 6
@@ -62,7 +62,7 @@ Projects:
     git-path: 1-agent
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 7
@@ -73,7 +73,7 @@ Projects:
     git-path: 4-perftools
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 8
@@ -84,7 +84,7 @@ Projects:
     git-path: 4-toolchain
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 9
@@ -95,7 +95,7 @@ Projects:
     git-path: 10.0/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 10
@@ -106,7 +106,7 @@ Projects:
     git-path: 10.1/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 11
@@ -117,7 +117,7 @@ Projects:
     git-path: 2.4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 12
@@ -128,7 +128,7 @@ Projects:
     git-path: 2.6/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 13
@@ -139,7 +139,7 @@ Projects:
     git-path: 3.2/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 14
@@ -150,7 +150,7 @@ Projects:
     git-path: 9.2/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 15
@@ -161,7 +161,7 @@ Projects:
     git-path: 9.4/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: hhorak@redhat.com
     depends-on: centos/centos:latest
   
   - id: 16
