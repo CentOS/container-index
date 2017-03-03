@@ -9,3 +9,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 2
+    app-id: che-stacks
+    job-id: springboot
+    git-url: https://github.com/dharmit/spring-boot-with-che
+    git-branch: image-and-scope
+    git-path: container/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
