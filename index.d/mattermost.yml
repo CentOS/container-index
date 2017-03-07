@@ -64,3 +64,25 @@ Projects:
     desired-tag: latest
     notify-email: jchevret@redhat.com
     depends-on: centos/centos:7
+
+  - id: 7
+    app-id: mattermost
+    job-id: nginx-redirector
+    git-url: https://github.com/jfchevrette/nginx-redirector
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jchevret@redhat.com
+    depends-on: kbsingh/openshift-nginx:latest
+    
+  - id: 8
+    app-id: mattermost
+    job-id: mattermost-rss-integration
+    git-url: https://github.com/syamgk/Rss-Atom-Feed-Integration-for-Mattermost
+    git-branch: centosDockerfile
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: centos/python:latest
