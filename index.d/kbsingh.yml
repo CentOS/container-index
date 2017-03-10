@@ -10,6 +10,17 @@ Projects:
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:latest
   
+  - id: 2
+    app-id: kbsingh
+    job-id: mysql-proxy
+    git-url: https://gitlab.com/kbsingh/container-mysql-proxy.git
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: cp.build.inb@karan.org
+    depends-on: centos/centos:latest
+
   - id: 3
     app-id: kbsingh
     job-id: openshift-vault
