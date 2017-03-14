@@ -13,7 +13,7 @@ Projects:
   - id: 2
     app-id: kbsingh
     job-id: mysql-proxy
-    git-url: https://gitlab.com/kbsingh/container-mysql-proxy.git
+    git-url: https://gitlab.com/kbsingh/container-mysql-proxy
     git-branch: master
     git-path: /
     target-file: Dockerfile
