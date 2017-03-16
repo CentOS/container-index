@@ -43,3 +43,13 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
+  - id: 5
+    app-id: dharmit
+    job-id: freegeoip
+    git-url: https://github.com/dharmit/freegeoip
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile.centos
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
