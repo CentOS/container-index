@@ -31,4 +31,15 @@ Projects:
     desired-tag: latest
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:latest
+
+  - id: 4
+    app-id: kbsingh
+    job-id: gogs
+    git-url: https://gitlab.com/kbsingh/container-gogs
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: 0.10.18-1
+    notify-email: cp.build.inb@karan.org
+    depends-on: centos/centos:7
   
