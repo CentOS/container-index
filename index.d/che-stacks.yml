@@ -12,10 +12,10 @@ Projects:
 
   - id: 2
     app-id: che-stacks
-    job-id: springboot
-    git-url: https://github.com/dharmit/spring-boot-with-che
-    git-branch: image-and-scope
-    git-path: container/
+    job-id: spring-boot
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
+    git-path: recipes/centos_spring_boot
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
