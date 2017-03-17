@@ -43,3 +43,4 @@ Projects:
     desired-tag: latest
     notify-email: bamachrn@gmail.com
     depends-on: centos/centos:latest
+
