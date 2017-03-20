@@ -35,7 +35,7 @@ Projects:
   - id: 4
     app-id: kbsingh
     job-id: gogs
-    git-url: https://gitlab.com/kbsingh/container-gogs
+    git-url: https://gitlab.com/kbsingh/container-gogs.git
     git-branch: master
     git-path: /
     target-file: Dockerfile
