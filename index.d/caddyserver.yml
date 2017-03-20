@@ -2,8 +2,8 @@ Projects:
   - id: 1
     app-id: caddyserver
     job-id: caddyserver
-    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
-    git-branch: 2017-01-27_12-08-53-caddyserver_container
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
     git-path: caddy_server/centos7
     target-file: Dockerfile
     desired-tag: latest
