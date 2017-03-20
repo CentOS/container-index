@@ -43,3 +43,14 @@ Projects:
     desired-tag: latest
     notify-email: bamachrn@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 5
+    app-id: bamachrn
+    job-id: nginx-header
+    git-url: https://github.com/bamachrn/nginx-header
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    depends-on: centos/centos:latest
