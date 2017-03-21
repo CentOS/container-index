@@ -97,3 +97,14 @@ Projects:
     desired-tag: latest
     notify-email: sgk@redhat.com
     depends-on: centos/centos:latest
+    
+  - id: 10
+    app-id: mattermost
+    job-id: matterbridge
+    git-url: https://github.com/syamgk/matterbridge
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: centos/centos:latest
