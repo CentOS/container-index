@@ -42,4 +42,14 @@ Projects:
     desired-tag: 0.10.18-1
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:7
-  
+
+  - id: 5
+    app-id: kbsingh
+    job-id: zabbix-agent
+    git-url: https://gitlab.com/kbsingh/container-zabbix-agent.git
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: 3.0.7-1.el7
+    notify-email: cp.build.inb@karan.org
+    depends-on: centos/centos:7
