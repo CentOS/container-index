@@ -53,3 +53,58 @@ Projects:
     desired-tag: latest
     notify-email: sgk@redhat.com
     depends-on: centos/centos:latest
+
+  - id: 6
+    app-id: mattermost
+    job-id: mattermost-team
+    git-url: https://github.com/jfchevrette/mattermost-openshift
+    git-branch: master
+    git-path: mattermost-team
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jchevret@redhat.com
+    depends-on: centos/centos:7
+
+  - id: 7
+    app-id: mattermost
+    job-id: nginx-redirector
+    git-url: https://github.com/jfchevrette/nginx-redirector
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jchevret@redhat.com
+    depends-on: kbsingh/openshift-nginx:latest
+    
+  - id: 8
+    app-id: mattermost
+    job-id: mattermost-rss-integration
+    git-url: https://github.com/syamgk/Rss-Atom-Feed-Integration-for-Mattermost
+    git-branch: centosDockerfile
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: centos/python:latest
+    
+  - id: 9
+    app-id: mattermost
+    job-id: matterircd
+    git-url: https://github.com/syamgk/matterircd
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: centos/centos:latest
+    
+  - id: 10
+    app-id: mattermost
+    job-id: matterbridge
+    git-url: https://github.com/syamgk/matterbridge
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: centos/centos:latest

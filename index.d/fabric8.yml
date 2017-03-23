@@ -1,0 +1,11 @@
+Projects:
+  - id: 1
+    app-id: fabric8
+    job-id: openshift-nginx
+    git-url: https://github.com/fabric8-ui/fabric8-ui-openshift-nginx
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: cp.build.inb@karan.org
+    depends-on: centos/centos:latest

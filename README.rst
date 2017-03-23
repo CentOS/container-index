@@ -35,9 +35,9 @@ The index.d contains yaml formatted files, which must include :
  - *Target File (target-file)* : Required: The actual file from where the build will start. This would typically be Dockerfile.
  - *Notify Email (notify-email)*: The email id to which emails will be sent, upon success or failure of builds.
  - *Desired Tag (desired-tag)* : Required: The tag for container, such as latest.
- - *Depends On (depends-on)* : This would be a list of containers, already in the index that this container depends on. The list should container container names in the form of "namespace/job-id:tag" of the containers the current entry relies on.
+ - *Depends On (depends-on)* : This would be a list of containers, already in the index that this container depends on. The list should container names in the form of "namespace/job-id:tag" of the containers the current entry relies on. This includes build time dependency containers, even if they are specified in the target file such as FROM in dockerfile. So even if your docker file mentions "FROM foo/bar:latest", the depends on list should explicitly include foo/bar:latest as well.
  
-*Note :* : The name of the file is going to be part of the container name (i.e the namespace). Infact your container will be based on the filename, jobid and desired-tag 
+*Note :* The name of the file is going to be part of the container name (i.e the namespace). Infact your container will be based on the filename, jobid and desired-tag
 
 For Example: File name :  hello.yml, job-id: mycontainer, desired-tag: latest, then container name will be hello/mycontainer:latest
 
@@ -47,8 +47,12 @@ The *cccp.yml* File
 Every build that we process is required to host a container pipeline control file, called the cccp.yml. You can host it as either .cccp.yml ( and then its just out of the way ), or as cccp.yml. An example of what this file might look like is included in this git repo. Feel free to use that as a template. This file is a standard yaml formatted file and includes the following information:
 
  - *Job ID (job-id)* : Required: This must match the Job ID that you insert into the index file.
- - *Nulecule File (nulecule-file)* : Optional - Currently unusable: Indicate a nulecule pattern file.
+ - *Nulecule File (nulecule-file)* : Optional - *Currently unusable*: Indicate a nulecule pattern file.
  - *Test Skip (test-skip)* : Optional (True or False): Indicate if you want to skip the test phase of the pipeline. Note, this only skips user scripts and not the standard tests that we run on every container.
- - *Test Script (test-script)* : Optional: Use to specify the path of the test script relative to the location of your target-file from index.yml. This test script must use a non-zero exit code to indicate failure.
- - *Build Script (build-script)* : Optional - Currently unusable:
+ - *Test Script (test-script)* : Optional: Use to specify the path of the test script relative to the location of your target-file from index.yml. This test script must use a non-zero exit code to indicate failure and can get to know the intermediate container tag with which to reference the image via the CONTAINER_NAME environment variable which is injected into the workers. Ensure that test-skip above is explicitly reset to False, as otherwise the test script will not be run (if test-skip is not specified, it is assumed to be True)
+ - *Build Script (build-script)* : Optional - *Currently unusable*: Custom build script
  - *Delivery script (delivery-script)* : Optional: This would be where you can specify a custom delivery script.
+ - *Docker Index (docker-index)* : Optional - *Currently unusable* : If true, then container is delivered to docker hub.
+ - *Custom Delivery (custom-delivery)* : Optional - *Currently unusable* : Specify a script for your own delivery mechanisms
+ - *Local Delivery* : Optional - *Currently unusable* : This flag can be used to disable delivery to r.c.o
+ - *Upstreams* : Optional - *Currently unusable* : This can be used to specify upstreams to track and rebuild based on.
