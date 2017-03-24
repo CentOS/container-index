@@ -20,3 +20,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 3
+    app-id: che-stacks
+    job-id: wildfly-swarm
+    git-url: https://github.com/dharmit/che-dockerfiles
+    git-branch: centos_wildfly_swarm
+    git-path: recipes/centos_wildfly_swarm
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
