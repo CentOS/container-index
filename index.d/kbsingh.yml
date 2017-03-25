@@ -52,4 +52,15 @@ Projects:
     target-file: Dockerfile
     desired-tag: 3.0.7-1.el7
     notify-email: cp.build.inb@karan.org
+    depends-on: centos/centos:7  
+
+  - id: 6
+    app-id: kbsingh
+    job-id: golang
+    git-url: https://gitlab.com/kbsingh/container-golang.git
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: 1.7.4-1.el7
+    notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:7
