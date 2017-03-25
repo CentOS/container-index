@@ -53,3 +53,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 6
+    app-id: dharmit
+    job-id: nsq
+    git-url: https://github.com/dharmit/nsq
+    git-branch: pipeline
+    git-path: /
+    target-file: Dockerfile.centos
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
