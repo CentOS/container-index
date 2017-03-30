@@ -64,3 +64,14 @@ Projects:
     desired-tag: 9.3
     notify-email: mohammed.zee1000@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 7
+    app-id: postgresql
+    job-id: postgresql
+    git-url: https://github.com/mohammedzee1000/postgresql_openshift
+    git-branch: master
+    git-path: 9.2/
+    target-file: Dockerfile
+    desired-tag: 9.2
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: centos/centos:latest
