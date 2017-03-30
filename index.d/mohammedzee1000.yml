@@ -56,10 +56,10 @@ Projects:
 
   - id: 6
     app-id: mohammedzee1000
-    job-id: keycloak-postgres/
+    job-id: keycloak-postgres
     git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_keycloak
     git-branch: 2016-12-14_21-27-10-keycloak_direct_perms
-    git-path: server-postgres
+    git-path: server-postgres/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
