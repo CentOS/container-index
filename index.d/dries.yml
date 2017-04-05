@@ -10,7 +10,6 @@ Projects:
     notify-email: dries.verachtert@dries.eu
     depends-on: centos/centos:latest
 
-Projects:
   - id: 2
     app-id: dries
     job-id: beanstalkd
