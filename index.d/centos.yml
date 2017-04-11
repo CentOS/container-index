@@ -416,7 +416,7 @@ Projects:
   - id: 37
     app-id: centos
     job-id: elasticsearch
-    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfile
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
     git-branch: 2017-04-10_11-32-10-elastic
     git-path: elasticsearch/centos7
     target-file: Dockerfile.24
