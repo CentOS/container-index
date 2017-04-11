@@ -412,3 +412,14 @@ Projects:
     desired-tag: 7.3.1611
     notify-email: mohammed.zee1000@gmail.com
     depends-on: null
+
+  - id: 36
+    app-id: centos
+    job-id: elasticsearch
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfile
+    git-branch: 2017-04-10_11-32-10-elastic
+    git-path: elasticsearch/centos7
+    target-file: Dockerfile.24
+    desired-tag: 2.4.0
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: centos/centos:7
