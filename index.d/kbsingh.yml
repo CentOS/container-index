@@ -9,7 +9,7 @@ Projects:
     desired-tag: latest
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:latest
-  
+
   - id: 2
     app-id: kbsingh
     job-id: mysql-proxy
@@ -64,3 +64,15 @@ Projects:
     desired-tag: 1.7.4-1.el7
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:7
+
+  - id: 7
+    app-id: kbsingh
+    job-id: openshift-nginx
+    git-url: https://github.com/kbsingh/openshift-nginx
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: 1.10.2
+    notify-email: cp.build.inb@karan.org
+    depends-on: centos/centos:latest
+
