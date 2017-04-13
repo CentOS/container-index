@@ -423,3 +423,14 @@ Projects:
     desired-tag: 2.4.0
     notify-email: mohammed.zee1000@gmail.com
     depends-on: centos/centos:7
+
+  - id: 38
+    app-id: centos
+    job-id: cgit
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2017-03-31_12-40-00-cgit_container
+    git-path: cgit/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: centos/centos:7
