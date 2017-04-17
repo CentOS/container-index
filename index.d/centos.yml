@@ -436,6 +436,7 @@ Projects:
     depends-on: centos/centos:7
 
   - id: 39
+    app-id: centos
     job-id: moodle
     git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
     git-branch: 2017-04-03_16-56-49-moodle_container
