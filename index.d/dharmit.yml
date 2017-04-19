@@ -65,13 +65,3 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 7
-    app-id: dharmit
-    job-id: centos-git
-    git-url: https://github.com/dharmit/che-dockerfiles
-    git-branch: centos_git
-    git-path: recipes/centos/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
