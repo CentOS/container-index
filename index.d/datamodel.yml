@@ -6,7 +6,7 @@ Projects:
     git-branch: master
     git-path: centos-java/
     target-file: Dockerfile
-    desired-tag: concaf
+    desired-tag: latest
     notify-email: data-model-gremlin@googlegroups.com
     depends-on: centos/centos:7
 
@@ -17,11 +17,11 @@ Projects:
     git-branch: master
     git-path: gremlin/
     target-file: Dockerfile
-    desired-tag: concaf
+    desired-tag: latest
     notify-email: data-model-gremlin@googlegroups.com
     depends-on:
       - centos/centos:latest
-      - datamodel/centos-java:concaf
+      - datamodel/centos-java:latest
 
   - id: 3
     app-id: datamodel
@@ -30,8 +30,8 @@ Projects:
     git-branch: master
     git-path: gremlin-client/
     target-file: Dockerfile
-    desired-tag: concaf
+    desired-tag: latest
     notify-email: data-model-gremlin@googlegroups.com
     depends-on: 
       - centos/centos:latest
-      - datamodel/gremlin:concaf
+      - datamodel/gremlin:latest
