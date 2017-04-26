@@ -17,7 +17,7 @@ Projects:
     git-branch: master
     git-path: gremlin/
     target-file: Dockerfile
-    desired-tag: 1.1.0
+    desired-tag: 1.2.0
     notify-email: data-model-gremlin@googlegroups.com
     depends-on:
       - centos/centos:latest
