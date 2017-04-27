@@ -2,7 +2,7 @@
 *
 # Except what we need
 !.gitignore
-!README.rst
+!README.md
 !cccp.yml
 !whattomerge.md
 !index.d
