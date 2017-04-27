@@ -1,10 +1,10 @@
-This is the master Index used by the `CentOS Container Pipeline Service <https://github.com/CentOS/container-pipeline-service>`_ to build and deliver containers at https://registry.centos.org
+This is the master Index used by the [CentOS Community Container Pipeline Service](https://github.com/CentOS/container-pipeline-service) to build and deliver containers at [registry.centos.org](https://wiki.centos.org/ContainerPipeline)
 
 # Quickstart
 
 1. Fork and clone https://github.com/CentOS/container-index.
 1. Copy cccp.yml file included in the above repo into your project's directory containing the Dockerfile.
-1. Customize cccp.yml as needed.cccp.yml is heavily commented.
+1. Customize cccp.yml as needed. cccp.yml is heavily commented.
 1. Back in the container-index repo, in the index.d directory, you can do either
     1. Put your project in a new namespace yml file, by copying index_template.yml file to a desired file.
     1. You can add your project details in an existing namespace yml file.
