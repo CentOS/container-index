@@ -3,18 +3,21 @@ This is the master Index used by the [CentOS Community Container Pipeline Servic
 # Quickstart
 
 1. Fork and clone https://github.com/CentOS/container-index.
-1. Copy cccp.yml file included in the above repo into your project's directory containing the Dockerfile.
-1. Customize cccp.yml as needed. cccp.yml is heavily commented.
-1. Back in the container-index repo, in the index.d directory, you can do either
-    1. Put your project in a new namespace yml file, by copying index_template.yml file to a desired file.
-    1. You can add your project details in an existing namespace yml file.
+1. Copy ``cccp.yml`` file included in the above repo into your project's git repo directory containing the ``Dockerfile``.
+1. Customize ``cccp.yml`` as needed and, commit and push the changes to git.
+1. Back in the container-index repo, in the ``index.d`` directory, you can do either
+    1. Put your project in a new namespace ``yml`` file, by copying ``index.d/index_template.yml``
+    file in this repo to a desired file, and customizing it as needed.
+    1. You can add your project details in an existing namespace ``yml`` file
+    by following the example in ``index.d/index_template.yml`` file.
 1. Please note that, in your project details, app-id must be the same as the namespace filename containing your project.
 1. Commit your changes and send a pull request to https://github.com/CentOS/container-index and wait for a maintainer to accept it.
 
-**Note**: *Even if CI has passed your pull request, please go through the CI
+**Notes**
+- Even if CI has passed your pull request, please go through the CI
 build logs for warnings against your changes. Unless there is an explicit and
 appropriate reason why they should be ignored, the maintainers wont ignore
-them.*
+them.
 
 Once the PR is merged, and the pipeline has picked up your artifacts, your
 container will be built, tested and delivered to registry.centos.org. You
