@@ -59,7 +59,7 @@ Projects:
     job-id: mattermost-team
     git-url: https://github.com/jfchevrette/mattermost-openshift
     git-branch: master
-    git-path: mattermost-team
+    git-path: 3.7/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jchevret@redhat.com
@@ -108,3 +108,14 @@ Projects:
     desired-tag: latest
     notify-email: sgk@redhat.com
     depends-on: centos/centos:latest
+
+  - id: 11
+    app-id: mattermost
+    job-id: mattermost-team
+    git-url: https://github.com/jfchevrette/mattermost-openshift
+    git-branch: master
+    git-path: 3.7/
+    target-file: Dockerfile
+    desired-tag: 3.7
+    notify-email: jchevret@redhat.com
+    depends-on: centos/centos:7
