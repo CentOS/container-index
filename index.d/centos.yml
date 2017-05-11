@@ -456,3 +456,14 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     depends-on: centos/centos:7
+  
+  - id: 41
+    app-id: centos
+    job-id: sentry
+    git-url: https://github.com/rtnpro/docker-sentry
+    git-path: 8.16/
+    git-branch: master
+    target-file: Dockerfile.centos
+    desired-tag: 8.16
+    notify-email: rtnpro@redhat.com
+    depends-on: centos/centos:latest
