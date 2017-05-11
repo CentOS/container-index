@@ -79,8 +79,8 @@ Projects:
   - id: 8
     app-id: pipeline-images
     job-id: misc-package-updates
-    git-url: https://github.com/dharmit/container-pipeline-service
-    git-branch: misc-package-updates
+    git-url: https://github.com/CentOS/container-pipeline-service
+    git-branch: master
     git-path: atomic_scanners/misc-package-updates/
     target-file: Dockerfile
     desired-tag: latest
