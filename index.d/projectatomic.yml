@@ -7,7 +7,7 @@ Projects:
     git-path: examples/atomic-registry/systemd
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: aweiteka@redhat.com
     depends-on:
       - centos/centos:latest 
       - openshift/origin:latest
