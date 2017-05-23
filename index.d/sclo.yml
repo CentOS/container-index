@@ -441,18 +441,3 @@ Projects:
     depends-on: 
       - centos/centos:latest
       - openshift/base-centos7:latest
-
-# * S2I playbook image
-
-  - id: 36
-    app-id: openshift
-    job-id: playbook2image
-    git-url: https://github.com/openshift/playbook2image
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: aweiteka@redhat.com
-    depends-on:
-        - centos/centos:latest
-        - openshift/base-centos7:latest
