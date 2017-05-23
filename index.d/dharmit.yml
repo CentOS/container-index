@@ -10,17 +10,6 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
   
-  - id: 2
-    app-id: dharmit
-    job-id: centos-go
-    git-url: https://github.com/dharmit/dockerfiles
-    git-branch: centos-dockerfiles
-    git-path: centos_go
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
-
   - id: 3
     app-id: dharmit
     job-id: maven33
