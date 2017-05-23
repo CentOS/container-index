@@ -766,7 +766,7 @@ Projects:
 
 # * S2I playbook image
 
-  - id: 36
+  - id: 59
     app-id: openshift
     job-id: playbook2image
     git-url: https://github.com/openshift/playbook2image
