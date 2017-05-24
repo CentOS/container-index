@@ -53,3 +53,15 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 6
+    app-id: che-stacks
+    job-id: centos-go
+    git-url: https://github.com/dharmit/che-dockerfiles
+    git-branch: centos_go
+    git-path: recipes/centos_go
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+
