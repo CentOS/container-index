@@ -43,28 +43,6 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 5
-    app-id: eclipse
-    job-id: centos-python27
-    git-url: https://github.com/dharmit/dockerfiles
-    git-branch: centos-dockerfiles
-    git-path: centos_python/2.7
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
-
-  - id: 6
-    app-id: eclipse
-    job-id: centos-python35
-    git-url: https://github.com/dharmit/dockerfiles
-    git-branch: centos-dockerfiles
-    git-path: centos_python/3.5
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
-
 #   - id: 7
 #     app-id: eclipse
 #     job-id: che-server
