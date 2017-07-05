@@ -230,19 +230,6 @@ Projects:
       - centos/centos:latest
       - openshift/origin:v1.2.1
 
-# s2i base container
-
-  - id          : 18
-    app-id      : openshift
-    job-id      : base-centos7
-    git-url     : https://github.com/sclorg/s2i-base-container
-    git-path    : /
-    git-branch  : master
-    target-file : Dockerfile
-    notify-email: hhorak@redhat.com
-    desired-tag : latest
-    depends-on  : centos/centos:latest
-
 # v1.3.1 containers
 
 # * Base Images
