@@ -1,14 +1,4 @@
 Projects:
-  - id: 1
-    app-id: dharmit
-    job-id: centos-jre
-    git-url: https://github.com/dharmit/dockerfiles
-    git-branch: centos-dockerfiles
-    git-path: centos_jre
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
   
   - id: 3
     app-id: dharmit
