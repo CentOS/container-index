@@ -1,5 +1,4 @@
 Projects:
-  
   - id: 3
     app-id: dharmit
     job-id: maven33
@@ -44,3 +43,24 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
+  - id: 7
+    app-id: dharmit
+    job-id: golang
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /golang/1.6/
+    target-file: Dockerfile
+    desired-tag: 1.6
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+
+  - id: 8
+    app-id: dharmit
+    job-id: golang
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /golang/1.7/
+    target-file: Dockerfile
+    desired-tag: 1.7
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
