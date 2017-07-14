@@ -39,7 +39,7 @@ Projects:
     git-branch: master
     git-path: /
     target-file: Dockerfile
-    desired-tag: 0.10.18-1
+    desired-tag: 0.11.19-1
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:7
 
