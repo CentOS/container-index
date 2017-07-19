@@ -24,8 +24,8 @@ Projects:
   - id: 3
     app-id: che-stacks
     job-id: wildfly-swarm
-    git-url: https://github.com/dharmit/che-dockerfiles
-    git-branch: centos_wildfly_swarm
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
     git-path: recipes/centos_wildfly_swarm
     target-file: Dockerfile
     desired-tag: latest
@@ -35,8 +35,8 @@ Projects:
   - id: 4
     app-id: che-stacks
     job-id: centos-nodejs
-    git-url: https://github.com/dharmit/che-dockerfiles
-    git-branch: centos-nodejs
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
     git-path: recipes/centos_nodejs
     target-file: Dockerfile
     desired-tag: latest
@@ -57,8 +57,8 @@ Projects:
   - id: 6
     app-id: che-stacks
     job-id: centos-go
-    git-url: https://github.com/dharmit/che-dockerfiles
-    git-branch: centos_go
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
     git-path: recipes/centos_go
     target-file: Dockerfile
     desired-tag: latest
