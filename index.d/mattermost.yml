@@ -6,9 +6,9 @@ Projects:
     git-branch: centos
     git-path: /
     target-file: Dockerfile
-    desired-tag: latest
+    desired-tag: 92394f2
     notify-email: sgk@redhat.com
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 2
     app-id: mattermost
@@ -39,9 +39,9 @@ Projects:
     git-branch: master
     git-path: /
     target-file: Dockerfile
-    desired-tag: latest
+    desired-tag: 4a61a48
     notify-email: sgk@redhat.com
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 5
     app-id: mattermost
@@ -83,9 +83,9 @@ Projects:
     git-branch: centosDockerfile
     git-path: /
     target-file: Dockerfile
-    desired-tag: latest
+    desired-tag: 8e189eb
     notify-email: sgk@redhat.com
-    depends-on: centos/python:latest
+    depends-on: centos/centos:7
     
   - id: 9
     app-id: mattermost
@@ -94,9 +94,9 @@ Projects:
     git-branch: master
     git-path: /
     target-file: Dockerfile
-    desired-tag: 0.13.0
+    desired-tag: latest
     notify-email: sgk@redhat.com
-    depends-on: centos/centos:7
+    depends-on: centos/centos:latest
     
   - id: 10
     app-id: mattermost
