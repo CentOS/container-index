@@ -105,7 +105,7 @@ Projects:
     git-branch: master
     git-path: /
     target-file: Dockerfile
-    desired-tag: latest
+    desired-tag: 0.16.1
     notify-email: sgk@redhat.com
     depends-on: centos/centos:latest
 
