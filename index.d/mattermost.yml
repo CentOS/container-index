@@ -94,9 +94,9 @@ Projects:
     git-branch: master
     git-path: /
     target-file: Dockerfile
-    desired-tag: latest
+    desired-tag: 0.13.0
     notify-email: sgk@redhat.com
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
     
   - id: 10
     app-id: mattermost
