@@ -152,3 +152,14 @@ Projects:
     desired-tag: 3.10
     notify-email: jchevret@redhat.com
     depends-on: centos/centos:7
+    
+  - id: 15
+    app-id: mattermost
+    job-id: mattermost-team
+    git-url: https://github.com/jfchevrette/mattermost-openshift
+    git-branch: master
+    git-path: 4.0/
+    target-file: Dockerfile
+    desired-tag: 4.0
+    notify-email: jchevret@redhat.com
+    depends-on: centos/centos:7
