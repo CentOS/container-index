@@ -97,3 +97,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+ 
+  - id: 10
+    app-id: pipeline-images
+    job-id: docker-registry-frontend
+    git-url: https://github.com/mohammedzee1000/docker-registry-frontend
+    git-path: /
+    git-branch: 07-19-2017_11-54-47_centos_dockerfile
+    target-file: Dockerfile.centos7
+    desired-tag: v2
+    notify-email: mohammed.zee1000@gmail.com
+    depends-on: centos/centos:latest
