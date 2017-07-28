@@ -65,24 +65,24 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
 
-    #  - id: 7
-    #    app-id: che-stacks
-    #    job-id: centos-python27
-    #    git-url: https://github.com/dharmit/che-dockerfiles
-    #   git-branch: centos_python
-    #    git-path: recipes/centos_python/2.7
-    #    target-file: Dockerfile
-    #    desired-tag: latest
-    #    notify-email: shahdharmit@gmail.com
-    #    depends-on: centos/centos:latest
+  - id: 7
+    app-id: che-stacks
+    job-id: centos-python27
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
+    git-path: recipes/centos_python/2
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
 
-    #  - id: 8
-    #    app-id: che-stacks
-    #    job-id: centos-python35
-    #    git-url: https://github.com/dharmit/che-dockerfiles
-    #    git-branch: centos_python
-    #    git-path: recipes/centos_python/3.5
-    #    target-file: Dockerfile
-    #    desired-tag: latest
-    #    notify-email: shahdharmit@gmail.com
-    #    depends-on: centos/centos:latest
+  - id: 8
+    app-id: che-stacks
+    job-id: centos-python35
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
+    git-path: recipes/centos_python/3
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
