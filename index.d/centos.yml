@@ -478,3 +478,90 @@ Projects:
     desired-tag: 8.18
     notify-email: rtnpro@redhat.com
     depends-on: centos/centos:latest
+
+  - id: 44
+    app-id: centos
+    job-id: kubernetes-sig-master
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/master
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    depends-on: centos/centos:latest
+
+  - id: 45
+    app-id: centos
+    job-id: kubernetes-sig-node
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/node
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    depends-on: centos/centos:latest
+
+  - id: 46
+    app-id: centos
+    job-id: kubernetes-sig-apiserver
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/apiserver
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-sig-master:latest
+
+  - id: 47
+    app-id: centos
+    job-id: kubernetes-sig-controller-manager
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/controller-manager
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-sig-master:latest
+
+  - id: 48
+    app-id: centos
+    job-id: kubernetes-sig-kubelet
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/kubelet
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-sig-node:latest
+
+  - id: 49
+    app-id: centos
+    job-id: kubernetes-sig-proxy
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/proxy
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-sig-node:latest
+
+  - id: 50
+    app-id: centos
+    job-id: kubernetes-sig-scheduler
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/scheduler
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    depends-on: 
+      - centos/centos:latest
+      - centos/kubernetes-sig-master:latest
