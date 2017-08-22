@@ -2,9 +2,9 @@ Projects:
   - id: 1
     app-id: starterapb
     job-id: starterapb
-    git-url: https://github.com/rflorenc/container-rhel-examples/starter-apb
+    git-url: https://github.com/rflorenc/container-rhel-examples
     git-branch: starter-apb
-    git-path: /
+    git-path: starter-apb
     target-file: Dockerfile
     desired-tag: latest
     notify-email: rfplourenco@redhat.com
