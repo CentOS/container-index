@@ -3,7 +3,7 @@ Projects:
     app-id: starterapb
     job-id: starterapb
     git-url: https://github.com/rflorenc/container-rhel-examples/starter-apb
-    git-branch: master
+    git-branch: starter-apb
     git-path: /
     target-file: Dockerfile
     desired-tag: latest
