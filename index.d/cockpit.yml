@@ -30,7 +30,7 @@ Projects:
     git-path: containers/ws
     target-file: Dockerfile.centos7
     desired-tag: latest
-    notify-email: pvolpe@redhat.com
+    notify-email: petervo@redhat.com
     depends-on: centos/centos:latest
 
   - id: 4
@@ -52,5 +52,5 @@ Projects:
     git-path: containers/kubernetes
     target-file: Dockerfile.centos7
     desired-tag: upstream
-    notify-email: pvolpe@redhat.com
+    notify-email: petervo@redhat.com
     depends-on: centos/centos:latest
