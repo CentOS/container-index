@@ -20,3 +20,47 @@ Projects:
     notify-email: rlourenc@redhat.com
     desired-tag : latest
     depends-on  : centos/centos:7
+
+  - id          : 3
+    app-id      : container-examples
+    job-id      : starter
+    git-url     : https://github.com/RHsyseng/container-rhel-examples
+    git-path    : starter
+    git-branch  : master
+    target-file : Dockerfile.centos7
+    notify-email: rlourenc@redhat.com
+    desired-tag : latest
+    depends-on  : centos/centos:7
+
+  - id          : 4
+    app-id      : container-examples
+    job-id      : starter-systemd
+    git-url     : https://github.com/RHsyseng/container-rhel-examples
+    git-path    : starter-systemd
+    git-branch  : master
+    target-file : Dockerfile.centos7
+    notify-email: rlourenc@redhat.com
+    desired-tag : latest
+    depends-on  : centos/centos:7
+
+  - id          : 5
+    app-id      : container-examples
+    job-id      : starter-nsswrapper
+    git-url     : https://github.com/RHsyseng/container-rhel-examples
+    git-path    : starter-nsswrapper
+    git-branch  : master
+    target-file : Dockerfile.centos7
+    notify-email: rlourenc@redhat.com
+    desired-tag : latest
+    depends-on  : centos/centos:7
+
+  - id          : 6
+    app-id      : container-examples
+    job-id      : starter-api
+    git-url     : https://github.com/RHsyseng/container-rhel-examples
+    git-path    : starter-api
+    git-branch  : master
+    target-file : Dockerfile.centos7
+    notify-email: rlourenc@redhat.com
+    desired-tag : latest
+    depends-on  : centos/centos:7
