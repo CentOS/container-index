@@ -86,3 +86,14 @@ Projects:
     desired-tag: 3.5
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 11
+    app-id: dharmit
+    job-id: base
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /base
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
