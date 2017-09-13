@@ -45,10 +45,10 @@ Projects:
 
   - id: 5
     app-id: che-stacks
-    job-id: centos-git
+    job-id: centos-jdk8
     git-url: https://github.com/eclipse/che-dockerfiles
     git-branch: master
-    git-path: recipes/centos/
+    git-path: recipes/centos_jdk8/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
