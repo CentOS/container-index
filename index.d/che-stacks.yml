@@ -86,3 +86,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 9
+    app-id: che-stacks
+    job-id: centos-stack-base
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
+    git-path: recipes/stack-base/centos
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
