@@ -97,3 +97,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 12
+    app-id: dharmit
+    job-id: digitalocean-compass
+    git-url: https://github.com/dharmit/digitalocean-compass
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: dharmit/base:latest
