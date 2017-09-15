@@ -97,3 +97,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 11
+    app-id: che-stacks
+    job-id: centos-ceylon-nodejs-dart
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
+    git-path: recipes/centos_ceylon_nodejs_dart
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: che-stacks/centos-jdk8:latest
