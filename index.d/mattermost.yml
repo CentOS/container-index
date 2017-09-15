@@ -185,3 +185,14 @@ Projects:
     desired-tag: 4.1
     notify-email: jchevret@redhat.com
     depends-on: centos/centos:7
+
+  - id: 18
+    app-id: mattermost
+    job-id: mattermost-push-proxy
+    git-url: https://github.com/syamgk/mm-push-proxy
+    git-branch: master
+    git-path: 3.10.0/
+    target-file: Dockerfile
+    desired-tag: 3.10.0
+    notify-email: sgk@redhat.com
+    depends-on: centos/centos:7
