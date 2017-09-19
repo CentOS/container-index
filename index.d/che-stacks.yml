@@ -41,7 +41,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
+    depends-on: che-stacks/centos-stack-base:latest
 
   - id: 5
     app-id: che-stacks
@@ -52,7 +52,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
+    depends-on: che-stacks/centos-stack-base:latest
 
   - id: 6
     app-id: che-stacks
@@ -63,7 +63,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
+    depends-on: che-stacks/centos-stack-base:latest
 
   - id: 7
     app-id: che-stacks
@@ -74,7 +74,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
+    depends-on: che-stacks/centos-stack-base:latest
 
   - id: 8
     app-id: che-stacks
@@ -85,7 +85,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
+    depends-on: che-stacks/centos-stack-base:latest
 
   - id: 9
     app-id: che-stacks
