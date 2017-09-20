@@ -100,11 +100,11 @@ Projects:
 
   - id: 12
     app-id: dharmit
-    job-id: digitalocean-compass
-    git-url: https://github.com/dharmit/digitalocean-compass
+    job-id: outdated
+    git-url: https://github.com/dharmit/dockerfiles
     git-branch: master
-    git-path: /
+    git-path: /outdated
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: dharmit/base:latest
+    depends-on: centos/centos:latest
