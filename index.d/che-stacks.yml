@@ -108,3 +108,15 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: che-stacks/centos-jdk8:latest
+
+  - id: 12
+    app-id: che-stacks
+    job-id: centos-dotnet20
+    git-url: https://github.com/dharmit/che-dockerfiles
+    git-branch: centos-dotnet-20
+    git-path: recipes/centos_dotnet20
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: che-stacks/centos-jdk8:latest
+
