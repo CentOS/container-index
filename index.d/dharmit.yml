@@ -100,10 +100,10 @@ Projects:
 
   - id: 12
     app-id: dharmit
-    job-id: digitalocean-compass
-    git-url: https://github.com/dharmit/digitalocean-compass
+    job-id: dotnet20
+    git-url: https://github.com/dharmit/dockerfiles
     git-branch: master
-    git-path: /
+    git-path: /dotnet20/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
