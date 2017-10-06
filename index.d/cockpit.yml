@@ -3,12 +3,12 @@ Projects:
   - id: 1
     app-id: cockpit
     job-id: kubernetes
-    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-url: https://github.com/cockpit-project/cockpit
     git-branch: master
-    git-path: cockpit/kubernetes
-    target-file: Dockerfile
+    git-path: containers/kubernetes
+    target-file: Dockerfile.centos7
     desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
+    notify-email: petervo@redhat.com
     depends-on: centos/centos:latest
 
   - id: 2
@@ -42,15 +42,4 @@ Projects:
     target-file: Dockerfile.testing
     desired-tag: testing
     notify-email: mohammed.zee1000@gmail.com
-    depends-on: centos/centos:latest
-
-  - id: 5
-    app-id: cockpit
-    job-id: kubernetes
-    git-url: https://github.com/cockpit-project/cockpit
-    git-branch: master
-    git-path: containers/kubernetes
-    target-file: Dockerfile.centos7
-    desired-tag: upstream
-    notify-email: petervo@redhat.com
     depends-on: centos/centos:latest
