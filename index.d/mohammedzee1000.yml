@@ -82,7 +82,7 @@ Projects:
   - id: 8
     app-id: mohammedzee1000
     job-id: traefik
-    git-url: https://github.com/mohammedzee1000/traefik
+    git-url: https://github.com/mohammedzee1000/traefik-library-image
     git-branch: centos_image
     git-path: centos/
     target-file: Dockerfile.1.3.8
