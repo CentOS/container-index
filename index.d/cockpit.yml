@@ -3,7 +3,7 @@ Projects:
   - id: 1
     app-id: cockpit
     job-id: kubernetes
-    git-url: https://github.com/cockpit-project/cockpit
+    git-url: https://github.com/cockpituous/cockpit
     git-branch: master
     git-path: containers/kubernetes
     target-file: Dockerfile.centos7
@@ -25,7 +25,7 @@ Projects:
   - id: 3
     app-id: cockpit
     job-id: ws
-    git-url: https://github.com/cockpit-project/cockpit
+    git-url: https://github.com/cockpituous/cockpit
     git-branch: master
     git-path: containers/ws
     target-file: Dockerfile.centos7
