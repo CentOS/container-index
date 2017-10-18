@@ -1,6 +1,6 @@
 Projects:
   - id: 1
-    app-id: dotnetcore
+    app-id: dotnet
     job-id: dotnet-20-runtime-centos7
     git-url: https://github.com/redhat-developer/s2i-dotnetcore
     git-branch: master
@@ -11,7 +11,7 @@ Projects:
     depends-on: centos/centos:latest
 
   - id: 2
-    app-id: dotnetcore
+    app-id: dotnet
     job-id: dotnet-20-centos7
     git-url: https://github.com/redhat-developer/s2i-dotnetcore
     git-branch: master
