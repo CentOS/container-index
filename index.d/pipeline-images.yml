@@ -32,16 +32,16 @@ Projects:
     notify-email: bamachrn@gmail.com
     depends-on: centos/centos:latest
 
-  - id: 4
-    app-id: pipeline-images
-    job-id: mail-server
-    git-url: https://github.com/CentOS/container-pipeline-service
-    git-branch: master
-    git-path: mail_service
-    target-file: Dockerfile.mailserv
-    desired-tag: latest
-    notify-email: bamachrn@gmail.com
-    depends-on: centos/centos:latest
+#  - id: 4
+#    app-id: pipeline-images
+#    job-id: mail-server
+#    git-url: https://github.com/CentOS/container-pipeline-service
+#    git-branch: master
+#    git-path: mail_service
+#    target-file: Dockerfile.mailserv
+#    desired-tag: latest
+#    notify-email: bamachrn@gmail.com
+#    depends-on: centos/centos:latest
 
   - id: 5
     app-id: pipeline-images
