@@ -21,4 +21,4 @@ Projects:
     notify-email: omajid@redhat.com
     depends-on:
        - centos/centos:latest
-       - centos/dotnet-20-runtime-centos7
+       - centos/dotnet-20-runtime-centos7:latest
