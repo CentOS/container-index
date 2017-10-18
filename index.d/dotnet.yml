@@ -1,0 +1,24 @@
+Projects:
+  - id: 1
+    app-id: dotnet
+    job-id: dotnet-20-runtime-centos7
+    git-url: https://github.com/redhat-developer/s2i-dotnetcore
+    git-branch: master
+    git-path: 2.0/runtime
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: omajid@redhat.com
+    depends-on: centos/centos:latest
+
+  - id: 2
+    app-id: dotnet
+    job-id: dotnet-20-centos7
+    git-url: https://github.com/redhat-developer/s2i-dotnetcore
+    git-branch: master
+    git-path: 2.0/build
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: omajid@redhat.com
+    depends-on:
+       - centos/centos:latest
+       - centos/dotnet-20-runtime-centos7:latest
