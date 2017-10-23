@@ -76,3 +76,17 @@ Projects:
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:latest
 
+
+  - id: 8
+    app-id: kbsingh
+    job-id: openshift-nginx
+    git-url: https://github.com/kbsingh/openshift-nginx
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    notify-email: cp.build.inb@karan.org
+    depends-on: centos/centos:latest
+    desired-tag:
+      x86_64: 1.10.2
+      aarch64: 1.10.2.aarch64
+      ppc64le: 1.10.2.ppc64le
