@@ -28,7 +28,7 @@ Projects:
     job-id: dotnet-20-jenkins-slave-centos7
     git-url: https://github.com/redhat-developer/dotnet-jenkins-slave
     git-branch: master
-    git-path: 2.0
+    git-path: 2.0/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: omajid@redhat.com
