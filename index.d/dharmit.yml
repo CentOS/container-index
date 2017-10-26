@@ -108,3 +108,14 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: dharmit/base:latest
+
+  - id: 13
+    app-id: dharmit
+    job-id: gnatsd
+    git-url: https://github.com/dharmit/gnatsd
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile.centos
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: dharmit/golang:1.8
