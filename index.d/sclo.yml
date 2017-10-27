@@ -178,7 +178,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 16
     app-id: sclo
@@ -191,7 +191,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 17
     app-id: sclo
@@ -204,7 +204,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 18
     app-id: sclo
@@ -217,7 +217,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 19
     app-id: sclo
@@ -230,7 +230,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 20
     app-id: sclo
@@ -243,7 +243,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 21
     app-id: sclo
@@ -256,7 +256,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 22
     app-id: sclo
@@ -269,7 +269,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 23
     app-id: sclo
@@ -282,7 +282,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 24
     app-id: sclo
@@ -295,7 +295,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 25
     app-id: sclo
@@ -308,7 +308,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 26
     app-id: sclo
@@ -321,7 +321,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 27
     app-id: sclo
@@ -334,7 +334,7 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
+      - sclo/s2i-core-centos7:latest
 
   - id: 28
     app-id: sclo
@@ -347,8 +347,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 29
     app-id: sclo
@@ -361,8 +361,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 30
     app-id: sclo
@@ -375,8 +375,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 31
     app-id: sclo
@@ -389,8 +389,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 32
     app-id: sclo
@@ -403,8 +403,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 33
     app-id: sclo
@@ -417,8 +417,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 34
     app-id: sclo
@@ -431,8 +431,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 35
     app-id: sclo
@@ -445,8 +445,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 36
     app-id: sclo
@@ -459,8 +459,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 37
     app-id: sclo
@@ -473,8 +473,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 38
     app-id: sclo
@@ -487,8 +487,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 39
     app-id: sclo
@@ -501,8 +501,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 40
     app-id: sclo
@@ -515,8 +515,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 41
     app-id: sclo
@@ -529,8 +529,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 42
     app-id: sclo
@@ -543,8 +543,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 43
     app-id: sclo
@@ -557,8 +557,8 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
   - id: 44
     app-id: sclo
@@ -571,6 +571,6 @@ Projects:
     notify-email: hhorak@redhat.com
     depends-on:
       - centos/centos:latest
-      - sclo/s2i-core-centos7
-      - sclo/s2i-base-centos7
+      - sclo/s2i-core-centos7:latest
+      - sclo/s2i-base-centos7:latest
 
