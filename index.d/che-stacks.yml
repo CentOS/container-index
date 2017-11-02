@@ -112,8 +112,8 @@ Projects:
   - id: 12
     app-id: che-stacks
     job-id: centos-dotnet20
-    git-url: https://github.com/dharmit/che-dockerfiles
-    git-branch: centos-dotnet-20
+    git-url: https://github.com/eclipse/che-dockerfiles
+    git-branch: master
     git-path: recipes/centos_dotnet20
     target-file: Dockerfile
     desired-tag: latest
