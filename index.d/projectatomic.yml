@@ -23,3 +23,15 @@ Projects:
     notify-email: gscrivan@redhat.com
     depends-on:
       - centos/centos:latest
+
+  - id: 3
+    app-id: projectatomic
+    job-id: docker
+    git-url: https://github.com/projectatomic/atomic-system-containers
+    git-branch: master
+    git-path: /docker-centos
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: gscrivan@redhat.com
+    depends-on:
+      - centos/centos:latest
