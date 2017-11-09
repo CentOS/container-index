@@ -11,3 +11,15 @@ Projects:
     depends-on:
       - centos/centos:latest 
         #      - openshift/origin:latest
+
+  - id: 2
+    app-id: projectatomic
+    job-id: cri-o
+    git-url: https://github.com/projectatomic/atomic-system-containers
+    git-branch: master
+    git-path: /cri-o-centos
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: gscrivan@redhat.com
+    depends-on:
+      - centos/centos:latest
