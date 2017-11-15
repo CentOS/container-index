@@ -23,17 +23,6 @@ Projects:
 
   - id: 3
     app-id: mattermost
-    job-id: mattermost
-    git-url: https://github.com/syamgk/mattermost-docker
-    git-branch: master
-    git-path: app
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: sgk@redhat.com
-    depends-on: centos/centos:latest
-
-  - id: 4
-    app-id: mattermost
     job-id: mattermost-gitlab-integration
     git-url: https://github.com/syamgk/mattermost-gitlab-integration
     git-branch: master
@@ -43,7 +32,7 @@ Projects:
     notify-email: sgk@redhat.com
     depends-on: centos/centos:7
 
-  - id: 5
+  - id: 4
     app-id: mattermost
     job-id: mattermost-trello-integration
     git-url: https://github.com/syamgk/mattermost-trello-integration
@@ -54,18 +43,7 @@ Projects:
     notify-email: sgk@redhat.com
     depends-on: centos/centos:latest
 
-  - id: 6
-    app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
-    git-branch: master
-    git-path: 3.7/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: jchevret@redhat.com
-    depends-on: centos/centos:7
-
-  - id: 7
+  - id: 5
     app-id: mattermost
     job-id: nginx-redirector
     git-url: https://github.com/jfchevrette/nginx-redirector
@@ -76,7 +54,7 @@ Projects:
     notify-email: jchevret@redhat.com
     depends-on: kbsingh/openshift-nginx:latest
     
-  - id: 8
+  - id: 6
     app-id: mattermost
     job-id: mattermost-rss-integration
     git-url: https://github.com/syamgk/Rss-Atom-Feed-Integration-for-Mattermost
@@ -87,7 +65,7 @@ Projects:
     notify-email: sgk@redhat.com
     depends-on: centos/centos:7
     
-  - id: 9
+  - id: 7
     app-id: mattermost
     job-id: matterircd
     git-url: https://github.com/syamgk/matterircd
@@ -98,54 +76,10 @@ Projects:
     notify-email: sgk@redhat.com
     depends-on: centos/centos:7
     
-  - id: 10
-    app-id: mattermost
-    job-id: matterbridge
-    git-url: https://github.com/syamgk/matterbridge
-    git-branch: master
-    git-path: 0.16.1/
-    target-file: Dockerfile
-    desired-tag: 0.16.1
-    notify-email: sgk@redhat.com
-    depends-on: centos/centos:7
-
-  - id: 11
+  - id: 8
     app-id: mattermost
     job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
-    git-branch: master
-    git-path: 3.7/
-    target-file: Dockerfile
-    desired-tag: 3.7
-    notify-email: jchevret@redhat.com
-    depends-on: centos/centos:7
-    
-  - id: 12
-    app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
-    git-branch: master
-    git-path: 3.8/
-    target-file: Dockerfile
-    desired-tag: 3.8
-    notify-email: jchevret@redhat.com
-    depends-on: centos/centos:7
-
-  - id: 13
-    app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
-    git-branch: master
-    git-path: 3.9/
-    target-file: Dockerfile
-    desired-tag: 3.9
-    notify-email: jchevret@redhat.com
-    depends-on: centos/centos:7
-
-  - id: 14
-    app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
     git-path: 3.10/
     target-file: Dockerfile
@@ -153,10 +87,10 @@ Projects:
     notify-email: jchevret@redhat.com
     depends-on: centos/centos:7
     
-  - id: 15
+  - id: 9
     app-id: mattermost
     job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
     git-path: 4.0/
     target-file: Dockerfile
@@ -164,7 +98,7 @@ Projects:
     notify-email: jchevret@redhat.com
     depends-on: centos/centos:7
 
-  - id: 16
+  - id: 10
     app-id: mattermost
     job-id: matterbridge
     git-url: https://github.com/syamgk/matterbridge
@@ -175,10 +109,10 @@ Projects:
     notify-email: sgk@redhat.com
     depends-on: centos/centos:7
     
-  - id: 17
+  - id: 11
     app-id: mattermost
     job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
     git-path: 4.1/
     target-file: Dockerfile
@@ -186,7 +120,7 @@ Projects:
     notify-email: jchevret@redhat.com
     depends-on: centos/centos:7
 
-  - id: 18
+  - id: 12
     app-id: mattermost
     job-id: mattermost-push-proxy
     git-url: https://github.com/syamgk/mm-push-proxy
@@ -197,10 +131,10 @@ Projects:
     notify-email: sgk@redhat.com
     depends-on: centos/centos:7
 
-  - id: 19
+  - id: 13
     app-id: mattermost
     job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
     git-path: 4.2/
     target-file: Dockerfile
@@ -208,10 +142,10 @@ Projects:
     notify-email: jchevret@redhat.com
     depends-on: centos/centos:7
     
-  - id: 20
+  - id: 14
     app-id: mattermost
     job-id: mattermost-team
-    git-url: https://github.com/jfchevrette/mattermost-openshift
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
     git-path: 4.3/
     target-file: Dockerfile
@@ -219,7 +153,7 @@ Projects:
     notify-email: jchevret@redhat.com
     depends-on: centos/centos:7
     
-  - id: 21
+  - id: 15
     app-id: mattermost
     job-id: matterbridge
     git-url: https://github.com/syamgk/matterbridge
