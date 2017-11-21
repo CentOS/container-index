@@ -76,15 +76,14 @@ Projects:
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:latest
 
- - id: 8
+  - id: 8
     app-id: kbsingh
     job-id: container-prebuild
-    git-url: https://github.com/bamachrn/cccp-pre-build-code
+    git-url: https://gitlab.com/kbsingh/container-prebuild.git
     git-branch: master
     git-path: /
     target-file: Dockerfile
     desired-tag: 1
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:latest
-    prebuild-source: https://gitlab.com/kbsingh/container-prebuild
     prebuild-script: pre-build.sh
