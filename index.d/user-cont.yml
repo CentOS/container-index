@@ -10,3 +10,4 @@ Projects:
     notify-email: ttomecek@redhat.com
     depends-on: centos/centos:latest
     prebuild-script: hooks/pre_build_centos
+    prebuild-context: /
