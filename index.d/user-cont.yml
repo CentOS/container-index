@@ -1,0 +1,13 @@
+Projects:
+  - id: 1
+    app-id: user-cont
+    job-id: tools
+    git-url: https://github.com/container-images/tools
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: ttomecek@redhat.com
+    depends-on: centos/centos:latest
+    prebuild-script: hooks/pre_build_centos
+    prebuild-context: /
