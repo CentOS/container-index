@@ -87,3 +87,4 @@ Projects:
     notify-email: cp.build.inb@karan.org
     depends-on: centos/centos:latest
     prebuild-script: pre-build.sh
+    prebuild-context: /
