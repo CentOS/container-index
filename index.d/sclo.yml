@@ -8,6 +8,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -20,6 +21,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -32,6 +34,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -44,6 +47,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -56,6 +60,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -68,6 +73,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -80,6 +86,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -92,6 +99,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -104,6 +112,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -116,6 +125,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -128,6 +138,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -140,6 +151,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -152,6 +164,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -164,6 +177,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -176,6 +190,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -189,6 +204,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -202,6 +218,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -215,6 +232,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -228,6 +246,7 @@ Projects:
     target-file: 10.0/Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ../
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -241,6 +260,7 @@ Projects:
     target-file: 10.1/Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ../
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -254,6 +274,7 @@ Projects:
     target-file: 10.2/Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ../
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -267,6 +288,7 @@ Projects:
     target-file: 5.6/Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ../
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -280,6 +302,7 @@ Projects:
     target-file: 5.7/Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ../
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -293,6 +316,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -306,6 +330,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -319,6 +344,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -332,6 +358,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -345,6 +372,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -359,6 +387,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -373,6 +402,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -387,6 +417,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -401,6 +432,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -415,6 +447,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -429,6 +462,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -443,6 +477,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -457,6 +492,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -471,6 +507,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -485,6 +522,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -499,6 +537,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -513,6 +552,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -527,6 +567,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -541,6 +582,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -555,6 +597,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
@@ -569,6 +612,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
       - sclo/s2i-core-centos7:latest
