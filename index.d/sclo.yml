@@ -242,8 +242,8 @@ Projects:
     job-id: mariadb-100-centos7
     git-url: https://github.com/sclorg/mariadb-container.git
     git-branch: master
-    git-path: ./
-    target-file: 10.0/Dockerfile
+    git-path: 10.0/
+    target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
@@ -256,8 +256,8 @@ Projects:
     job-id: mariadb-101-centos7
     git-url: https://github.com/sclorg/mariadb-container.git
     git-branch: master
-    git-path: ./
-    target-file: 10.1/Dockerfile
+    git-path: 10.1/
+    target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
@@ -270,8 +270,8 @@ Projects:
     job-id: mariadb-102-centos7
     git-url: https://github.com/sclorg/mariadb-container.git
     git-branch: master
-    git-path: ./
-    target-file: 10.2/Dockerfile
+    git-path: 10.2/
+    target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
@@ -284,8 +284,8 @@ Projects:
     job-id: mysql-56-centos7
     git-url: https://github.com/sclorg/mysql-container.git
     git-branch: master
-    git-path: ./
-    target-file: 5.6/Dockerfile
+    git-path: 5.6/
+    target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
@@ -298,8 +298,8 @@ Projects:
     job-id: mysql-57-centos7
     git-url: https://github.com/sclorg/mysql-container.git
     git-branch: master
-    git-path: ./
-    target-file: 5.7/Dockerfile
+    git-path: 5.7/
+    target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
