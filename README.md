@@ -14,15 +14,24 @@ This is the master Index used by the [CentOS Community Container Pipeline Servic
 1. Commit your changes and send a pull request to https://github.com/CentOS/container-index and wait for a maintainer to accept it.
 
 **Notes**
-- Even if CI has passed your pull request, please go through the CI
-build logs for warnings against your changes. Unless there is an explicit and
-appropriate reason why they should be ignored, the maintainers wont ignore
-them.
 
-Once the PR is merged, and the pipeline has picked up your artifacts, your
-container will be built, tested and delivered to registry.centos.org. You
-should receive a mail indicating the status of the build(s) once completed.
-
+ - Even if CI has passed your pull request, please go through the CI
+   build logs for warnings against your changes. Unless there is an
+   explicit and appropriate reason why they should be ignored, the
+   maintainers wont ignore them.
+ - Preferably, add comments to the index to give more information,      
+   such as if you want to group containers together, based on function  
+   For example : If you have 3 mariadb containers under centos   
+   namespace,    Then group them together with something like
+  
+          # My MariaDB Containers
+          Your entries here
+          # My MariaDB Containers ends
+    
+ - Once the PR is merged, and the pipeline has picked up your artifacts,
+   your container will be built, tested and delivered to
+   registry.centos.org. You should receive a mail indicating the status
+   of the build(s) once completed.
 
 # How it works?
 
@@ -55,6 +64,14 @@ The index.d contains yaml formatted files, which must include :
 - **Target File (target-file)** : Required: The actual file from where the build will start. This would typically be Dockerfile.
 - **Notify Email (notify-email)**: The email id to which status emails will be sent, upon success or failure of builds.
 - **Desired Tag (desired-tag)** : Required: The tag for container, such as latest.
+- **Build Context(build-context)** : Required: A path, relative to the git path, which needs to be included
+during the build. For Dockerfiles, it would be what you give as last parameter to a docker build command.
+The default value is ".".
+- **Prebuild Script(prebuild-script)** : Optional: This would be the path, relative to the repository root, of the
+script, you wish to run, before the build usually happens, in preparation for it. For example, it could a script that generates the artifacts required during the image build.
+- **Prebuild Context(prebuild-context)**: Required with prebuild-script: This value needs to be specified with 
+prebuild script, and is the path, relative to repository root, where you want to be, when you run the prebuild
+script.
 - **Depends On (depends-on)** : This would be a list of containers, already in the index that this container depends on. The list should container names in the form of "namespace/job-id:tag" of the containers the current entry relies on. This includes build time dependency containers, even if they are specified in the target file such as FROM in dockerfile. So even if your docker file mentions "FROM foo/bar:latest", the depends on list should explicitly include foo/bar:latest as well.
 
 **Note** The name of the file is going to be part of the container name (i.e the namespace). Infact your container will be based on the filename, jobid and desired-tag
