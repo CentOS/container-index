@@ -9,6 +9,7 @@ Projects:
     target-file: Dockerfile.demo
     desired-tag: release
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 2
@@ -20,6 +21,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 3
@@ -31,6 +33,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 4
@@ -42,6 +45,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 5
@@ -53,4 +57,5 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest

@@ -14,6 +14,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: youremail@example.com
+    build-context: ./
     depends-on: null
 
 # If you have any dependant containers use this 

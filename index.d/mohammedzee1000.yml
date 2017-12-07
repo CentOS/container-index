@@ -8,6 +8,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: 9.2
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 2
@@ -19,6 +20,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: 9.3
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 3
@@ -30,6 +32,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: 9.4
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 4
@@ -41,6 +44,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: 9.5
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 5
@@ -52,6 +56,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: 9.6
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 6
@@ -63,6 +68,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - jboss/keycloak:latest
@@ -76,6 +82,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
 
@@ -88,6 +95,7 @@ Projects:
     target-file: Dockerfile.1.3.8
     desired-tag: 1.3.8
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on:
       - centos/centos:7
 

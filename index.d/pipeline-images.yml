@@ -8,6 +8,7 @@ Projects:
     target-file: Dockerfile.build
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 2
@@ -19,6 +20,7 @@ Projects:
     target-file: Dockerfile.test
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 3
@@ -30,6 +32,7 @@ Projects:
     target-file: Dockerfile.delivery
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
 #  - id: 4
@@ -41,6 +44,7 @@ Projects:
 #    target-file: Dockerfile.mailserv
 #    desired-tag: latest
 #    notify-email: bamachrn@gmail.com
+#    build-context: ./
 #    depends-on: centos/centos:latest
 
   - id: 5
@@ -52,6 +56,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 6
@@ -63,6 +68,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 7
@@ -74,6 +80,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 8
@@ -85,6 +92,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 9
@@ -96,6 +104,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 10
@@ -107,6 +116,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: v2
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 11

@@ -8,6 +8,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: null
   
   - id: 2
@@ -19,6 +20,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 3
@@ -30,6 +32,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 4
@@ -41,6 +44,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 5
@@ -52,6 +56,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 6
@@ -63,6 +68,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 7
@@ -74,6 +80,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 8
@@ -85,6 +92,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 9
@@ -96,6 +104,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 10
@@ -107,6 +116,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 11
@@ -118,6 +128,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 12
@@ -129,6 +140,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 13
@@ -140,6 +152,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 14
@@ -151,6 +164,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 15
@@ -162,6 +176,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 16
@@ -173,6 +188,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 17
@@ -184,6 +200,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 18
@@ -195,6 +212,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 19
@@ -206,6 +224,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
   
   - id: 20
@@ -217,6 +236,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 21
@@ -228,6 +248,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 22
@@ -239,6 +260,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: 7
     notify-email: bamachrn@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
 # New additions
@@ -252,6 +274,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 24
@@ -263,6 +286,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 25
@@ -274,6 +298,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 26
@@ -285,6 +310,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-master:latest
@@ -298,6 +324,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-master:latest
@@ -311,6 +338,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-node:latest
@@ -324,6 +352,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-node:latest
@@ -337,6 +366,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-master:latest
@@ -352,6 +382,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: centos7
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: null
 
   - id: 32
@@ -363,6 +394,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: centos6
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: null
 
 # CentOS_7.2.1511
@@ -376,6 +408,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: 7.2.1511
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: null
 
 # CentOS Dockerfiles continue
@@ -389,6 +422,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 35
@@ -400,6 +434,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 36
@@ -411,6 +446,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: 7.3.1611
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: null
 
   - id: 37
@@ -422,6 +458,7 @@ Projects:
     target-file: Dockerfile.24
     desired-tag: 2.4.0
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:7
 
   - id: 38
@@ -433,6 +470,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:7
 
   - id: 39
@@ -444,6 +482,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: 3.1
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:7
 
   - id: 40
@@ -455,6 +494,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:7
 
   - id: 42
@@ -466,6 +506,7 @@ Projects:
     target-file: Dockerfile.centos
     desired-tag: 8.17
     notify-email: container-status-report@centos.org
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 43
@@ -477,6 +518,7 @@ Projects:
     target-file: Dockerfile.centos
     desired-tag: 8.18
     notify-email: container-status-report@centos.org
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 44
@@ -488,6 +530,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 45
@@ -499,6 +542,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 46
@@ -510,6 +554,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-sig-master:latest
@@ -523,6 +568,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-sig-master:latest
@@ -536,6 +582,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-sig-node:latest
@@ -549,6 +596,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-sig-node:latest
@@ -562,6 +610,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: jbrooks@redhat.com
+    build-context: ./
     depends-on: 
       - centos/centos:latest
       - centos/kubernetes-sig-master:latest
