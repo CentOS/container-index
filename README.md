@@ -65,12 +65,12 @@ The index.d contains yaml formatted files, which must include :
 - **Notify Email (notify-email)**: The email id to which status emails will be sent, upon success or failure of builds.
 - **Desired Tag (desired-tag)** : Required: The tag for container, such as latest.
 - **Build Context(build-context)** : Required: A path, relative to the git path, which needs to be included
-during the build. For Dockerfiles, it would be what you give as last parameter to a docker build command.
+during the build. For Dockerfiles, it would be what you give as last parameter to a `docker build` command.
 The default value is ".".
 - **Prebuild Script(prebuild-script)** : Optional: This would be the path, relative to the repository root, of the
-script, you wish to run, before the build usually happens, in preparation for it. For example, it could a script that generates the artifacts required during the image build.
+script, you wish to run, before the build happens. For example, it could a script that generates the artifacts required during the image build.
 - **Prebuild Context(prebuild-context)**: Required with prebuild-script: This value needs to be specified with 
-prebuild script, and is the path, relative to repository root, where you want to be, when you run the prebuild
+prebuild script. It is the path, relative to repository root, where you want to be, when you run the prebuild
 script.
 - **Depends On (depends-on)** : This would be a list of containers, already in the index that this container depends on. The list should container names in the form of "namespace/job-id:tag" of the containers the current entry relies on. This includes build time dependency containers, even if they are specified in the target file such as FROM in dockerfile. So even if your docker file mentions "FROM foo/bar:latest", the depends on list should explicitly include foo/bar:latest as well.
 
@@ -92,3 +92,4 @@ Every build that we process is required to host a container pipeline control fil
 - **Custom Delivery (custom-delivery)** : Optional - *Currently unusable* : Specify a script for your own delivery mechanisms
 - **Local Delivery** : Optional - *Currently unusable* : This flag can be used to disable delivery to r.c.o
 - **Upstreams** : Optional - *Currently unusable* : This can be used to specify upstreams to track and rebuild based on.
+
