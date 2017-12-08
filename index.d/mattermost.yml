@@ -174,3 +174,15 @@ Projects:
     desired-tag: 1.4.1
     notify-email: sgk@redhat.com
     depends-on: centos/centos:7
+
+    
+  - id: 17
+    app-id: mattermost
+    job-id: penfold
+    git-url: https://github.com/gorkem/penfold
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: sclo/nodejs-6-centos7:latest
