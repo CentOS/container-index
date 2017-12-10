@@ -6,6 +6,6 @@ Projects:
     git-branch: master
     git-path: /
     target-file: Dockerfile
-    desired-tag: 1.0.0
+    desired-tag: latest
     notify-email: anbabu@redhat.com
     depends-on: centos/centos:latest
