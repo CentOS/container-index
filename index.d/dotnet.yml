@@ -7,7 +7,7 @@ Projects:
     git-path: 2.0/runtime
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: omajid@redhat.com
+    notify-email: andrew.slice@redhat.com
     depends-on: centos/centos:latest
 
   - id: 2
@@ -18,7 +18,7 @@ Projects:
     git-path: 2.0/build
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: omajid@redhat.com
+    notify-email: andrew.slice@redhat.com
     depends-on:
        - centos/centos:latest
        - dotnet/dotnet-20-runtime-centos7:latest
@@ -31,6 +31,6 @@ Projects:
     git-path: 2.0/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: omajid@redhat.com
+    notify-email: andrew.slice@redhat.com
     depends-on:
        - openshift/jenkins-slave-base-centos7:latest
