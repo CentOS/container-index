@@ -1187,3 +1187,21 @@ Projects:
       - centos/s2i-base-centos7:latest
 
 # List of SCLo SIG images ends
+
+# CentOS Atomic Base Image
+
+  - id: 145
+    app-id: centos
+    job-id: atomic-centos
+    git-url: https://github.com/mohammedzee1000/atomic-container
+    git-branch: 12-12-2017_11-49-49_container_pipeline
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: moahmed@redhat.com
+    prebuild-script: cccp-prebuild.sh
+    prebuild-context: /
+    build-context: ./
+    depends-on: null
+# CentOS Atomic Base Image ends
+
