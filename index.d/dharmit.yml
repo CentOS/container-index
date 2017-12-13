@@ -119,4 +119,5 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: dharmit/base:latest
+    build-context: ./
 
