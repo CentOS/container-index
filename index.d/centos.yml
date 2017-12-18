@@ -1192,9 +1192,9 @@ Projects:
 
   - id: 145
     app-id: centos
-    job-id: atomic-centos
-    git-url: https://github.com/mohammedzee1000/atomic-container
-    git-branch: 12-12-2017_11-49-49_container_pipeline
+    job-id: centos7-atomic
+    git-url: https://github.com/kbsingh/atomic-container
+    git-branch: master
     git-path: /
     target-file: Dockerfile
     desired-tag: latest
