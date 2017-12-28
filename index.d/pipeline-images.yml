@@ -118,5 +118,5 @@ Projects:
     target-file: Dockerfile.linter
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: dharmit/base
+    depends-on: dharmit/base:latest
     build_context: ./
