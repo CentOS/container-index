@@ -108,3 +108,15 @@ Projects:
     desired-tag: v2
     notify-email: bamachrn@gmail.com
     depends-on: centos/centos:latest
+
+  - id: 11
+    app-id: pipeline-images
+    job-id: dockerfile-lint-worker
+    git-url: https://github.com/dharmit/container-pipeline-service
+    git-path: /server
+    git-branch: fix-osio-1378
+    target-file: Dockerfile.linter
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: dharmit/base
+    build_context: ./
