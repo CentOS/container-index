@@ -120,3 +120,16 @@ Projects:
     notify-email: shahdharmit@gmail.com
     depends-on: dharmit/base:latest
     build_context: ./
+
+  # This is temporary image and has to be removed 
+  - id: 12
+    app-id: pipeline-images
+    job-id: dockerfile-lint-2
+    git-url: https://github.com/dharmit/dockerfile_lint
+    git-branch: dockerfile-linter-container
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+    build_context: ./
