@@ -8,4 +8,5 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: null

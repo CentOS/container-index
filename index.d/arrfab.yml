@@ -8,4 +8,5 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: arrfab@centos.org
+    build-context: ./
     depends-on: centos/centos:7

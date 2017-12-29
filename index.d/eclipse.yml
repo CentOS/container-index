@@ -8,6 +8,7 @@ Projects:
     target-file: Dockerfile.centos
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 2
@@ -19,6 +20,7 @@ Projects:
     target-file: Dockerfile.centos
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
 
@@ -31,5 +33,6 @@ Projects:
 #     target-file: Dockerfile.centos
 #     desired-tag: latest
 #     notify-email: shahdharmit@gmail.com
+#     build-context: ./
 #     depends-on: null
 

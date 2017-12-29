@@ -8,6 +8,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: dries.verachtert@dries.eu
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 2
@@ -19,4 +20,5 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: dries.verachtert@dries.eu
+    build-context: ./
     depends-on: centos/centos:latest

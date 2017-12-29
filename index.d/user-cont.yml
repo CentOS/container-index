@@ -9,5 +9,6 @@ Projects:
     desired-tag: latest
     notify-email: ttomecek@redhat.com
     depends-on: centos/centos:latest
+    build-context: ./
     prebuild-script: hooks/pre_build_centos
     prebuild-context: /

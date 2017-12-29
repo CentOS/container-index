@@ -9,6 +9,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: latest
     notify-email: petervo@redhat.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 2
@@ -20,6 +21,7 @@ Projects:
     target-file: Dockerfile.testing
     desired-tag: testing
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 3
@@ -31,6 +33,7 @@ Projects:
     target-file: Dockerfile.centos7
     desired-tag: latest
     notify-email: petervo@redhat.com
+    build-context: ./
     depends-on: centos/centos:latest
 
   - id: 4
@@ -42,4 +45,5 @@ Projects:
     target-file: Dockerfile.testing
     desired-tag: testing
     notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
     depends-on: centos/centos:latest

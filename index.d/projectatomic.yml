@@ -8,6 +8,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: aweiteka@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest 
         #      - openshift/origin:latest
@@ -21,6 +22,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: gscrivan@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
 
@@ -33,5 +35,6 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: gscrivan@redhat.com
+    build-context: ./
     depends-on:
       - centos/centos:latest
