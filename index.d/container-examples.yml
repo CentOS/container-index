@@ -6,7 +6,7 @@ Projects:
     git-path    : starter-arbitrary-uid
     git-branch  : master
     target-file : Dockerfile.centos7
-    notify-email: rlourenc@redhat.com
+    notify-email: aos-aie@redhat.com
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
@@ -18,7 +18,7 @@ Projects:
     git-path    : starter-epel
     git-branch  : master
     target-file : Dockerfile.centos7
-    notify-email: rlourenc@redhat.com
+    notify-email: aos-aie@redhat.com
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
@@ -30,7 +30,7 @@ Projects:
     git-path    : starter
     git-branch  : master
     target-file : Dockerfile.centos7
-    notify-email: rlourenc@redhat.com
+    notify-email: aos-aie@redhat.com
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
@@ -42,31 +42,43 @@ Projects:
     git-path    : starter-systemd
     git-branch  : master
     target-file : Dockerfile.centos7
-    notify-email: rlourenc@redhat.com
+    notify-email: aos-aie@redhat.com
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
 
   - id          : 5
     app-id      : container-examples
+    job-id      : starter-systemd
+    git-url     : https://github.com/RHsyseng/container-rhel-examples
+    git-path    : starter-systemd
+    git-branch  : master
+    target-file : Dockerfile.arbuid.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : arbuid
+    build-context: ./
+    depends-on  : centos/centos:7
+
+  - id          : 6
+    app-id      : container-examples
     job-id      : starter-nsswrapper
     git-url     : https://github.com/RHsyseng/container-rhel-examples
     git-path    : starter-nsswrapper
     git-branch  : master
     target-file : Dockerfile.centos7
-    notify-email: rlourenc@redhat.com
+    notify-email: aos-aie@redhat.com
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
 
-  - id          : 6
+  - id          : 7
     app-id      : container-examples
     job-id      : starter-api
     git-url     : https://github.com/RHsyseng/container-rhel-examples
     git-path    : starter-api
     git-branch  : master
     target-file : Dockerfile.centos7
-    notify-email: rlourenc@redhat.com
+    notify-email: aos-aie@redhat.com
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
