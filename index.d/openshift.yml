@@ -822,3 +822,15 @@ Projects:
     depends-on:
         - centos/centos:latest
         - openshift/base-centos7:latest
+
+  - id: 60
+    app-id: openshift
+    job-id: image-inspector
+    git-url: https://github.com/openshift/image-inspector
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: efreiber@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
