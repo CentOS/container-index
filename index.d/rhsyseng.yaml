@@ -1,0 +1,12 @@
+Projects:
+  - id          : 1
+    app-id      : rhsyseng
+    job-id      : sonarqube
+    git-url     : https://github.com/RHsyseng/docker-rhel-sonarqube
+    git-path    : /
+    git-branch  : master
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : latest
+    build-context: ./
+    depends-on  : centos/centos:7
