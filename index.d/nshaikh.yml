@@ -2,9 +2,9 @@ Projects:
   - id: 1
     app-id: nshaikh
     job-id: build-fail-test
-    git-url: https://github.com/navidshaikh/containers-catalogue
+    git-url: https://github.com/navidshaikh/fail-test-container
     git-branch: master
-    git-path: fail-test
+    git-path: /
     target-file: Dockerfile
     desired-tag: latest
     notify-email: container-status-report@centos.org
