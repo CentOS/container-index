@@ -7,7 +7,7 @@ Projects:
     git-path: recipes/centos_vertx
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-jdk8:latest
 
@@ -19,7 +19,7 @@ Projects:
     git-path: recipes/centos_spring_boot
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-jdk8:latest
 
@@ -31,7 +31,7 @@ Projects:
     git-path: recipes/centos_wildfly_swarm
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-jdk8:latest
 
@@ -43,7 +43,7 @@ Projects:
     git-path: recipes/centos_nodejs
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-stack-base:latest
 
@@ -55,7 +55,7 @@ Projects:
     git-path: recipes/centos_jdk8/
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-stack-base:latest
 
@@ -67,7 +67,7 @@ Projects:
     git-path: recipes/centos_go
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-stack-base:latest
 
@@ -79,7 +79,7 @@ Projects:
     git-path: recipes/centos_python/2
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-stack-base:latest
 
@@ -91,7 +91,7 @@ Projects:
     git-path: recipes/centos_python/3
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-stack-base:latest
 
@@ -103,7 +103,7 @@ Projects:
     git-path: recipes/stack-base/centos
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: centos/centos:latest
 
@@ -115,7 +115,7 @@ Projects:
     git-path: recipes/centos_ceylon_nodejs_dart
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-jdk8:latest
 
@@ -127,7 +127,7 @@ Projects:
     git-path: recipes/centos_dotnet20
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: shahdharmit@gmail.com
+    notify-email: yivantso@redhat.com
     build-context: ./
     depends-on: che-stacks/centos-stack-base:latest
 
