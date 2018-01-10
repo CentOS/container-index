@@ -131,7 +131,7 @@ Projects:
     depends-on: dharmit/base:latest
     build_context: ./
 
-  # This is temporary image and has to be removed 
+  # This is temporary image and has to be removed
   - id: 12
     app-id: pipeline-images
     job-id: dockerfile-lint-2
@@ -141,5 +141,17 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
+    depends-on: centos/centos:latest
+    build_context: ./
+
+  - id: 13
+    app-id: pipeline-images
+    job-id: scanner-analytics-integration
+    git-url: https://github.com/navidshaikh/scanner-analytics-integration
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
     depends-on: centos/centos:latest
     build_context: ./
