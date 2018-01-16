@@ -190,7 +190,6 @@ Projects:
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-
     
   - id: 17
     app-id: mattermost
@@ -202,3 +201,40 @@ Projects:
     desired-tag: latest
     notify-email: sgk@redhat.com
     depends-on: sclo/nodejs-6-centos7:latest
+
+  - id: 18
+    app-id: mattermost
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
+    git-branch: master
+    git-path: 4.4/
+    target-file: Dockerfile
+    desired-tag: 4.4
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+    
+  - id: 19
+    app-id: mattermost
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
+    git-branch: master
+    git-path: 4.5/
+    target-file: Dockerfile
+    desired-tag: 4.5
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+    
+  - id: 20
+    app-id: mattermost
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
+    git-branch: master
+    git-path: 4.6/
+    target-file: Dockerfile
+    desired-tag: 4.6
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+    
