@@ -1,0 +1,12 @@
+Projects:
+  - id: 1
+    app-id: dmick
+    job-id: ceph-daemon-luminous-centos-7
+    git-url: http://github.com/dmick/ceph-container
+    git-branch: build-master-luminous-centos-7
+    git-path: daemon
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: dmick@redhat.com
+    build-context: ./
+    depends-on: null
