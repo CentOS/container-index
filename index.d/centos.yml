@@ -1239,18 +1239,18 @@ Projects:
 
 # CentOS Atomic Base Image
 
-  - id: 145
-    app-id: centos
-    job-id: centos7-atomic
-    git-url: https://github.com/kbsingh/atomic-container
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: moahmed@redhat.com
-    prebuild-script: cccp-prebuild.sh
-    prebuild-context: /
-    build-context: ./
-    depends-on: null
+        #  - id: 145
+        #    app-id: centos
+        #    job-id: centos7-atomic
+        #    git-url: https://github.com/kbsingh/atomic-container
+        #    git-branch: master
+        #    git-path: /
+        #    target-file: Dockerfile
+        #    desired-tag: latest
+        #    notify-email: moahmed@redhat.com
+        #    prebuild-script: cccp-prebuild.sh
+        #    prebuild-context: /
+        #    build-context: ./
+        #    depends-on: null
 # CentOS Atomic Base Image ends
 
