@@ -500,10 +500,10 @@ Projects:
   - id: 42
     app-id: centos
     job-id: sentry
-    git-url: https://github.com/rtnpro/docker-sentry
-    git-path: 8.17/
+    git-url: https://github.com/centos/CentOS-Dockerfiles
+    git-path: sentry/centos7/8.17
     git-branch: master
-    target-file: Dockerfile.centos
+    target-file: Dockerfile
     desired-tag: 8.17
     notify-email: container-status-report@centos.org
     build-context: ./
@@ -512,10 +512,10 @@ Projects:
   - id: 43
     app-id: centos
     job-id: sentry
-    git-url: https://github.com/rtnpro/docker-sentry
-    git-path: 8.18/
+    git-url: https://github.com/centos/CentOS-Dockerfiles
+    git-path: sentry/centos7/8.18
     git-branch: master
-    target-file: Dockerfile.centos
+    target-file: Dockerfile
     desired-tag: 8.18
     notify-email: container-status-report@centos.org
     build-context: ./
