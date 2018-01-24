@@ -1235,6 +1235,19 @@ Projects:
       - centos/s2i-core-centos7:latest
       - centos/s2i-base-centos7:latest
 
+  - id: 145
+    app-id: centos
+    job-id: sentry
+    git-url: https://github.com/centos/CentOS-Dockerfiles
+    git-path: sentry/centos7/8.22
+    git-branch: master
+    target-file: Dockerfile
+    desired-tag: 8.22
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on: centos/centos:latest
+
+
 # List of SCLo SIG images ends
 
 # CentOS Atomic Base Image
