@@ -1,0 +1,168 @@
+Projects:
+  - id: 1
+    app-id: centos
+    job-id: perl-520-centos7
+    git-url: https://github.com/sclorg/s2i-perl-container.git
+    git-branch: master
+    git-path: 5.20/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 2
+    app-id: centos
+    job-id: perl-524-centos7
+    git-url: https://github.com/sclorg/s2i-perl-container.git
+    git-branch: master
+    git-path: 5.24/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 3
+    app-id: centos
+    job-id: ruby-22-centos7
+    git-url: https://github.com/sclorg/s2i-ruby-container.git
+    git-branch: master
+    git-path: 2.2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 4
+    app-id: centos
+    job-id: ruby-23-centos7
+    git-url: https://github.com/sclorg/s2i-ruby-container.git
+    git-branch: master
+    git-path: 2.3/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 5
+    app-id: centos
+    job-id: ruby-24-centos7
+    git-url: https://github.com/sclorg/s2i-ruby-container.git
+    git-branch: master
+    git-path: 2.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 6
+    app-id: centos
+    job-id: passenger-40-centos7
+    git-url: https://github.com/sclorg/passenger-container.git
+    git-branch: master
+    git-path: 4.0/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 7
+    app-id: centos
+    job-id: varnish-4-centos7
+    git-url: https://github.com/sclorg/varnish-container.git
+    git-branch: master
+    git-path: 4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 8
+    app-id: centos
+    job-id: nodejs-4-centos7
+    git-url: https://github.com/sclorg/s2i-nodejs-container.git
+    git-branch: master
+    git-path: 4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 9
+    app-id: centos
+    job-id: nodejs-6-centos7
+    git-url: https://github.com/sclorg/s2i-nodejs-container.git
+    git-branch: master
+    git-path: 6/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+  - id: 10
+    app-id: centos
+    job-id: nodejs-8-centos7
+    git-url: https://github.com/sclorg/s2i-nodejs-container.git
+    git-branch: master
+    git-path: 8/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+      - centos/s2i-base-centos7:latest
+
+# List of SCLo SIG images ends
+
+# CentOS Atomic Base Image
+
+  - id: 11
+    app-id: centos
+    job-id: centos7-atomic
+    git-url: https://github.com/kbsingh/atomic-container
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    prebuild-script: cccp-prebuild.sh
+    prebuild-context: /
+    build-context: ./
+    depends-on: null
