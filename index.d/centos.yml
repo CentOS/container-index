@@ -1247,6 +1247,18 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
+  - id: 146
+    app-id: centos
+    job-id: sentry-sso
+    git-url: https://github.com/centos/CentOS-Dockerfiles
+    git-path: sentry-sso/centos7/8.22
+    git-branch: master
+    target-file: Dockerfile
+    desired-tag: 8.22
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on: centos/centos:latest
+
 
 # List of SCLo SIG images ends
 
