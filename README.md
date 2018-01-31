@@ -6,24 +6,24 @@ This is the master index used by the [CentOS Community Container Pipeline Servic
 
 In this tutorial we will learn to deploy a Docker container to the [CentOS Registry](https://registry.centos.org).
 
-__First, we push changed to the same directory as our Dockerfile:__
+__First, change to the same directory as your `Dockerfile`__
 
-1. Change to the directory container your Dockerfile
+1. Change to the directory containing your Dockerfile
 ```sh
 cd yourdirectory
 ```
-2. Download the example `cccp.yml` file from https://github.com/CentOS/container-index
+2. Download the example `cccp.yaml` file from https://github.com/CentOS/container-index
 ```sh
-wget https://raw.githubusercontent.com/CentOS/container-index/master/cccp.yml
+wget https://raw.githubusercontent.com/CentOS/container-index/master/cccp.yaml
 ```
-3. Customize the `cccp.yml` file as needed
+3. Customize the `cccp.yaml` file as needed
 ```sh
-vim cccp.yml
+vim cccp.yaml
 ```
 4. Push the changes to your (public) Git repository
 ```
 git add .
-git commit -m "Added cccp.yml"
+git commit -m "Added cccp.yaml"
 git push
 ```
 
@@ -34,18 +34,18 @@ __Second, we will open a PR request to add your container to the CentOS registry
 git clone https://github.com/yourusername/container-index
 cd container-index
 ```
-2. Create a new namespace by copying the `index_template.yml`
+2. Create a new namespace by copying the `index_template.yaml`
 ```sh
-cp index.d/index_template.yml index.d/yourgitname.yml
+cp index.d/index_template.yaml index.d/yourgitname.yaml
 ```
 3. Add your container details to the index file, customizing it to your needs. Note that the app-id must be the same as the namespace filename containing your project.
 ```sh
-vim index.d/yourgitname.yml
+vim index.d/yourgitname.yaml
 ```
 4. Commit your changes and open a pull request against https://github.com/CentOS/container-index
 ```
 git add .
-git commit -m "Added cccp.yml"
+git commit -m "Added cccp.yaml"
 git push
 ```
 
@@ -72,7 +72,7 @@ The index.d contains yaml formatted files, which must include :
 | app-id           | string         | Yes      | This will be namespace of your containers. For example postgresql containers will be under postgresql namespace so all the app-id's should be postgresql.                                                                                                                                                                                                                                                                                                                 |
 | job-id           | string         | Yes      | This will be the name of your container. Infact the final name of your container will be app-id/job-id:desired-tag.                                                                                                                                                                                                                                                                                                                                                       |
 | git-url          | string         | Yes      | The complete url to your git repo ( eg. https://github.com/username/repo ). The Git repo can reside anywhere on the public internet. If this is a Gitlab URL, url must end with .git.                                                                                                                                                                                                                                                                                     |
-| git-path         | string         | Yes      | The qualified path within the git repo to the Dockerfile, and cccp.yml should be on the same directory as the dockerfile.                                                                                                                                                                                                                                                                                                                                                 |
+| git-path         | string         | Yes      | The qualified path within the git repo to the Dockerfile, and cccp.yaml should be on the same directory as the dockerfile.                                                                                                                                                                                                                                                                                                                                                 |
 | git-branch       | string         | No       | Defaults to 'master'. Branch from the git repo you want processed.                                                                                                                                                                                                                                                                                                                                                                                                        |
 | target-file      | string         | Yes      | The actual file from where the build will start. This would typically be Dockerfile.                                                                                                                                                                                                                                                                                                                                                                                      |
 | notify-email     | string         | Yes      | The email  to which status emails will be sent, upon success or failure of builds.                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -90,18 +90,18 @@ The name of the YAML file will be part of the container name. For example, if yo
 Example:
 
 ```
-foo.yml, job-id: bar, desired-tag: latest, then container name will be foo/bar:latest
+foo.yaml, job-id: bar, desired-tag: latest, then container name will be foo/bar:latest
 ```
 
-## `cccp.yml`
+## `cccp.yaml`
 
-Every build that we process is required to contain `cccp.yml` (or `cccp.yaml` if you prefer). An example is located at: https://raw.githubusercontent.com/CentOS/container-index/master/cccp.yml
+Every build that we process is required to contain `cccp.yaml` (or `cccp.yaml` if you prefer). An example is located at: https://raw.githubusercontent.com/CentOS/container-index/master/cccp.yaml
 
 | Key             | Type     | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------|----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | job-id          | string   | Yes      | This must match the Job ID that you insert into the index file.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | test-skip       | boolean  | No       | Indicate if you want to skip the test phase of the pipeline. Note, this only skips user scripts and not the standard tests that we run on every container.                                                                                                                                                                                                                                                                                                                                                       |
-| test-script     | string   | No       | Use to specify the path of the test script relative to the location of your target-file from index.yml. This test script must use a non-zero exit code to indicate failure and can get to know the intermediate container tag with which to reference the image via the CONTAINER_NAME environment variable which is injected into the workers. Ensure that test-skip above is explicitly reset to False, as otherwise the test script will not be run (if test-skip is not specified, it is assumed to be True) |
+| test-script     | string   | No       | Use to specify the path of the test script relative to the location of your target-file from index.yaml. This test script must use a non-zero exit code to indicate failure and can get to know the intermediate container tag with which to reference the image via the CONTAINER_NAME environment variable which is injected into the workers. Ensure that test-skip above is explicitly reset to False, as otherwise the test script will not be run (if test-skip is not specified, it is assumed to be True) |
 | build-script    | _unused_ | No       | Custom build script                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | delivery-script | _unused_ | No       | This would be where you can specify a custom delivery script.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | docker-index    | _unused_ | No       | If true, then container is delivered to docker hub.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -113,5 +113,5 @@ Every build that we process is required to contain `cccp.yml` (or `cccp.yaml` if
 
 The [index.d](https://github.com/CentOS/container-index/tree/master/index.d) directory in this git repository contains yaml formatted files with lists of all container applicatons included in the pipeline. In order to have your container application be included, tested and delivered via the Community Pipeline, it must be listed in this index. We are making resources behind the pipeline available to anyone on the internet who wishes to use them, provided what they are doing is not illegal and is licensed in a way to be open source compatible. Note that the pipeline, its contents, all build and post build artifacts as well as delivery destinations should be considered publicly available.
 
-The index.d files are processed frequently, so new inclusions will be picked up fairly quickly. Once in the system, we will poll your git repository for changes every hour and initiate build runs as needed. Details for the build are included in the cccp.yml file that is hosted inside your git repo. Metadata from this file can be used to control the build, request changes to the delivery path, opt-in or out of the testing options available, etc.
+The index.d files are processed frequently, so new inclusions will be picked up fairly quickly. Once in the system, we will poll your git repository for changes every hour and initiate build runs as needed. Details for the build are included in the cccp.yaml file that is hosted inside your git repo. Metadata from this file can be used to control the build, request changes to the delivery path, opt-in or out of the testing options available, etc.
 
