@@ -98,7 +98,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: container-status-report@centos.org
-    build-context: ./
+    build-context: ../
     depends-on:
       - centos/centos:latest
       - centos/s2i-core-centos7:latest
