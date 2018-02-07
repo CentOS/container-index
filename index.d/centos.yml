@@ -1184,7 +1184,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
-    build-context: ./
+    build-context: ../
     depends-on:
       - centos/centos:latest
       - centos/s2i-core-centos7:latest
