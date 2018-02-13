@@ -11,14 +11,14 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 2
-    app-id: cdrage
-    job-id: reg
-    git-url: https://github.com/cdrage/reg
-    git-branch: master
-    git-path: server
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: charlie+cccp@charliedrage.com
-    build-context: ./
-    depends-on: centos/centos:latest
+    #  - id: 2
+    #    app-id: cdrage
+    #    job-id: reg
+    #    git-url: https://github.com/cdrage/reg
+    #    git-branch: master
+    #    git-path: server
+    #    target-file: Dockerfile
+    #    desired-tag: latest
+    #    notify-email: charlie+cccp@charliedrage.com
+    #    build-context: ./
+    #    depends-on: centos/centos:latest
