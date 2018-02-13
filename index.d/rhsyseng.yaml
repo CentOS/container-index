@@ -10,3 +10,91 @@ Projects:
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
+  - id          : 2
+    app-id      : rhsyseng
+    job-id      : kibana
+    git-url     : https://github.com/RHsyseng/docker-rhel-kibana
+    git-path    : /
+    git-branch  : master
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : latest
+    build-context: ./
+    depends-on  : centos/centos:7
+  - id          : 3
+    app-id      : rhsyseng
+    job-id      : kibana
+    git-url     : https://github.com/RHsyseng/docker-rhel-kibana
+    git-path    : /
+    git-branch  : 6.2.x
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : 6.2.1
+    build-context: ./
+    depends-on  : centos/centos:7
+  - id          : 4
+    app-id      : rhsyseng
+    job-id      : kibana
+    git-url     : https://github.com/RHsyseng/docker-rhel-kibana
+    git-path    : /
+    git-branch  : 6.1.x
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : 6.1.2
+    build-context: ./
+    depends-on  : centos/centos:7
+  - id          : 5
+    app-id      : rhsyseng
+    job-id      : kibana
+    git-url     : https://github.com/RHsyseng/docker-rhel-kibana
+    git-path    : /
+    git-branch  : 5.x
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : 5.5.2
+    build-context: ./
+    depends-on  : centos/centos:7
+  - id          : 6
+    app-id      : rhsyseng
+    job-id      : elasticsearch
+    git-url     : https://github.com/RHsyseng/docker-rhel-elasticsearch
+    git-path    : /
+    git-branch  : master
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : latest
+    build-context: ./
+    depends-on  : centos/centos:7
+  - id          : 7
+    app-id      : rhsyseng
+    job-id      : elasticsearch
+    git-url     : https://github.com/RHsyseng/docker-rhel-elasticsearch
+    git-path    : /
+    git-branch  : 6.2.x
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : 6.2.1
+    build-context: ./
+    depends-on  : centos/centos:7
+  - id          : 8
+    app-id      : rhsyseng
+    job-id      : elasticsearch
+    git-url     : https://github.com/RHsyseng/docker-rhel-elasticsearch
+    git-path    : /
+    git-branch  : 6.1.x
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : 6.1.2
+    build-context: ./
+    depends-on  : centos/centos:7
+  - id          : 9
+    app-id      : rhsyseng
+    job-id      : elasticsearch
+    git-url     : https://github.com/RHsyseng/docker-rhel-elasticsearch
+    git-path    : /
+    git-branch  : 5.x
+    target-file : Dockerfile.centos7
+    notify-email: aos-aie@redhat.com
+    desired-tag : 5.5.2
+    build-context: ./
+    depends-on  : centos/centos:7
