@@ -156,14 +156,14 @@ Projects:
     depends-on: centos/centos:latest
     build_context: ./
 
-    #  - id: 14
-    #    app-id: pipeline-images
-    #    job-id: reg
-    #    git-url: https://github.com/cdrage/reg
-    #    git-branch: master
-    #    git-path: server
-    #    target-file: Dockerfile
-    #    desired-tag: latest
-    #    notify-email: bamachrn@gmail.com
-    #    build-context: ./
-    #    depends-on: centos/centos:latest
+  - id: 14
+    app-id: pipeline-images
+    job-id: reg
+    git-url: https://github.com/cdrage/reg
+    git-branch: master
+    git-path: server
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
