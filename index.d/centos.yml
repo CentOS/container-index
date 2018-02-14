@@ -149,6 +149,30 @@ Projects:
       - centos/s2i-core-centos7:latest
       - centos/s2i-base-centos7:latest
 
+  - id: 12
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: null
+
+  - id: 13
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 7
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
 # List of SCLo SIG images ends
 
 # CentOS Atomic Base Image
