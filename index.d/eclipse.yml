@@ -1,16 +1,4 @@
 Projects:
-  - id: 1
-    app-id: eclipse
-    job-id: che-dev
-    git-url: https://github.com/dharmit/che-dockerfiles
-    git-branch: centos-dockerfiles
-    git-path: che-dev
-    target-file: Dockerfile.centos
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    build-context: ./
-    depends-on: centos/centos:latest
-
   - id: 2
     app-id: eclipse
     job-id: che-launcher
