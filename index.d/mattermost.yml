@@ -214,3 +214,14 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
     
+  - id: 19
+    app-id: mattermost
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
+    git-branch: master
+    git-path: 4.7/
+    target-file: Dockerfile
+    desired-tag: 4.7.0
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
