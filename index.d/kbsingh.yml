@@ -97,17 +97,3 @@ Projects:
     prebuild-script: pre-build.sh
     prebuild-context: /
 
-  - id: 9
-    app-id: kbsingh
-    job-id: centos7-atomic
-    git-url: https://github.com/kbsingh/atomic-container
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: cp.build.inb@karan.org
-    prebuild-script: cccp-prebuild.sh
-    prebuild-context: /
-    build-context: ./
-    depends-on: null
-
