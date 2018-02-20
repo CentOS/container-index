@@ -1263,7 +1263,7 @@ Projects:
 # List of SCLo SIG images ends
 
 # CentOS Atomic Base Image
-  - id: 145
+  - id: 147
     app-id: centos
     job-id: centos7-atomic
     git-url: https://github.com/CentOS/atomic-container
