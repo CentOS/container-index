@@ -221,7 +221,7 @@ Projects:
     git-branch: master
     git-path: 4.7/
     target-file: Dockerfile
-    desired-tag: 4.7.0
+    desired-tag: 4.7.1
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
