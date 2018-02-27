@@ -6,6 +6,8 @@ Projects:
     git-branch: master
     git-path: caddy_server/centos7
     target-file: Dockerfile
+    prebuild-script: cccp-prebuild.sh
+    prebuild-context: caddy_server/centos7
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
