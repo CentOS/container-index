@@ -9,3 +9,4 @@ Projects:
     desired-tag: latest
     notify-email: goern@redhat.com
     build-context: ./
+    depende-on: null
