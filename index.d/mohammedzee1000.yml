@@ -2,30 +2,6 @@ Projects:
   - id: 1
     app-id: mohammedzee1000
     job-id: postgresql
-    git-url: https://github.com/mohammedzee1000/postgres
-    git-branch: dockerfile.centos7-files
-    git-path: 9.2/
-    target-file: Dockerfile.centos7
-    desired-tag: 9.2
-    notify-email: mohammed.zee1000@gmail.com
-    build-context: ./
-    depends-on: centos/centos:latest
-  
-  - id: 2
-    app-id: mohammedzee1000
-    job-id: postgresql
-    git-url: https://github.com/mohammedzee1000/postgres
-    git-branch: dockerfile.centos7-files
-    git-path: 9.3/
-    target-file: Dockerfile.centos7
-    desired-tag: 9.3
-    notify-email: mohammed.zee1000@gmail.com
-    build-context: ./
-    depends-on: centos/centos:latest
-  
-  - id: 3
-    app-id: mohammedzee1000
-    job-id: postgresql
     git-url: https://github.com/mohammedzee1000/postgresql_openshift
     git-branch: master
     git-path: 9.4/
@@ -35,7 +11,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
   
-  - id: 4
+  - id: 2
     app-id: mohammedzee1000
     job-id: postgresql
     git-url: https://github.com/mohammedzee1000/postgresql_openshift
@@ -47,7 +23,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
   
-  - id: 5
+  - id: 3
     app-id: mohammedzee1000
     job-id: postgresql
     git-url: https://github.com/mohammedzee1000/postgresql_openshift
@@ -59,7 +35,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 6
+  - id: 4
     app-id: mohammedzee1000
     job-id: keycloak-postgres
     git-url: https://github.com/mohammedzee1000/jboss-dockerfiles_keycloak
@@ -73,7 +49,7 @@ Projects:
       - centos/centos:latest
       - jboss/keycloak:latest
 
-  - id: 7
+  - id: 5
     app-id: mohammedzee1000
     job-id: kyoto-tycoon
     git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
@@ -86,7 +62,7 @@ Projects:
     depends-on: 
       - centos/centos:latest
 
-  - id: 8
+  - id: 6
     app-id: mohammedzee1000
     job-id: traefik
     git-url: https://github.com/mohammedzee1000/traefik-library-image
