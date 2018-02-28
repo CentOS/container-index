@@ -1,0 +1,40 @@
+Projects:
+  - id: 1 
+    app-id: projectatomic
+    job-id: atomic-registry-install
+    git-url: https://github.com/openshift/origin
+    git-branch: master
+    git-path: examples/atomic-registry/systemd
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@redhat.com
+    build-context: ./
+    depends-on:
+      - centos/centos:latest 
+        #      - openshift/origin:latest
+
+  - id: 2
+    app-id: projectatomic
+    job-id: cri-o
+    git-url: https://github.com/kubernetes-incubator/cri-o.git
+    git-branch: master
+    git-path: /contrib/system_containers/centos
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@redhat.com
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
+
+  - id: 3
+    app-id: projectatomic
+    job-id: docker
+    git-url: https://github.com/projectatomic/atomic-system-containers
+    git-branch: master
+    git-path: /docker-centos
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@redhat.com
+    build-context: ./
+    depends-on:
+      - centos/centos:latest
