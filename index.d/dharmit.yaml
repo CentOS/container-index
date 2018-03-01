@@ -52,18 +52,6 @@ Projects:
     job-id: golang
     git-url: https://github.com/dharmit/dockerfiles
     git-branch: master
-    git-path: /golang/1.6/
-    target-file: Dockerfile
-    desired-tag: 1.6
-    notify-email: shahdharmit@gmail.com
-    build-context: ./
-    depends-on: dharmit/base:latest
-
-  - id: 8
-    app-id: dharmit
-    job-id: golang
-    git-url: https://github.com/dharmit/dockerfiles
-    git-branch: master
     git-path: /golang/1.8/
     target-file: Dockerfile
     desired-tag: 1.8
@@ -71,7 +59,7 @@ Projects:
     build-context: ./
     depends-on: dharmit/base:latest
 
-  - id: 9
+  - id: 8
     app-id: dharmit
     job-id: python
     git-url: https://github.com/dharmit/dockerfiles
@@ -83,7 +71,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 10
+  - id: 9
     app-id: dharmit
     job-id: python
     git-url: https://github.com/dharmit/dockerfiles
@@ -95,7 +83,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 11
+  - id: 10
     app-id: dharmit
     job-id: base
     git-url: https://github.com/dharmit/dockerfiles
@@ -107,7 +95,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 12
+  - id: 11
     app-id: dharmit
     job-id: dotnet20
     git-url: https://github.com/dharmit/dockerfiles
@@ -119,7 +107,7 @@ Projects:
     build-context: ./
     depends-on: dharmit/base:latest
 
-  - id: 13
+  - id: 12
     app-id: dharmit
     job-id: beanstalkd
     git-url: https://github.com/dharmit/dockerfiles
