@@ -7,5 +7,5 @@
 !whattomerge.md
 !index.d
 index.d/*
-!/index.d/*.yml
+!/index.d/*.y*ml
 
