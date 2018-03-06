@@ -1,0 +1,12 @@
+Projects:
+  - id: 1
+    app-id: janusgraph
+    job-id: server
+    git-url: https://github.com/goern/janusgraph-openshift
+    git-branch: master
+    git-path: images/janusgraph/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: goern@redhat.com
+    build-context: ./
+    depends-on: null
