@@ -119,3 +119,15 @@ Projects:
     depends-on: dharmit/base:latest
     build-context: ./
 
+  - id: 13
+    app-id: dharmit
+    job-id: ccp-openshift-slave
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /ccp-openshift-slave
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: openshift/jenkins-slave-base-centos7:latest
+    build-context: ./
+
