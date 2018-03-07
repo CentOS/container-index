@@ -128,6 +128,6 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
-    depends-on: openshift/jenkins-slave-base-centos7
+    depends-on: openshift/jenkins-slave-base-centos7:latest
     build-context: ./
 
