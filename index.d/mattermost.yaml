@@ -2,7 +2,7 @@ Projects:
   - id: 1
     app-id: mattermost
     job-id: recurring-pgdump
-    git-url: https://github.com/syamgk/recurring-pgdump
+    git-url: https://github.com/rhdt/recurring-pgdump
     git-branch: master
     git-path: /
     target-file: Dockerfile
@@ -26,7 +26,7 @@ Projects:
   - id: 3
     app-id: mattermost
     job-id: mattermost-github-integration
-    git-url: https://github.com/syamgk/mattermost-github-integration
+    git-url: https://github.com/rhdt/mattermost-github-integration
     git-branch: centos
     git-path: /
     target-file: Dockerfile
@@ -38,7 +38,7 @@ Projects:
   - id: 4
     app-id: mattermost
     job-id: mattermost-gitlab-integration
-    git-url: https://github.com/syamgk/mattermost-gitlab-integration
+    git-url: https://github.com/rhdt/mattermost-gitlab-integration
     git-branch: master
     git-path: /
     target-file: Dockerfile
@@ -50,7 +50,7 @@ Projects:
   - id: 5
     app-id: mattermost
     job-id: mattermost-trello-integration
-    git-url: https://github.com/syamgk/mattermost-trello-integration
+    git-url: https://github.com/rhdt/mattermost-trello-integration
     git-branch: master
     git-path: /
     target-file: Dockerfile
@@ -62,7 +62,7 @@ Projects:
   - id: 6
     app-id: mattermost
     job-id: mattermost-rss-integration
-    git-url: https://github.com/syamgk/Rss-Atom-Feed-Integration-for-Mattermost
+    git-url: https://github.com/rhdt/Rss-Atom-Feed-Integration-for-Mattermost
     git-branch: centosDockerfile
     git-path: /
     target-file: Dockerfile
@@ -74,7 +74,7 @@ Projects:
   - id: 7
     app-id: mattermost
     job-id: matterbridge
-    git-url: https://github.com/syamgk/matterbridge
+    git-url: https://github.com/rhdt/matterbridge
     git-branch: master
     git-path: 1.7.1/
     target-file: Dockerfile
@@ -86,7 +86,7 @@ Projects:
   - id: 8
     app-id: mattermost
     job-id: matterbridge
-    git-url: https://github.com/syamgk/matterbridge
+    git-url: https://github.com/rhdt/matterbridge
     git-branch: master
     git-path: 1.4.1/
     target-file: Dockerfile
@@ -98,7 +98,7 @@ Projects:
   - id: 9
     app-id: mattermost
     job-id: matterbridge
-    git-url: https://github.com/syamgk/matterbridge
+    git-url: https://github.com/rhdt/matterbridge
     git-branch: master
     git-path: 1.8.0/
     target-file: Dockerfile
@@ -110,7 +110,7 @@ Projects:
   - id: 10
     app-id: mattermost
     job-id: mattermost-push-proxy
-    git-url: https://github.com/syamgk/mm-push-proxy
+    git-url: https://github.com/rhdt/mm-push-proxy
     git-branch: master
     git-path: 3.10.0/
     target-file: Dockerfile
@@ -122,7 +122,7 @@ Projects:
   - id: 11
     app-id: mattermost
     job-id: matterircd
-    git-url: https://github.com/syamgk/mm-push-proxy
+    git-url: https://github.com/rhdt/mm-push-proxy
     git-branch: master
     git-path: 4.4/
     target-file: Dockerfile
