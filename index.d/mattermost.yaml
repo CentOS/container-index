@@ -70,20 +70,8 @@ Projects:
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-    
-  - id: 7
-    app-id: mattermost
-    job-id: matterircd
-    git-url: https://github.com/syamgk/matterircd
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: 0.13.0
-    notify-email: sgk@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
       
-  - id: 8
+  - id: 7
     app-id: mattermost
     job-id: matterbridge
     git-url: https://github.com/syamgk/matterbridge
@@ -95,7 +83,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
 
-  - id: 9
+  - id: 8
     app-id: mattermost
     job-id: matterbridge
     git-url: https://github.com/syamgk/matterbridge
@@ -107,7 +95,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
     
-  - id: 10
+  - id: 9
     app-id: mattermost
     job-id: matterbridge
     git-url: https://github.com/syamgk/matterbridge
@@ -119,7 +107,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
 
-  - id: 11
+  - id: 10
     app-id: mattermost
     job-id: mattermost-push-proxy
     git-url: https://github.com/syamgk/mm-push-proxy
@@ -130,7 +118,19 @@ Projects:
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-
+    
+  - id: 11
+    app-id: mattermost
+    job-id: matterircd
+    git-url: https://github.com/syamgk/mm-push-proxy
+    git-branch: master
+    git-path: 4.4/
+    target-file: Dockerfile
+    desired-tag: 4.4
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+    
   - id: 12
     app-id: mattermost
     job-id: penfold
