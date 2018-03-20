@@ -88,9 +88,9 @@ Projects:
     job-id: matterbridge
     git-url: https://github.com/rhdt/matterbridge
     git-branch: master
-    git-path: 1.4.1/
+    git-path: 1.9.0/
     target-file: Dockerfile
-    desired-tag: 1.4.1
+    desired-tag: 1.9.0
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
