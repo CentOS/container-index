@@ -121,7 +121,7 @@ Projects:
     
   - id: 11
     app-id: mattermost
-    job-id: matterircd
+    job-id: mattermost-push-proxy
     git-url: https://github.com/rhdt/mm-push-proxy
     git-branch: master
     git-path: 4.4/
