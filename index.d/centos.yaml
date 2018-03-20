@@ -730,6 +730,8 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
     depends-on:
       - centos/centos:latest
 
@@ -743,6 +745,8 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
     depends-on:
       - centos/centos:latest
 
@@ -756,6 +760,8 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
     depends-on:
       - centos/centos:latest
 
