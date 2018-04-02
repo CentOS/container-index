@@ -7,7 +7,7 @@ Projects:
     git-path: examples/atomic-registry/systemd
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@redhat.com
+    notify-email: container-status-report@centos.org
     build-context: ./
     depends-on:
       - centos/centos:latest 
@@ -21,7 +21,7 @@ Projects:
     git-path: /contrib/system_containers/centos
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@redhat.com
+    notify-email: container-status-report@centos.org
     build-context: ./
     depends-on:
       - centos/centos:latest
@@ -34,7 +34,7 @@ Projects:
     git-path: /docker-centos
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: container-status-report@redhat.com
+    notify-email: container-status-report@centos.org
     build-context: ./
     depends-on:
       - centos/centos:latest
