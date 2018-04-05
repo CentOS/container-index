@@ -747,18 +747,6 @@ Projects:
 
 # * Jenkins containers
 
-  - id: 54
-    app-id: openshift
-    job-id: jenkins-1-centos7
-    git-url: https://github.com/openshift/jenkins
-    git-branch: master
-    git-path: 1/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    build-context: ./
-    depends-on: centos/centos:latest
-
   - id: 55
     app-id: openshift
     job-id: jenkins-2-centos7
