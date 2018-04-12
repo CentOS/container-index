@@ -1,0 +1,12 @@
+Projects:
+  - id          : 1
+    app-id      : microsoft
+    job-id      : mssql-server-linux
+    desired-tag : latest
+    git-url     : https://github.com/tchughesiv/mssql-docker
+    git-branch  : apb
+    git-path    : linux/preview/CentOS
+    target-file : Dockerfile
+    notify-email: aos-aie@redhat.com
+    build-context: ./
+    depends-on  : centos/centos:7
