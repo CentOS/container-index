@@ -183,9 +183,9 @@ Projects:
     job-id: mattermost-team
     git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
-    git-path: 4.4/
+    git-path: 4.9-PCP/
     target-file: Dockerfile
-    desired-tag: 4.4
+    desired-tag: 4.9-PCP
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
