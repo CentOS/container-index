@@ -2,7 +2,7 @@ Projects:
   - id: 1
     app-id: minishift
     job-id: dnsmasq
-    git-url: https://github.com/gbraad/dockerfile-dnsmasq
+    git-url: https://github.com/minishift/dockerfile-dnsmasq-centos 
     git-branch: master
     git-path: /
     target-file: Dockerfile
