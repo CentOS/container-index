@@ -1,0 +1,13 @@
+Projects:
+  - id: 1
+    app-id: gbraad
+    job-id: minishift-build
+    git-url: https://github.com/gbraad/dockerfile-minishift-build-centos
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: me@gbraad.nl
+    build-context: ./
+    depends-on:
+      - centos/centos:7
