@@ -1285,3 +1285,14 @@ Projects:
 
 # CentOS Atomic Base Image ends
 
+  - id: 148
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-6
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 6
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
