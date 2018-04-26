@@ -50,3 +50,27 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
     depends-on: null
+
+  - id: 5
+    app-id: library
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 7
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+
+  - id: 6
+    app-id: library
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-6
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 6
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
