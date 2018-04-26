@@ -121,31 +121,6 @@ Projects:
 
   - id: 11
     app-id: pipeline-images
-    job-id: dockerfile-lint-worker
-    git-url: https://github.com/dharmit/container-pipeline-service
-    git-path: /server
-    git-branch: fix-osio-1378
-    target-file: Dockerfile.linter
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: dharmit/base:latest
-    build_context: ./
-
-  # This is temporary image and has to be removed
-  - id: 12
-    app-id: pipeline-images
-    job-id: dockerfile-lint-2
-    git-url: https://github.com/dharmit/dockerfile_lint
-    git-branch: dockerfile-linter-container
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: shahdharmit@gmail.com
-    depends-on: centos/centos:latest
-    build_context: ./
-
-  - id: 13
-    app-id: pipeline-images
     job-id: scanner-analytics-integration
     git-url: https://github.com/navidshaikh/scanner-analytics-integration
     git-branch: master
@@ -156,7 +131,7 @@ Projects:
     depends-on: centos/centos:latest
     build_context: ./
 
-  - id: 14
+  - id: 12
     app-id: pipeline-images
     job-id: reg
     git-url: https://github.com/cdrage/reg
