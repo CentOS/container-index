@@ -1,17 +1,17 @@
 Projects:
-  - id: 1 
-    app-id: projectatomic
-    job-id: atomic-registry-install
-    git-url: https://github.com/openshift/origin
-    git-branch: master
-    git-path: examples/atomic-registry/systemd
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: container-status-report@centos.org
-    build-context: ./
-    depends-on:
-      - centos/centos:latest 
-        #      - openshift/origin:latest
+    # - id: 1 
+    #   app-id: projectatomic
+    #   job-id: atomic-registry-install
+    #   git-url: https://github.com/openshift/origin
+    #   git-branch: master
+    #   git-path: examples/atomic-registry/systemd
+    #   target-file: Dockerfile
+    #   desired-tag: latest
+    #   notify-email: container-status-report@centos.org
+    #   build-context: ./
+    #   depends-on:
+    #     - centos/centos:latest 
+    #       #      - openshift/origin:latest
 
   - id: 2
     app-id: projectatomic
