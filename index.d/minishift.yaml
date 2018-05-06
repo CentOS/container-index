@@ -11,3 +11,17 @@ Projects:
     build-context: ./
     depends-on:
       - centos/centos:7
+
+  - id: 2
+    app-id: minishift
+    job-id: minishift-build
+    git-url: https://github.com/minishift/dockerfile-minishift-build-centos
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: me@gbraad.nl
+    build-context: ./
+    depends-on:
+      - centos/centos:7
+
