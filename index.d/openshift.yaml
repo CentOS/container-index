@@ -4,9 +4,9 @@ Projects:
   - id          : 1
     app-id      : openshift
     job-id      : origin-source
-    git-url     : git://github.com/openshift/origin
+    git-url     : git://github.com/mohammedzee1000/origin
     git-path    : images/source
-    git-branch  : release-3.9
+    git-branch  : 3.9_origin-source_cccp_yaml
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : latest
@@ -265,9 +265,9 @@ Projects:
   - id          : 21
     app-id      : openshift
     job-id      : origin-source
-    git-url     : git://github.com/openshift/origin
+    git-url     : git://github.com/mohammedzee1000/origin
     git-path    : images/source
-    git-branch  : release-3.9
+    git-branch  : 3.9_origin-source_cccp_yaml
     target-file : Dockerfile
     notify-email: mohammed.zee1000@gmail.com
     desired-tag : v3.9
