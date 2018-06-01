@@ -1191,10 +1191,11 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
     depends-on:
       - centos/centos:latest
       - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
 
   - id: 142
     app-id: centos
@@ -1264,6 +1265,23 @@ Projects:
     notify-email: container-status-report@centos.org
     build-context: ./
     depends-on: centos/centos:latest
+
+  - id: 149
+    app-id: centos
+    job-id: varnish-5-centos7
+    git-url: https://github.com/sclorg/varnish-container.git
+    git-branch: master
+    git-path: 5/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ../
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
+    depends-on:
+      - centos/centos:latest
+      - centos/s2i-core-centos7:latest
+
 
 
 # List of SCLo SIG images ends
