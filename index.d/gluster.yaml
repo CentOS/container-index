@@ -2,11 +2,37 @@ Projects:
   - id: 1
     app-id: gluster
     job-id: storagesig-gluster-centos
-    git-url: https://github.com/gluster/docker
+    git-url: https://github.com/gluster/gluster-containers
     git-branch: master
     git-path: CentOS/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: humble.devassy@gmail.com
     build-context: ./
+    depends-on: centos/centos:latest
+  - id: 2
+    app-id: gluster
+    job-id: storagesig-heketi
+    git-url: https://github.com/heketi/heketi
+    git-branch: master
+    git-path: extras/docker/centos
+    target-file: Dockerfile.testing
+    desired-tag: testing
+    notify-email: heketi-devel@gluster.org
+    build-context: ./
+    prebuild-script: ./prepare-build.sh
+    prebuild-context: ./
+    depends-on: centos/centos:latest
+  - id: 3
+    app-id: gluster
+    job-id: storagesig-heketi
+    git-url: https://github.com/heketi/heketi
+    git-branch: master
+    git-path: extras/docker/centos
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: heketi-devel@gluster.org
+    build-context: ./
+    prebuild-script: ./prepare-build.sh
+    prebuild-context: ./
     depends-on: centos/centos:latest
