@@ -2,7 +2,7 @@ Projects:
   - id: 1
     app-id: gluster
     job-id: storagesig-gluster-centos
-    git-url: https://github.com/gluster/docker
+    git-url: https://github.com/gluster/gluster-containers
     git-branch: master
     git-path: CentOS/
     target-file: Dockerfile
