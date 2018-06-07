@@ -21,7 +21,7 @@ Projects:
     notify-email: heketi-devel@gluster.org
     build-context: ./
     prebuild-script: ./prepare-build.sh
-    prebuild-context: ./
+    prebuild-context: extras/docker/centos
     depends-on: centos/centos:latest
   - id: 3
     app-id: gluster
@@ -34,5 +34,5 @@ Projects:
     notify-email: heketi-devel@gluster.org
     build-context: ./
     prebuild-script: ./prepare-build.sh
-    prebuild-context: ./
+    prebuild-context: extras/docker/centos
     depends-on: centos/centos:latest
