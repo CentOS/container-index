@@ -76,9 +76,9 @@ Projects:
     job-id: matterbridge
     git-url: https://github.com/rhdt/matterbridge
     git-branch: master
-    git-path: 1.7.1/
+    git-path: 1.10.1/
     target-file: Dockerfile
-    desired-tag: 1.7.1
+    desired-tag: 1.10.1
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
@@ -195,9 +195,9 @@ Projects:
     job-id: mattermost-team
     git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
-    git-path: 4.5/
+    git-path: 4.10-PCP/
     target-file: Dockerfile
-    desired-tag: 4.5
+    desired-tag: 4.10-PCP
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
