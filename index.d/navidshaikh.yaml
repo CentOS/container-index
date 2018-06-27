@@ -1,0 +1,12 @@
+Projects:
+  - id: 1
+    app-id: navidshaikh
+    job-id: ccp-openshift-scan
+    git-url: https://github.com/navidshaikh/ccp-openshift
+    git-branch: scan-container
+    git-path: /ccp-openshift-scan
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    depends-on: centos/centos:latest
+    build-context: ./
