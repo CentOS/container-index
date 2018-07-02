@@ -146,9 +146,9 @@ Projects:
   - id: 13
     app-id: pipeline-images
     job-id: jenkins-2-centos7
-    git-url: https://github.com/dharmit/jenkins
+    git-url: https://github.com/dharmit/dockerfiles
     git-branch: master
-    git-path: 2/
+    git-path: ccp-jenkins
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
