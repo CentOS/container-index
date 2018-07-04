@@ -154,3 +154,27 @@ Projects:
     notify-email: shahdharmit@gmail.com
     build-context: ./
     depends-on: centos/centos:latest
+
+  - id: 14
+    app-id: pipeline-images
+    job-id: ccp-openshift-scan
+    git-url: https://github.com/navidshaikh/ccp-openshift
+    git-branch: scan-container
+    git-path: /ccp-openshift-scan
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    depends-on: centos/centos:latest
+    build-context: ./
+
+  - id: 15
+    app-id: pipeline-images
+    job-id: ccp-openshift-slave
+    git-url: https://github.com/dharmit/dockerfiles
+    git-branch: master
+    git-path: /ccp-openshift-slave
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    depends-on: openshift/jenkins-slave-base-centos7:latest
+    build-context: ./
