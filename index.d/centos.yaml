@@ -1266,7 +1266,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 149
+  - id: 147
     app-id: centos
     job-id: varnish-5-centos7
     git-url: https://github.com/sclorg/varnish-container.git
@@ -1287,7 +1287,7 @@ Projects:
 # List of SCLo SIG images ends
 
 # CentOS Atomic Base Image
-  - id: 147
+  - id: 148
     app-id: centos
     job-id: centos7-atomic
     git-url: https://github.com/CentOS/atomic-container
@@ -1303,7 +1303,7 @@ Projects:
 
 # CentOS Atomic Base Image ends
 
-  - id: 148
+  - id: 149
     app-id: centos
     job-id: centos
     git-url: https://github.com/CentOS/sig-cloud-instance-images
@@ -1315,7 +1315,7 @@ Projects:
     build-context: ./
     depends-on: null
 
-  - id: 149
+  - id: 150
     app-id: centos
     job-id: moodle
     git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
