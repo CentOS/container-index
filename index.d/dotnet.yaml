@@ -37,3 +37,29 @@ Projects:
     build-context: ./
     depends-on:
        - openshift/jenkins-slave-base-centos7:latest
+
+  - id: 4
+    app-id: dotnet
+    job-id: dotnet-21-runtime-centos7
+    git-url: https://github.com/redhat-developer/s2i-dotnetcore
+    git-branch: master
+    git-path: 2.1/runtime
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: dotnet-team@redhat.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 5
+    app-id: dotnet
+    job-id: dotnet-21-centos7
+    git-url: https://github.com/redhat-developer/s2i-dotnetcore
+    git-branch: master
+    git-path: 2.1/build
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: dotnet-team@redhat.com
+    build-context: ./
+    depends-on:
+       - centos/centos:latest
+       - dotnet/dotnet-21-runtime-centos7:latest
