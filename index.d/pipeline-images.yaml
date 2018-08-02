@@ -159,9 +159,9 @@ Projects:
   - id: 14
     app-id: pipeline-images
     job-id: ccp-openshift-scan
-    git-url: https://github.com/navidshaikh/ccp-openshift
-    git-branch: scan-container
-    git-path: /ccp-openshift-scan
+    git-url: https://github.com/dharmit/ccp-openshift
+    git-branch: master
+    git-path: /Dockerfiles/ccp-openshift-scan
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
@@ -171,9 +171,9 @@ Projects:
   - id: 15
     app-id: pipeline-images
     job-id: ccp-openshift-slave
-    git-url: https://github.com/dharmit/dockerfiles
+    git-url: https://github.com/dharmit/ccp-openshift
     git-branch: master
-    git-path: /ccp-openshift-slave
+    git-path: /Dockerfiles/ccp-openshift-slave
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
