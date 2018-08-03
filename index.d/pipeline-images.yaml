@@ -127,6 +127,7 @@ Projects:
     git-path: /
     target-file: Dockerfile
     desired-tag: latest
+    build-context: ./
     notify-email: shaikhnavid14@gmail.com
     depends-on: centos/centos:latest
     build_context: ./
