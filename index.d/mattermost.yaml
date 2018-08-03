@@ -138,6 +138,7 @@ Projects:
     git-branch: master
     git-path: /
     target-file: Dockerfile
+    build-context: ./
     desired-tag: latest
     notify-email: sgk@redhat.com
     depends-on: sclo/nodejs-6-centos7:latest
