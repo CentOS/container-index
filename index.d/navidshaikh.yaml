@@ -10,3 +10,15 @@ Projects:
     notify-email: shaikhnavid14@gmail.com
     depends-on: centos/centos:latest
     build-context: ./
+
+  - id: 2
+    app-id: navidshaikh
+    job-id: ccp-openshift-slave
+    git-url: https://github.com/navidshaikh/ccp-openshift
+    git-branch: email-1
+    git-path: /Dockerfiles/ccp-openshift-slave
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    depends-on: openshift/jenkins-slave-base-centos7:latest
+    build-context: ./
