@@ -95,6 +95,6 @@ Projects:
     git-branch  : 5.x
     target-file : Dockerfile.centos7
     notify-email: aos-aie@redhat.com
-    desired-tag : 5.5.2
+    desired-tag : 5.6.10
     build-context: ./
     depends-on  : centos/centos:7
