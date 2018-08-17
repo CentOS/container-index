@@ -1,149 +1,80 @@
+# Collection of Mattermost related container images
+# Please retain entries for older images as they may be still in use by someone, somewhere.
 Projects:
+# Mattermost-server
   - id: 1
     app-id: mattermost
-    job-id: recurring-pgdump
-    git-url: https://github.com/rhdt/recurring-pgdump
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
-    git-path: /
+    git-path: 4.6/
     target-file: Dockerfile
-    desired-tag: latest
+    desired-tag: 4.6
     notify-email: sgk@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
-    
+    depends-on: centos/centos:7
+
   - id: 2
     app-id: mattermost
-    job-id: nginx-redirector
-    git-url: https://github.com/jfchevrette/nginx-redirector
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
-    git-path: /
+    git-path: 4.7/
     target-file: Dockerfile
-    desired-tag: latest
+    desired-tag: 4.7.1
     notify-email: sgk@redhat.com
     build-context: ./
-    depends-on: kbsingh/openshift-nginx:latest
-    
+    depends-on: centos/centos:7
+
   - id: 3
     app-id: mattermost
-    job-id: mattermost-github-integration
-    git-url: https://github.com/rhdt/mattermost-github-integration
-    git-branch: centos
-    git-path: /
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
+    git-branch: master
+    git-path: 4.8/
     target-file: Dockerfile
-    desired-tag: 92394f2
+    desired-tag: 4.8
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
 
   - id: 4
     app-id: mattermost
-    job-id: mattermost-gitlab-integration
-    git-url: https://github.com/rhdt/mattermost-gitlab-integration
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
-    git-path: /
+    git-path: 4.8-PCP/
     target-file: Dockerfile
-    desired-tag: 4a61a48
+    desired-tag: 4.8-PCP
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
 
   - id: 5
     app-id: mattermost
-    job-id: mattermost-trello-integration
-    git-url: https://github.com/rhdt/mattermost-trello-integration
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
     git-branch: master
-    git-path: /
+    git-path: 4.9-PCP/
     target-file: Dockerfile
-    desired-tag: latest
+    desired-tag: 4.9-PCP
     notify-email: sgk@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
-    
+    depends-on: centos/centos:7
+
   - id: 6
     app-id: mattermost
-    job-id: mattermost-rss-integration
-    git-url: https://github.com/rhdt/Rss-Atom-Feed-Integration-for-Mattermost
-    git-branch: centosDockerfile
-    git-path: /
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
+    git-branch: master
+    git-path: 4.10-PCP/
     target-file: Dockerfile
-    desired-tag: 8e189eb
+    desired-tag: 4.10-PCP
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-      
+
   - id: 7
-    app-id: mattermost
-    job-id: matterbridge
-    git-url: https://github.com/rhdt/matterbridge
-    git-branch: master
-    git-path: 1.10.1/
-    target-file: Dockerfile
-    desired-tag: 1.10.1
-    notify-email: sgk@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
-
-  - id: 8
-    app-id: mattermost
-    job-id: matterbridge
-    git-url: https://github.com/rhdt/matterbridge
-    git-branch: master
-    git-path: 1.9.0/
-    target-file: Dockerfile
-    desired-tag: 1.9.0
-    notify-email: sgk@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
-    
-  - id: 9
-    app-id: mattermost
-    job-id: matterbridge
-    git-url: https://github.com/rhdt/matterbridge
-    git-branch: master
-    git-path: 1.11.0/
-    target-file: Dockerfile
-    desired-tag: 1.11.0
-    notify-email: akonarde@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
-
-  - id: 10
-    app-id: mattermost
-    job-id: mattermost-push-proxy
-    git-url: https://github.com/rhdt/mm-push-proxy
-    git-branch: master
-    git-path: 3.10.0/
-    target-file: Dockerfile
-    desired-tag: 3.10.0
-    notify-email: sgk@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
-    
-  - id: 11
-    app-id: mattermost
-    job-id: mattermost-push-proxy
-    git-url: https://github.com/rhdt/mm-push-proxy
-    git-branch: master
-    git-path: 4.4/
-    target-file: Dockerfile
-    desired-tag: 4.4
-    notify-email: sgk@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
-    
-  - id: 12
-    app-id: mattermost
-    job-id: penfold
-    git-url: https://github.com/gorkem/penfold
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    build-context: ./
-    desired-tag: latest
-    notify-email: sgk@redhat.com
-    depends-on: sclo/nodejs-6-centos7:latest
-
-  - id: 13
     app-id: mattermost
     job-id: mattermost-team
     git-url: https://github.com/rhdt/mattermost-openshift
@@ -155,74 +86,173 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
 
+  - id: 8
+    app-id: mattermost
+    job-id: mattermost-team
+    git-url: https://github.com/rhdt/mattermost-openshift
+    git-branch: master
+    git-path: 5.1-PCP/
+    target-file: Dockerfile
+    desired-tag: 5.1-PCP
+    notify-email: akonarde@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+# Matterbridge
+  - id: 9
+    app-id: mattermost
+    job-id: matterbridge
+    git-url: https://github.com/rhdt/matterbridge
+    git-branch: master
+    git-path: 1.9.0/
+    target-file: Dockerfile
+    desired-tag: 1.9.0
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 10
+    app-id: mattermost
+    job-id: matterbridge
+    git-url: https://github.com/rhdt/matterbridge
+    git-branch: master
+    git-path: 1.10.1/
+    target-file: Dockerfile
+    desired-tag: 1.10.1
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 11
+    app-id: mattermost
+    job-id: matterbridge
+    git-url: https://github.com/rhdt/matterbridge
+    git-branch: master
+    git-path: 1.11.0/
+    target-file: Dockerfile
+    desired-tag: 1.11.0
+    notify-email: akonarde@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+
+# Mattermost Push proxy
+
+  - id: 12
+    app-id: mattermost
+    job-id: mattermost-push-proxy
+    git-url: https://github.com/rhdt/mm-push-proxy
+    git-branch: master
+    git-path: 3.10.0/
+    target-file: Dockerfile
+    desired-tag: 3.10.0
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+    
+  - id: 13
+    app-id: mattermost
+    job-id: mattermost-push-proxy
+    git-url: https://github.com/rhdt/mm-push-proxy
+    git-branch: master
+    git-path: 4.4/
+    target-file: Dockerfile
+    desired-tag: 4.4
+    notify-email: sgk@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+# Integrations: 
+
+# Mattermost Gitlab Integration
   - id: 14
     app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/rhdt/mattermost-openshift
+    job-id: mattermost-gitlab-integration
+    git-url: https://github.com/rhdt/mattermost-gitlab-integration
     git-branch: master
-    git-path: 4.8-PCP/
+    git-path: /
     target-file: Dockerfile
-    desired-tag: 4.8-PCP
+    desired-tag: 4a61a48
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-    
+
+# Mattermost Trello Integration
   - id: 15
     app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/rhdt/mattermost-openshift
+    job-id: mattermost-trello-integration
+    git-url: https://github.com/rhdt/mattermost-trello-integration
     git-branch: master
-    git-path: 4.8/
+    git-path: /
     target-file: Dockerfile
-    desired-tag: 4.8
+    desired-tag: latest
     notify-email: sgk@redhat.com
     build-context: ./
-    depends-on: centos/centos:7
-        
+    depends-on: centos/centos:latest
+    
+# Mattermost RSS Integration
   - id: 16
     app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/rhdt/mattermost-openshift
-    git-branch: master
-    git-path: 4.9-PCP/
+    job-id: mattermost-rss-integration
+    git-url: https://github.com/rhdt/Rss-Atom-Feed-Integration-for-Mattermost
+    git-branch: centosDockerfile
+    git-path: /
     target-file: Dockerfile
-    desired-tag: 4.9-PCP
+    desired-tag: 8e189eb
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-    
+
+# Mattermost Github integration
   - id: 17
     app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/rhdt/mattermost-openshift
-    git-branch: master
-    git-path: 4.10-PCP/
+    job-id: mattermost-github-integration
+    git-url: https://github.com/rhdt/mattermost-github-integration
+    git-branch: centos
+    git-path: /
     target-file: Dockerfile
-    desired-tag: 4.10-PCP
+    desired-tag: 92394f2
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-    
+
+# Miscellaneous
+
+# recurring-pgdump
   - id: 18
     app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/rhdt/mattermost-openshift
+    job-id: recurring-pgdump
+    git-url: https://github.com/rhdt/recurring-pgdump
     git-branch: master
-    git-path: 4.6/
+    git-path: /
     target-file: Dockerfile
-    desired-tag: 4.6
+    desired-tag: latest
     notify-email: sgk@redhat.com
     build-context: ./
-    depends-on: centos/centos:7
-    
+    depends-on: centos/centos:latest
+
+# nginx-redirector
   - id: 19
     app-id: mattermost
-    job-id: mattermost-team
-    git-url: https://github.com/rhdt/mattermost-openshift
+    job-id: nginx-redirector
+    git-url: https://github.com/jfchevrette/nginx-redirector
     git-branch: master
-    git-path: 4.7/
+    git-path: /
     target-file: Dockerfile
-    desired-tag: 4.7.1
+    desired-tag: latest
     notify-email: sgk@redhat.com
     build-context: ./
-    depends-on: centos/centos:7
+    depends-on: kbsingh/openshift-nginx:latest
+
+# Penfold
+  - id: 20
+    app-id: mattermost
+    job-id: penfold
+    git-url: https://github.com/gorkem/penfold
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    build-context: ./
+    desired-tag: latest
+    notify-email: sgk@redhat.com
+    depends-on: sclo/nodejs-6-centos7:latest
