@@ -147,10 +147,21 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
 
+  - id: 13
+    app-id: mattermost
+    job-id: matterbridge
+    git-url: https://github.com/rhdt/matterbridge
+    git-branch: master
+    git-path: 1.11.2/
+    target-file: Dockerfile
+    desired-tag: 1.11.2
+    notify-email: akonarde@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
 
 # Mattermost Push proxy
 
-  - id: 13
+  - id: 14
     app-id: mattermost
     job-id: mattermost-push-proxy
     git-url: https://github.com/rhdt/mm-push-proxy
@@ -162,7 +173,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
     
-  - id: 14
+  - id: 15
     app-id: mattermost
     job-id: mattermost-push-proxy
     git-url: https://github.com/rhdt/mm-push-proxy
@@ -177,7 +188,7 @@ Projects:
 # Integrations: 
 
 # Mattermost Gitlab Integration
-  - id: 15
+  - id: 16
     app-id: mattermost
     job-id: mattermost-gitlab-integration
     git-url: https://github.com/rhdt/mattermost-gitlab-integration
@@ -190,7 +201,7 @@ Projects:
     depends-on: centos/centos:7
 
 # Mattermost Trello Integration
-  - id: 16
+  - id: 17
     app-id: mattermost
     job-id: mattermost-trello-integration
     git-url: https://github.com/rhdt/mattermost-trello-integration
@@ -203,7 +214,7 @@ Projects:
     depends-on: centos/centos:latest
     
 # Mattermost RSS Integration
-  - id: 17
+  - id: 18
     app-id: mattermost
     job-id: mattermost-rss-integration
     git-url: https://github.com/rhdt/Rss-Atom-Feed-Integration-for-Mattermost
@@ -216,7 +227,7 @@ Projects:
     depends-on: centos/centos:7
 
 # Mattermost Github integration
-  - id: 18
+  - id: 19
     app-id: mattermost
     job-id: mattermost-github-integration
     git-url: https://github.com/rhdt/mattermost-github-integration
@@ -231,7 +242,7 @@ Projects:
 # Miscellaneous
 
 # recurring-pgdump
-  - id: 19
+  - id: 20
     app-id: mattermost
     job-id: recurring-pgdump
     git-url: https://github.com/rhdt/recurring-pgdump
@@ -244,7 +255,7 @@ Projects:
     depends-on: centos/centos:latest
 
 # nginx-redirector
-  - id: 20
+  - id: 21
     app-id: mattermost
     job-id: nginx-redirector
     git-url: https://github.com/jfchevrette/nginx-redirector
@@ -257,7 +268,7 @@ Projects:
     depends-on: kbsingh/openshift-nginx:latest
 
 # Penfold
-  - id: 21
+  - id: 22
     app-id: mattermost
     job-id: penfold
     git-url: https://github.com/gorkem/penfold
