@@ -2,7 +2,16 @@
 
 This is the master index used by the [CentOS Community Container Pipeline Service](https://github.com/CentOS/container-pipeline-service) to build and deliver containers at [registry.centos.org](https://wiki.centos.org/ContainerPipeline)
 
-# Quickstart
+## Adding your project to index
+
+Any project is welcome to add their containers to the container index, so long as
+
+1. Project is open source, and they are ok with their image being published publically on registry.centos.org, along with the logs, such as build logs, scan logs etc.
+2. Image is CentOS based i.e Dockerfile has ```FROM centos``` or its eventual base image does.
+
+Please follow the quickstart below, to add your image to the registry.
+
+## Quickstart
 
 In this tutorial we will learn to deploy a Docker container to the [CentOS Registry](https://registry.centos.org).
 
@@ -60,9 +69,9 @@ git push
   ```
  - Once the PR is merged, and the pipeline has picked up your artifacts, your container will be built, tested and delivered to registry.centos.org. You should receive a mail indicating the status of the build(s) once completed.
 
-# File Reference
+## File Reference
 
-## `index.d` directory
+### `index.d` directory
 
 The index.d contains yaml formatted files, which must include :
 
@@ -93,7 +102,7 @@ Example:
 foo.yaml, job-id: bar, desired-tag: latest, then container name will be foo/bar:latest
 ```
 
-## `cccp.yaml`
+### `cccp.yaml`
 
 Every build that we process is required to contain `cccp.yaml` (or `cccp.yaml` if you prefer). An example is located at: https://raw.githubusercontent.com/CentOS/container-index/master/cccp.yaml
 
@@ -109,7 +118,7 @@ Every build that we process is required to contain `cccp.yaml` (or `cccp.yaml` i
 | local-delivery  | _unused_ | No       | This flag can be used to disable delivery to r.c.o                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | upstreams       | _unused_ | No       | Specify upstreams to track and rebuild based on                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-# How does it work?
+## How does it work?
 
 The [index.d](https://github.com/CentOS/container-index/tree/master/index.d) directory in this git repository contains yaml formatted files with lists of all container applicatons included in the pipeline. In order to have your container application be included, tested and delivered via the Community Pipeline, it must be listed in this index. We are making resources behind the pipeline available to anyone on the internet who wishes to use them, provided what they are doing is not illegal and is licensed in a way to be open source compatible. Note that the pipeline, its contents, all build and post build artifacts as well as delivery destinations should be considered publicly available.
 
