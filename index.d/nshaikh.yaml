@@ -9,15 +9,3 @@ Projects:
     desired-tag: latest
     notify-email: container-status-report@centos.org
     depends-on: centos/centos:latest
-
-  - id: 2
-    app-id: nshaikh
-    job-id: go-helloworld
-    git-url: https://github.com/navidshaikh/minimal-go-container
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile.scratch
-    desired-tag: latest
-    notify-email: shaikhnavid14@gmail.com
-    build-context: ./
-    depends-on: null
