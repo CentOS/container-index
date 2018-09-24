@@ -8,4 +8,5 @@
 !index.d
 index.d/*
 !/index.d/*.yml
+!/index.d/*.yaml
 
