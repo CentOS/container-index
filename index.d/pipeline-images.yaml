@@ -173,8 +173,8 @@ Projects:
     job-id: ccp-openshift-slave
     git-url: https://github.com/CentOS/container-pipeline-service
     git-branch: openshift
-    git-path: /Dockerfiles/ccp-openshift-slave
-    target-file: Dockerfile
+    git-path: /
+    target-file: Dockerfiles/ccp-openshift-slave/Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     depends-on: openshift/jenkins-slave-base-centos7:latest
