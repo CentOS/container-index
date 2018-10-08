@@ -135,7 +135,7 @@ Projects:
   - id: 12
     app-id: pipeline-images
     job-id: reg
-    git-url: https://github.com/cdrage/reg
+    git-url: https://github.com/bamachrn/reg
     git-branch: master
     git-path: server
     target-file: Dockerfile
