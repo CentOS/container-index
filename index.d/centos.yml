@@ -161,17 +161,17 @@ Projects:
     build-context: ./
     depends-on: null
 
-    # - id: 13
-    #   app-id: centos
-    #   job-id: centos
-    #   git-url: https://github.com/CentOS/sig-cloud-instance-images
-    #   git-branch: CentOS-7
-    #   git-path: docker
-    #   target-file: Dockerfile
-    #   desired-tag: 7
-    #   notify-email: bamachrn@gmail.com
-    #   build-context: ./
-    #   depends-on: centos/centos:latest
+  - id: 13
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 7
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
 
 # List of SCLo SIG images ends
 
