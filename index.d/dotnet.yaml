@@ -1,45 +1,6 @@
 Projects:
   - id: 1
     app-id: dotnet
-    job-id: dotnet-20-runtime-centos7
-    git-url: https://github.com/redhat-developer/s2i-dotnetcore
-    git-branch: master
-    git-path: 2.0/runtime
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: dotnet-team@redhat.com
-    build-context: ./
-    depends-on: centos/centos:latest
-
-  - id: 2
-    app-id: dotnet
-    job-id: dotnet-20-centos7
-    git-url: https://github.com/redhat-developer/s2i-dotnetcore
-    git-branch: master
-    git-path: 2.0/build
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: dotnet-team@redhat.com
-    build-context: ./
-    depends-on:
-       - centos/centos:latest
-       - dotnet/dotnet-20-runtime-centos7:latest
-
-  - id: 3
-    app-id: dotnet
-    job-id: dotnet-20-jenkins-slave-centos7
-    git-url: https://github.com/redhat-developer/dotnet-jenkins-slave
-    git-branch: master
-    git-path: 2.0/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: dotnet-team@redhat.com
-    build-context: ./
-    depends-on:
-       - openshift/jenkins-slave-base-centos7:latest
-
-  - id: 4
-    app-id: dotnet
     job-id: dotnet-21-runtime-centos7
     git-url: https://github.com/redhat-developer/s2i-dotnetcore
     git-branch: master
@@ -50,7 +11,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 5
+  - id: 2
     app-id: dotnet
     job-id: dotnet-21-centos7
     git-url: https://github.com/redhat-developer/s2i-dotnetcore
