@@ -156,6 +156,18 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
+    #  - id: 14
+    #    app-id: pipeline-images
+    #    job-id: ccp-openshift-scan
+    #    git-url: https://github.com/CentOS/container-pipeline-service
+    #    git-branch: openshift
+    #    git-path: /Dockerfiles/ccp-openshift-scan
+    #    target-file: Dockerfile
+    #    desired-tag: latest
+    #    notify-email: shaikhnavid14@gmail.com
+    #    depends-on: centos/centos:latest
+    #    build-context: ./
+
   - id: 14
     app-id: pipeline-images
     job-id: ccp-openshift-slave
