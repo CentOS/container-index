@@ -10,3 +10,15 @@ Projects:
     notify-email: shaikhnavid14@gmail.com
     depends-on: centos/centos:latest
     build-context: ./
+
+  - id: 2
+    app-id: navidshaikh
+    job-id: ccp-api-server
+    git-url: https://github.com/navidshaikh/container-pipeline-service
+    git-branch: apis
+    git-path: /Dockerfiles/ccp-api-server/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shaikhnavid14@gmail.com
+    depends-on: centos/centos:latest
+    build-context: ./
