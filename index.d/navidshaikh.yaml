@@ -2,8 +2,8 @@ Projects:
   - id: 1
     app-id: navidshaikh
     job-id: ccp-openshift-scan
-    git-url: https://github.com/navidshaikh/ccp-openshift
-    git-branch: master
+    git-url: https://github.com/navidshaikh/container-pipeline-service
+    git-branch: with-daemon-set
     git-path: /Dockerfiles/ccp-openshift-scan/
     target-file: Dockerfile
     desired-tag: latest
