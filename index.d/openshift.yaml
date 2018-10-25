@@ -548,30 +548,6 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-  - id: 57
-    app-id: openshift
-    job-id: jenkins-slave-maven-centos7
-    git-url: https://github.com/openshift/jenkins
-    git-branch: master
-    git-path: slave-maven/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    build-context: ./
-    depends-on: centos/centos:latest
-
-  - id: 58
-    app-id: openshift
-    job-id: jenkins-slave-nodejs-centos7
-    git-url: https://github.com/openshift/jenkins
-    git-branch: master
-    git-path: slave-nodejs/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    build-context: ./
-    depends-on: centos/centos:latest
-
 # * S2I playbook image
 
   - id: 59
