@@ -21,4 +21,4 @@ Projects:
     desired-tag: latest
     notify-email: shaikhnavid14@gmail.com
     depends-on: centos/centos:latest
-    build-context: ./
+    build-context: ../../
