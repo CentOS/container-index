@@ -615,6 +615,78 @@ Projects:
       - centos/centos:latest
       - centos/kubernetes-sig-master:latest
 
+  - id: 51
+    app-id: centos
+    job-id: couchdb
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: couchdb/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 52
+    app-id: centos
+    job-id: earthquake
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: earthquake/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 53
+    app-id: centos
+    job-id: golang
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: golang
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 54
+    app-id: centos
+    job-id: lighttpd
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: lighttpd/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 55
+    app-id: centos
+    job-id: nginx
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: nginx/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 56
+    app-id: centos
+    job-id: powershell
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: powershell/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
 # List of SCLo SIG images begins
   - id: 101
     app-id: centos
