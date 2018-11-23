@@ -51,19 +51,19 @@ Projects:
       - jboss/base-jdk:8
       - centos/centos:latest
 
-  - id: 5
-    app-id: jboss
-    job-id: keycloak-ha-postgres
-    git-url: https://github.com/jboss-dockerfiles/keycloak
-    git-branch: master
-    git-path: server-ha-postgres
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - jboss/keycloak-postgres:latest
+        #  - id: 5
+        #    app-id: jboss
+        #    job-id: keycloak-ha-postgres
+        #    git-url: https://github.com/jboss-dockerfiles/keycloak
+        #    git-branch: master
+        #    git-path: server-ha-postgres
+        #    target-file: Dockerfile
+        #    desired-tag: latest
+        #    notify-email: mohammed.zee1000@gmail.com
+        #    build-context: ./
+        #    depends-on: 
+        #      - centos/centos:latest
+        #      - jboss/keycloak-postgres:latest
 
   - id: 6
     app-id: jboss
