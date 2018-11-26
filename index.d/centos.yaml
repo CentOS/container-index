@@ -644,7 +644,7 @@ Projects:
     job-id: golang
     git-url: https://github.com/dharmit/CentOS-Dockerfiles
     git-branch: centos-container-pipeline
-    git-path: golang
+    git-path: golang/centos7
     target-file: Dockerfile
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
