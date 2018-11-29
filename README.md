@@ -54,7 +54,7 @@ vim index.d/yourgitname.yaml
 4. Commit your changes and open a pull request against https://github.com/CentOS/container-index
 ```
 git add .
-git commit -m "Added cccp.yaml"
+git commit -m "Added yourgitname.yaml to the index"
 git push
 ```
 
