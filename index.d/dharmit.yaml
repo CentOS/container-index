@@ -54,7 +54,7 @@ Projects:
     git-branch: master
     git-path: /golang/1.8/
     target-file: Dockerfile
-    desired-tag: 1.8
+    desired-tag: latest
     notify-email: shahdharmit@gmail.com
     build-context: ./
     depends-on: dharmit/base:latest
