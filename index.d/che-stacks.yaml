@@ -139,6 +139,6 @@ Projects:
     git-path: recipes/centos_quarkus.io_jdk8
     target-file: Dockerfile
     desired-tag: latest
-    notify-email: vorburger@redhat.com
+    notify-email: mike@vorburger.ch
     build-context: ./
     depends-on: che-stacks/centos-jdk8:latest
