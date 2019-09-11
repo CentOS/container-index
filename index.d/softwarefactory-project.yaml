@@ -1,0 +1,12 @@
+Projects:
+  - id: 1
+    app-id: softwarefactory-project
+    job-id: dlrnapi
+    git-url: https://github.com/softwarefactory-project/DLRN
+    git-branch: master
+    git-path: contrib
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jpena@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
