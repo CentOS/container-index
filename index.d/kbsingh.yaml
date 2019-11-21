@@ -57,7 +57,7 @@ Projects:
     desired-tag: 3.0.7-1.el7
     notify-email: cp.build.inb@karan.org
     build-context: ./
-    depends-on: centos/centos:7  
+    depends-on: centos/centos:7
 
   - id: 6
     app-id: kbsingh

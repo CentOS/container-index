@@ -97,7 +97,7 @@ Projects:
     notify-email: akonarde@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-    
+
   - id: 9
     app-id: mattermost
     job-id: mattermost-team
@@ -196,7 +196,7 @@ Projects:
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:7
-    
+
   - id: 17
     app-id: mattermost
     job-id: mattermost-push-proxy
@@ -209,7 +209,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
 
-# Integrations: 
+# Integrations:
 
 # Mattermost Gitlab Integration
   - id: 18
@@ -236,7 +236,7 @@ Projects:
     notify-email: sgk@redhat.com
     build-context: ./
     depends-on: centos/centos:latest
-    
+
 # Mattermost RSS Integration
   - id: 20
     app-id: mattermost
