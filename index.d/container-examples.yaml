@@ -10,7 +10,7 @@ Projects:
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
-        
+
   - id          : 2
     app-id      : container-examples
     job-id      : starter-epel
