@@ -1,5 +1,5 @@
 Projects:
-  - id: 1 
+  - id: 1
     app-id: jfchevrette
     job-id: origin-clients
     git-url: https://github.com/jfchevrette/container-images
@@ -11,7 +11,7 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
 
-  - id: 2 
+  - id: 2
     app-id: jfchevrette
     job-id: origin-clients
     git-url: https://github.com/jfchevrette/container-images

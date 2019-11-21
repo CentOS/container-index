@@ -263,8 +263,6 @@ Projects:
     build-context: ./
     depends-on: centos/centos:latest
 
-# New additions
-
   - id: 23
     app-id: centos
     job-id: bind
@@ -311,9 +309,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-master:latest
+    depends-on: centos/kubernetes-master:latest
 
   - id: 27
     app-id: centos
@@ -325,9 +321,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-master:latest
+    depends-on: centos/kubernetes-master:latest
 
   - id: 28
     app-id: centos
@@ -339,9 +333,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-node:latest
+    depends-on: centos/kubernetes-node:latest
 
   - id: 29
     app-id: centos
@@ -353,9 +345,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-node:latest
+    depends-on: centos/kubernetes-node:latest
 
   - id: 30
     app-id: centos
@@ -367,9 +357,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-master:latest
+    depends-on: centos/kubernetes-master:latest
 
 # centos base alternate tags - tempfix
 
@@ -555,9 +543,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-sig-master:latest
+    depends-on: centos/kubernetes-sig-master:latest
 
   - id: 47
     app-id: centos
@@ -569,9 +555,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-sig-master:latest
+    depends-on: centos/kubernetes-sig-master:latest
 
   - id: 48
     app-id: centos
@@ -583,9 +567,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-sig-node:latest
+    depends-on: centos/kubernetes-sig-node:latest
 
   - id: 49
     app-id: centos
@@ -597,9 +579,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-sig-node:latest
+    depends-on: centos/kubernetes-sig-node:latest
 
   - id: 50
     app-id: centos
@@ -611,9 +591,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - centos/kubernetes-sig-master:latest
+    depends-on: centos/kubernetes-sig-master:latest
 
   - id: 51
     app-id: centos
@@ -698,8 +676,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 102
     app-id: centos
@@ -711,8 +688,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 103
     app-id: centos
@@ -724,8 +700,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 104
     app-id: centos
@@ -737,8 +712,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 105
     app-id: centos
@@ -750,8 +724,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 106
     app-id: centos
@@ -763,8 +736,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 107
     app-id: centos
@@ -776,8 +748,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 108
     app-id: centos
@@ -789,8 +760,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 109
     app-id: centos
@@ -804,8 +774,7 @@ Projects:
     build-context: ./
     prebuild-script: hooks/pre_build_distgen
     prebuild-context: /
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 110
     app-id: centos
@@ -819,8 +788,7 @@ Projects:
     build-context: ./
     prebuild-script: hooks/pre_build_distgen
     prebuild-context: /
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 111
     app-id: centos
@@ -834,8 +802,7 @@ Projects:
     build-context: ./
     prebuild-script: hooks/pre_build_distgen
     prebuild-context: /
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 112
     app-id: centos
@@ -847,8 +814,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 113
     app-id: centos
@@ -860,8 +826,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 114
     app-id: centos
@@ -873,8 +838,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
+    depends-on: centos/centos:latest
 
   - id: 115
     app-id: centos
@@ -886,9 +850,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 116
     app-id: centos
@@ -900,9 +862,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 117
     app-id: centos
@@ -914,9 +874,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 118
     app-id: centos
@@ -928,9 +886,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 119
     app-id: centos
@@ -942,9 +898,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 120
     app-id: centos
@@ -956,9 +910,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 121
     app-id: centos
@@ -970,9 +922,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 122
     app-id: centos
@@ -984,9 +934,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 123
     app-id: centos
@@ -998,9 +946,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 124
     app-id: centos
@@ -1012,9 +958,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 125
     app-id: centos
@@ -1026,9 +970,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 126
     app-id: centos
@@ -1040,9 +982,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 127
     app-id: centos
@@ -1054,9 +994,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 128
     app-id: centos
@@ -1068,10 +1006,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 129
     app-id: centos
@@ -1083,25 +1018,20 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
-  - id: 130
-    app-id: centos
-    job-id: php-71-centos7
-    git-url: https://github.com/sclorg/s2i-php-container.git
-    git-branch: master
-    git-path: 7.1/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+#TODO: Need to confirm with the team about plan for updating this
+#  - id: 130
+#    app-id: centos
+#    job-id: php-71-centos7
+#    git-url: https://github.com/sclorg/s2i-php-container.git
+#    git-branch: master
+#    git-path: 7.1/
+#    target-file: Dockerfile
+#    desired-tag: latest
+#    notify-email: hhorak@redhat.com
+#    build-context: ./
+#    depends-on: centos/s2i-base-centos7:latest
 
   - id: 131
     app-id: centos
@@ -1113,10 +1043,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 132
     app-id: centos
@@ -1128,10 +1055,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 133
     app-id: centos
@@ -1143,10 +1067,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 134
     app-id: centos
@@ -1158,10 +1079,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 135
     app-id: centos
@@ -1173,10 +1091,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 136
     app-id: centos
@@ -1188,10 +1103,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 137
     app-id: centos
@@ -1203,10 +1115,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 138
     app-id: centos
@@ -1218,10 +1127,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 139
     app-id: centos
@@ -1233,10 +1139,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 140
     app-id: centos
@@ -1248,10 +1151,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 141
     app-id: centos
@@ -1265,9 +1165,7 @@ Projects:
     build-context: ../
     prebuild-script: hooks/pre_build_distgen
     prebuild-context: /
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
   - id: 142
     app-id: centos
@@ -1279,10 +1177,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 143
     app-id: centos
@@ -1294,10 +1189,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 144
     app-id: centos
@@ -1309,10 +1201,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
-      - centos/s2i-base-centos7:latest
+    depends-on: centos/s2i-base-centos7:latest
 
   - id: 145
     app-id: centos
@@ -1350,9 +1239,7 @@ Projects:
     build-context: ../
     prebuild-script: hooks/pre_build_distgen
     prebuild-context: /
-    depends-on:
-      - centos/centos:latest
-      - centos/s2i-core-centos7:latest
+    depends-on: centos/s2i-core-centos7:latest
 
 
 

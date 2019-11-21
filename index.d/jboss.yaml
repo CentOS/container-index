@@ -1,5 +1,5 @@
 Projects:
-  - id: 1 
+  - id: 1
     app-id: jboss
     job-id: base
     git-url: https://github.com/jboss-dockerfiles/base
@@ -21,9 +21,7 @@ Projects:
     desired-tag: 8
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: 
-      - centos/centos:latest
-      - jboss/base:latest
+    depends-on: jboss/base:latest
 
   - id: 3
     app-id: jboss
@@ -47,9 +45,7 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: 
-      - jboss/base-jdk:8
-      - centos/centos:latest
+    depends-on: jboss/base-jdk:8
 
         #  - id: 5
         #    app-id: jboss
@@ -75,9 +71,7 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on:
-      - centos/centos:latest
-      - jboss/base-jdk:8
+    depends-on: jboss/base-jdk:8
 
   - id: 7
     app-id: jboss
