@@ -1,16 +1,18 @@
 Projects:
 # * Distro cockpit containers
-  - id: 1
-    app-id: cockpit
-    job-id: kubernetes
-    git-url: https://github.com/cockpituous/cockpit
-    git-branch: master
-    git-path: containers/kubernetes
-    target-file: Dockerfile.centos7
-    desired-tag: latest
-    notify-email: petervo@redhat.com
-    build-context: ./
-    depends-on: centos/centos:latest
+#TODO: Confirm with the team about updating this
+#
+#  - id: 1
+#    app-id: cockpit
+#    job-id: kubernetes
+#    git-url: https://github.com/cockpituous/cockpit
+#    git-branch: master
+#    git-path: containers/kubernetes
+#    target-file: Dockerfile.centos7
+#    desired-tag: latest
+#    notify-email: petervo@redhat.com
+#    build-context: ./
+#    depends-on: centos/centos:latest
 
   - id: 2
     app-id: cockpit

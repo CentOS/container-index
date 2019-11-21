@@ -523,30 +523,32 @@ Projects:
 #       - openshift/node:v3.9
 
 # * Jenkins containers
-
-  - id: 55
-    app-id: openshift
-    job-id: jenkins-2-centos7
-    git-url: https://github.com/openshift/jenkins
-    git-branch: master
-    git-path: 2/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    build-context: ./
-    depends-on: centos/centos:latest
-
-  - id: 56
-    app-id: openshift
-    job-id: jenkins-slave-base-centos7
-    git-url: https://github.com/openshift/jenkins
-    git-branch: master
-    git-path: slave-base/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: mohammed.zee1000@gmail.com
-    build-context: ./
-    depends-on: centos/centos:latest
+#TODO: these images are deprecated upstream
+#TODO: need to check we want to maintain them
+#
+#  - id: 55
+#    app-id: openshift
+#    job-id: jenkins-2-centos7
+#    git-url: https://github.com/openshift/jenkins
+#    git-branch: master
+#    git-path: 2/
+#    target-file: Dockerfile
+#    desired-tag: latest
+#    notify-email: mohammed.zee1000@gmail.com
+#    build-context: ./
+#    depends-on: centos/centos:latest
+#
+#  - id: 56
+#    app-id: openshift
+#    job-id: jenkins-slave-base-centos7
+#    git-url: https://github.com/openshift/jenkins
+#    git-branch: master
+#    git-path: slave-base/
+#    target-file: Dockerfile
+#    desired-tag: latest
+#    notify-email: mohammed.zee1000@gmail.com
+#    build-context: ./
+#    depends-on: centos/centos:latest
 
 # * S2I playbook image
 

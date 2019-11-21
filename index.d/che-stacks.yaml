@@ -131,14 +131,16 @@ Projects:
     build-context: ./
     depends-on: che-stacks/centos-stack-base:latest
 
-  - id: 13
-    app-id: che-stacks
-    job-id: centos-quarkus-io-jdk8
-    git-url: https://github.com/eclipse/che-dockerfiles
-    git-branch: master
-    git-path: recipes/centos_quarkus.io_jdk8
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: mike@vorburger.ch
-    build-context: ./
-    depends-on: che-stacks/centos-jdk8:latest
+#TODO: Need to add exception in CI for this and uncomment
+#
+#  - id: 13
+#    app-id: che-stacks
+#    job-id: centos-quarkus-io-jdk8
+#    git-url: https://github.com/eclipse/che-dockerfiles
+#    git-branch: master
+#    git-path: recipes/centos_quarkus.io_jdk8
+#    target-file: Dockerfile
+#    desired-tag: latest
+#    notify-email: mike@vorburger.ch
+#    build-context: ./
+#    depends-on: che-stacks/centos-jdk8:latest

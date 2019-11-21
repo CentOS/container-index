@@ -1020,17 +1020,18 @@ Projects:
     build-context: ./
     depends-on: centos/s2i-base-centos7:latest
 
-  - id: 130
-    app-id: centos
-    job-id: php-71-centos7
-    git-url: https://github.com/sclorg/s2i-php-container.git
-    git-branch: master
-    git-path: 7.1/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
+#TODO: Need to confirm with the team about plan for updating this
+#  - id: 130
+#    app-id: centos
+#    job-id: php-71-centos7
+#    git-url: https://github.com/sclorg/s2i-php-container.git
+#    git-branch: master
+#    git-path: 7.1/
+#    target-file: Dockerfile
+#    desired-tag: latest
+#    notify-email: hhorak@redhat.com
+#    build-context: ./
+#    depends-on: centos/s2i-base-centos7:latest
 
   - id: 131
     app-id: centos
