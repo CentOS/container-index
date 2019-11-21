@@ -20,8 +20,6 @@ Projects:
 # If you have any dependant containers use this
 # Please check the other yml files for ids that are free
 #
-#   depends-on:
-#     - namespace1/container_name1:tag1
-#     - namespace2/container_name2:tag2
+#   depends-on: namespace1/container_name1:tag1
 #
-# Just copy paste for multiple entries
+# Just copy paste immedieate

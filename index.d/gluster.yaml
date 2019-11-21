@@ -10,6 +10,7 @@ Projects:
     notify-email: humble.devassy@gmail.com
     build-context: ./
     depends-on: centos/centos:latest
+
   - id: 2
     app-id: gluster
     job-id: storagesig-heketi
@@ -23,6 +24,7 @@ Projects:
     prebuild-script: ./prepare-build.sh
     prebuild-context: extras/docker/centos
     depends-on: centos/centos:latest
+
   - id: 3
     app-id: gluster
     job-id: storagesig-heketi
