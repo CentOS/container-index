@@ -10,6 +10,7 @@ Projects:
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
+
   - id          : 2
     app-id      : rhsyseng
     job-id      : kibana
@@ -21,6 +22,7 @@ Projects:
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
+
   - id          : 3
     app-id      : rhsyseng
     job-id      : kibana
@@ -32,6 +34,7 @@ Projects:
     desired-tag : 6.2.1
     build-context: ./
     depends-on  : centos/centos:7
+
   - id          : 4
     app-id      : rhsyseng
     job-id      : kibana
@@ -43,6 +46,7 @@ Projects:
     desired-tag : 6.1.2
     build-context: ./
     depends-on  : centos/centos:7
+
   - id          : 5
     app-id      : rhsyseng
     job-id      : kibana
@@ -54,6 +58,7 @@ Projects:
     desired-tag : 5.5.2
     build-context: ./
     depends-on  : centos/centos:7
+
   - id          : 6
     app-id      : rhsyseng
     job-id      : elasticsearch
@@ -65,6 +70,7 @@ Projects:
     desired-tag : latest
     build-context: ./
     depends-on  : centos/centos:7
+
   - id          : 7
     app-id      : rhsyseng
     job-id      : elasticsearch
@@ -76,6 +82,7 @@ Projects:
     desired-tag : 6.2.1
     build-context: ./
     depends-on  : centos/centos:7
+
   - id          : 8
     app-id      : rhsyseng
     job-id      : elasticsearch
@@ -87,6 +94,7 @@ Projects:
     desired-tag : 6.1.2
     build-context: ./
     depends-on  : centos/centos:7
+
   - id          : 9
     app-id      : rhsyseng
     job-id      : elasticsearch

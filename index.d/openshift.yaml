@@ -1,4 +1,29 @@
 Projects:
+  - id: 59
+    app-id: openshift
+    job-id: playbook2image
+    git-url: https://github.com/openshift/playbook2image
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: aweiteka@redhat.com
+    build-context: ./
+    depends-on:
+        - centos/centos:latest
+        - openshift/base-centos7:latest
+
+  - id: 60
+    app-id: openshift
+    job-id: image-inspector
+    git-url: https://github.com/openshift/image-inspector
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: efreiber@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
 # Openshift origin containers
 ## latest
 #  - id          : 1
@@ -551,29 +576,3 @@ Projects:
 #    depends-on: centos/centos:latest
 
 # * S2I playbook image
-
-  - id: 59
-    app-id: openshift
-    job-id: playbook2image
-    git-url: https://github.com/openshift/playbook2image
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: aweiteka@redhat.com
-    build-context: ./
-    depends-on:
-        - centos/centos:latest
-        - openshift/base-centos7:latest
-
-  - id: 60
-    app-id: openshift
-    job-id: image-inspector
-    git-url: https://github.com/openshift/image-inspector
-    git-branch: master
-    git-path: /
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: efreiber@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
