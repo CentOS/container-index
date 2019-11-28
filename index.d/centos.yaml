@@ -3,14 +3,14 @@ Projects:
     app-id: centos
     job-id: centos
     git-url: https://github.com/CentOS/sig-cloud-instance-images
-    git-branch: CentOS-7
+    git-branch: CentOS-7-x86_64
     git-path: docker
     target-file: Dockerfile
     desired-tag: latest
     notify-email: bamachrn@gmail.com
     build-context: ./
     depends-on: null
-  
+
   - id: 2
     app-id: centos
     job-id: django
@@ -21,8 +21,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 3
     app-id: centos
     job-id: etherpad
@@ -33,8 +33,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 4
     app-id: centos
     job-id: firefox
@@ -45,8 +45,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 5
     app-id: centos
     job-id: freeipa
@@ -57,8 +57,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 6
     app-id: centos
     job-id: httpd
@@ -69,8 +69,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 7
     app-id: centos
     job-id: mariadb
@@ -81,8 +81,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 8
     app-id: centos
     job-id: memcached
@@ -93,8 +93,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 9
     app-id: centos
     job-id: mongo
@@ -105,8 +105,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 10
     app-id: centos
     job-id: owncloud
@@ -117,8 +117,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 11
     app-id: centos
     job-id: python
@@ -129,8 +129,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 12
     app-id: centos
     job-id: qpid
@@ -141,8 +141,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 13
     app-id: centos
     job-id: redis
@@ -153,8 +153,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 14
     app-id: centos
     job-id: registry-v2
@@ -165,8 +165,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 15
     app-id: centos
     job-id: registry
@@ -177,8 +177,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 16
     app-id: centos
     job-id: ssh
@@ -189,8 +189,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 17
     app-id: centos
     job-id: systemd
@@ -201,8 +201,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 18
     app-id: centos
     job-id: tools
@@ -213,8 +213,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 19
     app-id: centos
     job-id: wildfly
@@ -225,8 +225,8 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
-  
+    depends-on: centos/centos:7
+
   - id: 20
     app-id: centos
     job-id: wordpress
@@ -237,7 +237,7 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 21
     app-id: centos
@@ -249,19 +249,19 @@ Projects:
     desired-tag: latest
     notify-email: bamachrn@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 22
     app-id: centos
     job-id: centos
     git-url: https://github.com/CentOS/sig-cloud-instance-images
-    git-branch: CentOS-7
+    git-branch: CentOS-7-x86_64
     git-path: docker
     target-file: Dockerfile
     desired-tag: 7
     notify-email: bamachrn@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 23
     app-id: centos
@@ -273,7 +273,7 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 24
     app-id: centos
@@ -285,7 +285,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 25
     app-id: centos
@@ -297,7 +297,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 26
     app-id: centos
@@ -365,7 +365,7 @@ Projects:
     app-id: centos
     job-id: centos
     git-url: https://github.com/CentOS/sig-cloud-instance-images
-    git-branch: CentOS-7
+    git-branch: CentOS-7-x86_64
     git-path: docker
     target-file: Dockerfile
     desired-tag: centos7
@@ -411,7 +411,7 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 35
     app-id: centos
@@ -423,16 +423,16 @@ Projects:
     desired-tag: latest
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 36
     app-id: centos
     job-id: centos
     git-url: https://github.com/CentOS/sig-cloud-instance-images
-    git-branch: CentOS-7.3.1611
+    git-branch: CentOS-7.7.1908-x86_64
     git-path: docker
     target-file: Dockerfile
-    desired-tag: 7.3.1611
+    desired-tag: 7.7.1908
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
     depends-on: null
@@ -495,7 +495,7 @@ Projects:
     desired-tag: 8.17
     notify-email: container-status-report@centos.org
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 43
     app-id: centos
@@ -507,7 +507,7 @@ Projects:
     desired-tag: 8.18
     notify-email: container-status-report@centos.org
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 44
     app-id: centos
@@ -519,7 +519,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 45
     app-id: centos
@@ -531,7 +531,7 @@ Projects:
     desired-tag: latest
     notify-email: jbrooks@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 46
     app-id: centos
@@ -603,7 +603,7 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 52
     app-id: centos
@@ -615,7 +615,7 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 53
     app-id: centos
@@ -627,7 +627,7 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 54
     app-id: centos
@@ -639,7 +639,7 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 55
     app-id: centos
@@ -651,7 +651,7 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 56
     app-id: centos
@@ -663,7 +663,7 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
 # List of SCLo SIG images begins
   - id: 101
@@ -676,7 +676,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 102
     app-id: centos
@@ -688,7 +688,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 103
     app-id: centos
@@ -700,7 +700,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 104
     app-id: centos
@@ -712,7 +712,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 105
     app-id: centos
@@ -724,7 +724,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 106
     app-id: centos
@@ -736,7 +736,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 107
     app-id: centos
@@ -748,7 +748,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 108
     app-id: centos
@@ -760,7 +760,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 109
     app-id: centos
@@ -774,7 +774,7 @@ Projects:
     build-context: ./
     prebuild-script: hooks/pre_build_distgen
     prebuild-context: /
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 110
     app-id: centos
@@ -788,7 +788,7 @@ Projects:
     build-context: ./
     prebuild-script: hooks/pre_build_distgen
     prebuild-context: /
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 111
     app-id: centos
@@ -802,7 +802,7 @@ Projects:
     build-context: ./
     prebuild-script: hooks/pre_build_distgen
     prebuild-context: /
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 112
     app-id: centos
@@ -814,7 +814,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 113
     app-id: centos
@@ -826,7 +826,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 114
     app-id: centos
@@ -838,7 +838,7 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 115
     app-id: centos
@@ -1213,7 +1213,7 @@ Projects:
     desired-tag: 8.22
     notify-email: container-status-report@centos.org
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 146
     app-id: centos
@@ -1225,7 +1225,7 @@ Projects:
     desired-tag: 8.22
     notify-email: container-status-report@centos.org
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 147
     app-id: centos
@@ -1285,3 +1285,28 @@ Projects:
     notify-email: mohammed.zee1000@gmail.com
     build-context: ./
     depends-on: centos/centos:7
+
+#Adding centos8 entries
+  - id: 151
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-8-x86_64
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 8
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: null
+
+  - id: 152
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-8-x86_64
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: centos8
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: null
