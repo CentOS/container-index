@@ -1024,7 +1024,7 @@ Projects:
 
   - id: 144
     app-id: centos
-    job-id: nodejs-8-centos7
+    job-id: nodejs-10-centos7
     git-url: https://github.com/sclorg/s2i-nodejs-container.git
     git-branch: master
     git-path: 10/
