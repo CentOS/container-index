@@ -70,3 +70,27 @@ Projects:
     notify-email: dotnet-team@redhat.com
     build-context: ./
     depends-on: dotnet/dotnet-30-runtime-centos7:latest
+
+  - id: 7
+    app-id: dotnet
+    job-id: dotnet-31-runtime-centos7
+    git-url: https://github.com/redhat-developer/s2i-dotnetcore
+    git-branch: master
+    git-path: 3.1/runtime
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: dotnet-team@redhat.com
+    build-context: ./
+    depends-on: centos/centos:latest
+
+  - id: 8
+    app-id: dotnet
+    job-id: dotnet-31-centos7
+    git-url: https://github.com/redhat-developer/s2i-dotnetcore
+    git-branch: master
+    git-path: 3.1/build
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: dotnet-team@redhat.com
+    build-context: ./
+    depends-on: dotnet/dotnet-31-runtime-centos7:latest
