@@ -732,42 +732,6 @@ Projects:
     prebuild-context: /
     depends-on: centos/centos:7
 
-  - id: 112
-    app-id: centos
-    job-id: ror-41-centos7
-    git-url: https://github.com/sclorg/ror-container.git
-    git-branch: master
-    git-path: 4.1/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
-
-  - id: 113
-    app-id: centos
-    job-id: ror-42-centos7
-    git-url: https://github.com/sclorg/ror-container.git
-    git-branch: master
-    git-path: 4.2/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
-
-  - id: 114
-    app-id: centos
-    job-id: ror-50-centos7
-    git-url: https://github.com/sclorg/ror-container.git
-    git-branch: master
-    git-path: 5.0/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/centos:7
-
   - id: 115
     app-id: centos
     job-id: s2i-base-centos7
@@ -862,6 +826,18 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ../
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 125
+    app-id: centos
+    job-id: nginx-116-centos7
+    git-url: https://github.com/sclorg/nginx-container.git
+    git-branch: master
+    git-path: 1.16/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
     depends-on: centos/s2i-core-centos7:latest
 
   - id: 126
@@ -960,24 +936,12 @@ Projects:
     build-context: ./
     depends-on: centos/s2i-base-centos7:latest
 
-  - id: 137
-    app-id: centos
-    job-id: ruby-22-centos7
-    git-url: https://github.com/sclorg/s2i-ruby-container.git
-    git-branch: master
-    git-path: 2.2/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
-
   - id: 138
     app-id: centos
-    job-id: ruby-23-centos7
+    job-id: ruby-25-centos7
     git-url: https://github.com/sclorg/s2i-ruby-container.git
     git-branch: master
-    git-path: 2.3/
+    git-path: 2.5/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
@@ -986,10 +950,10 @@ Projects:
 
   - id: 139
     app-id: centos
-    job-id: ruby-24-centos7
+    job-id: ruby-26-centos7
     git-url: https://github.com/sclorg/s2i-ruby-container.git
     git-branch: master
-    git-path: 2.4/
+    git-path: 2.6/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
