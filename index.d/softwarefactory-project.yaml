@@ -9,4 +9,4 @@ Projects:
     desired-tag: latest
     notify-email: jpena@redhat.com
     build-context: ./
-    depends-on: centos/centos:7
+    depends-on: centos/centos:8
