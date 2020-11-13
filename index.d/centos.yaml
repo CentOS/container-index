@@ -690,48 +690,6 @@ Projects:
     build-context: ./
     depends-on: centos/centos:7
 
-  - id: 109
-    app-id: centos
-    job-id: postgresql-94-centos7
-    git-url: https://github.com/sclorg/postgresql-container.git
-    git-branch: master
-    git-path: 9.4/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    prebuild-script: hooks/pre_build_distgen
-    prebuild-context: /
-    depends-on: centos/centos:7
-
-  - id: 110
-    app-id: centos
-    job-id: postgresql-95-centos7
-    git-url: https://github.com/sclorg/postgresql-container.git
-    git-branch: master
-    git-path: 9.5/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    prebuild-script: hooks/pre_build_distgen
-    prebuild-context: /
-    depends-on: centos/centos:7
-
-  - id: 111
-    app-id: centos
-    job-id: postgresql-96-centos7
-    git-url: https://github.com/sclorg/postgresql-container.git
-    git-branch: master
-    git-path: 9.6/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    prebuild-script: hooks/pre_build_distgen
-    prebuild-context: /
-    depends-on: centos/centos:7
-
   - id: 115
     app-id: centos
     job-id: s2i-base-centos7
@@ -742,78 +700,6 @@ Projects:
     desired-tag: latest
     notify-email: hhorak@redhat.com
     build-context: ./
-    depends-on: centos/s2i-core-centos7:latest
-
-  - id: 116
-    app-id: centos
-    job-id: mongodb-26-centos7
-    git-url: https://github.com/sclorg/mongodb-container.git
-    git-branch: master
-    git-path: 2.6/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-core-centos7:latest
-
-  - id: 117
-    app-id: centos
-    job-id: mongodb-32-centos7
-    git-url: https://github.com/sclorg/mongodb-container.git
-    git-branch: master
-    git-path: 3.2/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-core-centos7:latest
-
-  - id: 118
-    app-id: centos
-    job-id: mongodb-34-centos7
-    git-url: https://github.com/sclorg/mongodb-container.git
-    git-branch: master
-    git-path: 3.4/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-core-centos7:latest
-
-  - id: 119
-    app-id: centos
-    job-id: mariadb-100-centos7
-    git-url: https://github.com/sclorg/mariadb-container.git
-    git-branch: master
-    git-path: 10.0/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ../
-    depends-on: centos/s2i-core-centos7:latest
-
-  - id: 120
-    app-id: centos
-    job-id: mariadb-101-centos7
-    git-url: https://github.com/sclorg/mariadb-container.git
-    git-branch: master
-    git-path: 10.1/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ../
-    depends-on: centos/s2i-core-centos7:latest
-
-  - id: 121
-    app-id: centos
-    job-id: mariadb-102-centos7
-    git-url: https://github.com/sclorg/mariadb-container.git
-    git-branch: master
-    git-path: 10.2/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ../
     depends-on: centos/s2i-core-centos7:latest
 
   - id: 123
@@ -882,42 +768,6 @@ Projects:
     git-url: https://github.com/sclorg/s2i-python-container.git
     git-branch: master
     git-path: 2.7/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
-
-  - id: 132
-    app-id: centos
-    job-id: python-34-centos7
-    git-url: https://github.com/sclorg/s2i-python-container.git
-    git-branch: master
-    git-path: 3.4/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
-
-  - id: 133
-    app-id: centos
-    job-id: python-35-centos7
-    git-url: https://github.com/sclorg/s2i-python-container.git
-    git-branch: master
-    git-path: 3.5/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
-
-  - id: 134
-    app-id: centos
-    job-id: python-36-centos7
-    git-url: https://github.com/sclorg/s2i-python-container.git
-    git-branch: master
-    git-path: 3.6/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
