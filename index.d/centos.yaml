@@ -1109,10 +1109,10 @@ Projects:
 
   - id: 153
     app-id: centos
-    job-id: nodejs-14-centos7
+    job-id: nodejs-12-centos7
     git-url: https://github.com/sclorg/s2i-nodejs-container.git
     git-branch: master
-    git-path: 14/
+    git-path: 12/
     target-file: Dockerfile
     desired-tag: latest
     notify-email: hhorak@redhat.com
