@@ -1105,3 +1105,16 @@ Projects:
     notify-email: bamachrn@gmail.com
     build-context: ./
     depends-on: null
+
+
+  - id: 153
+    app-id: centos
+    job-id: nodejs-14-centos7
+    git-url: https://github.com/sclorg/s2i-nodejs-container.git
+    git-branch: master
+    git-path: 14/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
