@@ -1,16 +1,16 @@
 Projects:
-#  - id: 1
-#    app-id: pipeline-images
-#    job-id: ccp-openshift-slave
-#    git-url: https://github.com/CentOS/container-pipeline-service
-#    git-branch: master
-#    git-path: /Dockerfiles/ccp-openshift-slave
-#    target-file: Dockerfile
-#    desired-tag: latest
-#    notify-email: container-status-report@centos.org
-#    depends-on: openshift/jenkins-slave-base-centos7:latest
-#    build-context: ../../
-#
+  - id: 1
+    app-id: pipeline-images
+    job-id: ccp-openshift-slave
+    git-url: https://github.com/CentOS/container-pipeline-service
+    git-branch: master
+    git-path: /Dockerfiles/ccp-openshift-slave
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: container-status-report@centos.org
+    depends-on: openshift/jenkins-slave-base-centos7:latest
+    build-context: ../../
+
   - id: 2
     app-id: pipeline-images
     job-id: ccp-api-server
@@ -20,7 +20,7 @@ Projects:
     target-file: Dockerfile
     desired-tag: latest
     notify-email: container-status-report@centos.org
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
     build-context: ../../
 
 #
@@ -46,7 +46,7 @@ Projects:
     desired-tag: v2
     notify-email: bamachrn@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 5
     app-id: pipeline-images
@@ -58,7 +58,7 @@ Projects:
     desired-tag: latest
     build-context: ./
     notify-email: shaikhnavid14@gmail.com
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
     build_context: ./
 
   - id: 6
@@ -71,7 +71,7 @@ Projects:
     desired-tag: latest
     notify-email: bamachrn@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7
 
   - id: 7
     app-id: pipeline-images
@@ -83,4 +83,4 @@ Projects:
     desired-tag: latest
     notify-email: shahdharmit@gmail.com
     build-context: ./
-    depends-on: centos/centos:latest
+    depends-on: centos/centos:7

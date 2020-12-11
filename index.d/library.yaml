@@ -3,7 +3,7 @@ Projects:
     app-id: library
     job-id: centos
     git-url: https://github.com/CentOS/sig-cloud-instance-images
-    git-branch: CentOS-7-x86_64
+    git-branch: CentOS-8-x86_64
     git-path: docker
     target-file: Dockerfile
     desired-tag: latest
