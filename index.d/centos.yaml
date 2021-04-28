@@ -836,18 +836,6 @@ Projects:
     prebuild-context: /
     depends-on: centos/s2i-core-centos7:latest
 
-  - id: 144
-    app-id: centos
-    job-id: nodejs-10-centos7
-    git-url: https://github.com/sclorg/s2i-nodejs-container.git
-    git-branch: master
-    git-path: 10/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
-
   - id: 145
     app-id: centos
     job-id: sentry
