@@ -726,18 +726,6 @@ Projects:
     build-context: ./
     depends-on: centos/s2i-core-centos7:latest
 
-  - id: 126
-    app-id: centos
-    job-id: nginx-114-centos7
-    git-url: https://github.com/sclorg/nginx-container.git
-    git-branch: master
-    git-path: 1.14/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-core-centos7:latest
-
   - id: 127
     app-id: centos
     job-id: httpd-24-centos7
@@ -749,18 +737,6 @@ Projects:
     notify-email: hhorak@redhat.com
     build-context: ./
     depends-on: centos/s2i-core-centos7:latest
-
-  - id: 129
-    app-id: centos
-    job-id: php-72-centos7
-    git-url: https://github.com/sclorg/s2i-php-container.git
-    git-branch: master
-    git-path: 7.2/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
 
   - id: 131
     app-id: centos
