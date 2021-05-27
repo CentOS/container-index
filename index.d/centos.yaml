@@ -750,30 +750,6 @@ Projects:
     build-context: ./
     depends-on: centos/s2i-base-centos7:latest
 
-  - id: 136
-    app-id: centos
-    job-id: perl-526-centos7
-    git-url: https://github.com/sclorg/s2i-perl-container.git
-    git-branch: master
-    git-path: 5.26/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
-
-  - id: 138
-    app-id: centos
-    job-id: ruby-25-centos7
-    git-url: https://github.com/sclorg/s2i-ruby-container.git
-    git-branch: master
-    git-path: 2.5/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ./
-    depends-on: centos/s2i-base-centos7:latest
-
   - id: 139
     app-id: centos
     job-id: ruby-26-centos7
@@ -798,20 +774,6 @@ Projects:
     build-context: ./
     depends-on: centos/s2i-base-centos7:latest
 
-  - id: 141
-    app-id: centos
-    job-id: varnish-4-centos7
-    git-url: https://github.com/sclorg/varnish-container.git
-    git-branch: master
-    git-path: 4/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ../
-    prebuild-script: hooks/pre_build_distgen
-    prebuild-context: /
-    depends-on: centos/s2i-core-centos7:latest
-
   - id: 145
     app-id: centos
     job-id: sentry
@@ -835,21 +797,6 @@ Projects:
     notify-email: container-status-report@centos.org
     build-context: ./
     depends-on: centos/centos:7
-
-  - id: 147
-    app-id: centos
-    job-id: varnish-5-centos7
-    git-url: https://github.com/sclorg/varnish-container.git
-    git-branch: master
-    git-path: 5/
-    target-file: Dockerfile
-    desired-tag: latest
-    notify-email: hhorak@redhat.com
-    build-context: ../
-    prebuild-script: hooks/pre_build_distgen
-    prebuild-context: /
-    depends-on: centos/s2i-core-centos7:latest
-
 
 
 # List of SCLo SIG images ends
