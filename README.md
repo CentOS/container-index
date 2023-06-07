@@ -1,3 +1,5 @@
+# This repo is no longer maintained (registry.centos.org is decommissioned)
+
 # CentOS Container Index
 
 This is the master index used by the [CentOS Community Container Pipeline Service](https://github.com/CentOS/container-pipeline-service) to build and deliver containers at [registry.centos.org](https://wiki.centos.org/ContainerPipeline)
